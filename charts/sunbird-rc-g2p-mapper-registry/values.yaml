@@ -1,9 +1,8 @@
-# TODO: Create helm chart for mapper ui and callback service
-
 replicaCount: 1
-host: mapper.openg2p.sandbox.net
+global:
+  hostname: mapper.openg2p.sandbox.net
 image:
-  repository: openg2p/sunbird-rc-g2p-mapper-registry
+  repository: lalithkota/sunbird-rc-g2p-mapper-registry
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""

@@ -20,17 +20,17 @@ spec:
     - {{ .Values.istio.virtualservice.gateway }}
     {{- end }}
   http:
-  - match:
-    - uri:
-        prefix: {{ .Values.istio.virtualservice.prefix }}
-    {{- if .Values.istio.virtualservice.rewriteUri }}
-    rewrite:
-      uri: {{ .Values.istio.virtualservice.rewriteUri }}
-    {{- end }}
-    route:
-    - destination:
-        host: {{ include "spar.fullname" . }}
-        port:
-          number: {{ .Values.service.port }}
-{{- end }}
-{{- end }}
+    - match:
+        - uri:
+            prefix: {{ .Values.istio.virtualservice.prefix }}
+      {{- if .Values.istio.virtualservice.rewriteUri }}
+      rewrite:
+        uri: {{ .Values.istio.virtualservice.rewriteUri }}
+      {{- end }}
+      route:
+        - destination:
+            host: {{ include "spar.fullname" . }}
+            port:
+              number: {{ .Values.service.port }}
+  {{- end }}
+  {{- end }}
