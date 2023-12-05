@@ -1,7 +1,8 @@
 replicaCount: 1
-host: spar.openg2p.sandbox.net
+global:
+  hostname: spar.openg2p.sandbox.net
 image:
-  repository: openg2p/social-payments-account-registry
+  repository: lalithkota/social-payments-account-registry
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "develop"
