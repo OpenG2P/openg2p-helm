@@ -1,5 +1,5 @@
 questions:
-- variable: global.hostname
+- variable: global.socialRegistryHostname
   description: Hostname to access Social Registry
   type: string
   label: Hostname
@@ -12,7 +12,7 @@ questions:
   type: Boolean
   label: Install Minio?
 
-- variable: odk-central.odk-central-frontend.istio.virtualservice.host
+- variable: global.odkHostname
   description: Hostname for ODK Central
   type: string
   label: ODK Central Hostname
@@ -33,7 +33,7 @@ questions:
   label: OIDC Client Secret
   group: ODK Central Settings
 
-- variable: minio.istio.virtualservice.host
+- variable: global.minioHostname
   description: Hostname for Minio Console
   type: string
   label: Minio Console Hostname

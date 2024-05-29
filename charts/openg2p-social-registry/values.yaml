@@ -1,6 +1,9 @@
 global:
-  hostname: socialregistry.openg2p.sandbox.net
+  socialRegistryHostname: socialregistry.openg2p.sandbox.net
+  odkHostname: odk.openg2p.sandbox.net
+  minioHostname: minio.openg2p.sandbox.net
   mailname: openg2p.sandbox.net
+  sysAdminEmail: admin@openg2p.sandbox.net
 
 istio:
   enabled: true
@@ -32,6 +35,7 @@ odoo:
     type: ClusterIP
     port: 80
 
+  # TODO: Remove this and use global.sysAdminEmail
   odooEmail: admin@openg2p.org
 
   postgresql:
@@ -77,10 +81,6 @@ odk-central:
       OIDC_ISSUER_URL: https://keycloak.openg2p.sandbox.net/realms/master
       OIDC_CLIENT_ID: ""
       OIDC_CLIENT_SECRET: ""
-  odk-central-frontend:
-    istio:
-      virtualservice:
-        host: odk.openg2p.sandbox.net
 
 minio:
   enabled: true
@@ -110,10 +110,10 @@ minio:
     enabled: true
     virtualservice:
       enabled: true
-      host: minio.openg2p.sandbox.net
+      host: ""
       gateway: "internal"
       destination: '{{ .Release.Name }}-minio'
-      destinationPort: 9001
+      destinationPort: "9001"
     gateway:
       enabled: false
       host: ""

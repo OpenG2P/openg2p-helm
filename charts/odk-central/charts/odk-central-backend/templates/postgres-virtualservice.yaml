@@ -14,7 +14,7 @@ metadata:
   {{- end }}
 spec:
   hosts:
-  - {{ default .Values.global.hostname .Values.postgresql.istio.virtualservice.host }}
+  - {{ default .Values.global.odkHostname .Values.postgresql.istio.virtualservice.host | quote }}
   gateways:
   - {{ default (include "postgresql.v1.primary.fullname" .Subcharts.postgresql) .Values.postgresql.istio.virtualservice.gateway }}
   tcp:
@@ -24,7 +24,7 @@ spec:
     - destination:
         host: {{ tpl .Values.postgresql.istio.virtualservice.destination $ }}
         port:
-          number: {{ .Values.postgresql.istio.virtualservice.destinationPort }}
+          number: {{ tpl .Values.postgresql.istio.virtualservice.destinationPort $ }}
 {{- end }}
 {{- end }}
 {{- end }}

@@ -21,7 +21,7 @@ spec:
       number: 8080
       protocol: HTTP2
     hosts:
-      - {{ default .Values.global.hostname .Values.istio.gateway.host }}
+      - {{ default .Values.global.odkHostname .Values.istio.gateway.host | quote }}
     {{- if .Values.istio.gateway.httpTlsRedirect }}
     tls:
       httpsRedirect: true
@@ -33,7 +33,7 @@ spec:
       number: 8443
       protocol: HTTPS
     hosts:
-      - {{ default .Values.global.hostname .Values.istio.gateway.host }}
+      - {{ default .Values.global.odkHostname .Values.istio.gateway.host | quote }}
     tls:
       {{ toYaml (omit .Values.istio.gateway.tls "enabled") | nindent 6 }}
   {{- end }}

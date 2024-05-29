@@ -9,20 +9,20 @@ metadata:
     {{- include "socialRegistry.labels" . | nindent 4 }}
 spec:
   hosts:
-  - {{ .Values.minio.istio.virtualservice.host }}
+  - {{ default .Values.global.minioHostname .Values.minio.istio.virtualservice.host | quote }}
   gateways:
   - {{ default (include "socialRegistry.fullname" .) .Values.minio.istio.virtualservice.gateway }}
   http:
   - headers:
       request:
         set:
-          x-forwarded-host: {{ .Values.minio.istio.virtualservice.host }}
+          x-forwarded-host: {{ default .Values.global.minioHostname .Values.minio.istio.virtualservice.host | quote }}
           x-forwarded-proto: https
     route:
     - destination:
         host: {{ tpl .Values.minio.istio.virtualservice.destination $ }}
         port:
-          number: {{ .Values.minio.istio.virtualservice.destinationPort }}
+          number: {{ tpl .Values.minio.istio.virtualservice.destinationPort $ }}
 {{- end }}
 {{- end }}
 {{- end }}

@@ -19,8 +19,8 @@ spec:
   ingressClassName: {{ .Values.ingress.ingressClassName | quote }}
   {{- end }}
   rules:
-    {{- if (default .Values.global.hostname .Values.ingress.hostname) }}
-    - host: {{ default .Values.global.hostname .Values.ingress.hostname }}
+    {{- if (default .Values.global.odkHostname .Values.ingress.hostname | quote) }}
+    - host: {{ default .Values.global.odkHostname .Values.ingress.hostname | quote }}
       http:
     {{- else }}
     - http:
@@ -41,8 +41,8 @@ spec:
   tls:
     {{- if .Values.ingress.tls }}
     - hosts:
-        - {{ .Values.ingress.hostname | quote }}
-      secretName: {{ printf "%s-tls" .Values.ingress.hostname }}
+        - {{ default .Values.global.odkHostname .Values.ingress.hostname | quote }}
+      secretName: {{ printf "%s-tls" (default .Values.global.odkHostname .Values.ingress.hostname) }}
     {{- end }}
     {{- if .Values.ingress.extraTls }}
     {{- include "common.tplvalues.render" (dict "value" .Values.ingress.extraTls "context" $) | nindent 4 }}

@@ -13,7 +13,7 @@ metadata:
   {{- end }}
 spec:
   hosts:
-  - {{ default .Values.global.hostname .Values.istio.virtualservice.host }}
+  - {{ default .Values.global.odkHostname .Values.istio.virtualservice.host | quote }}
   gateways:
   - {{ default (include "common.names.fullname" .) .Values.istio.virtualservice.gateway }}
   http:
@@ -21,6 +21,6 @@ spec:
     - destination:
         host: {{ tpl .Values.istio.virtualservice.destination $ }}
         port:
-          number: {{ .Values.istio.virtualservice.destinationPort }}
+          number: {{ tpl .Values.istio.virtualservice.destinationPort $ }}
 {{- end }}
 {{- end }}

@@ -1,8 +1,8 @@
 questions:
-- variable: global.hostname
+- variable: global.odkHostname
   default: odk.sandbox.openg2p.net
   description: Hostname under which ODK Central should be accessible
-  type: string 
+  type: string
   label: "ODK Central Hostname"
 - variable: odk-central-backend.envVars.OIDC_ISSUER_URL
   default: https://keycloak.sandbox.openg2p.net/realms/master

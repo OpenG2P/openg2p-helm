@@ -21,7 +21,7 @@ spec:
       name: tcp-postgres
       protocol: tcp
     hosts:
-    - {{ default .Values.global.hostname .Values.postgresql.istio.gateway.host }}
+    - {{ default .Values.global.odkHostname .Values.postgresql.istio.gateway.host | quote }}
     {{- if .Values.postgresql.istio.gateway.tls.enabled }}
     tls:
       {{ toYaml (omit .Values.postgresql.istio.gateway.tls "enabled") | nindent 6 }}
