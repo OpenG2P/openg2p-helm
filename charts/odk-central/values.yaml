@@ -19,46 +19,7 @@ odk-central-enketo:
   enabled: true
 odk-central-backend:
   enabled: true
+  postgresql:
+    nameOverride: odk-central-postgresql
 odk-central-frontend:
   enabled: true
-
-ingress:
-  enabled: false
-  ingressClassName: ""
-  pathType: ImplementationSpecific
-  pathBackend: '{{ include "common.names.fullname" . }}-odk-central-frontendend'
-  apiVersion: ""
-  hostname: ""
-  annotations: {}
-  tls: false
-  selfSigned: false
-  extraPaths: []
-  extraTls: []
-  secrets: []
-
-istio:
-  enabled: true
-  virtualservice:
-    enabled: true
-    host: ""
-    gateway: "internal"
-    destination: '{{ include "common.names.fullname" . }}-odk-central-frontendend'
-    destinationPort: "80"
-  gateway:
-    enabled: false
-    host: ""
-    ingressController:
-      istio: ingressgateway
-    httpTlsRedirect: true
-    tls:
-      enabled: true
-      mode: SIMPLE
-      credentialName: ""
-
-postgresIngress:
-  enabled: false
-  type: istio # Define for type ingress
-  # host not need. Because tcp.
-  istioControllerLabel:
-    istio: ingressgateway
-  port: 5433

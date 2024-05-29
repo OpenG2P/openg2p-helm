@@ -79,6 +79,40 @@ envVars:
   SENTRY_KEY: "3cf75f54983e473da6bd07daddf0d2ee"
   SENTRY_PROJECT: "1298632"
 
+ingress:
+  enabled: false
+  ingressClassName: ""
+  pathType: ImplementationSpecific
+  path: /
+  apiVersion: ""
+  hostname: ""
+  annotations: {}
+  tls: false
+  tlsSecret: ""
+  extraPaths: []
+  extraTls: []
+  extraRules: []
+
+istio:
+  enabled: true
+  virtualservice:
+    enabled: true
+    host: ""
+    gateway: "internal"
+    destination: '{{ include "common.names.fullname" . }}'
+    destinationPort: "80"
+  gateway:
+    enabled: false
+    host: ""
+    ingressController:
+      istio: ingressgateway
+    httpTlsRedirect: true
+    httpEnabled: true
+    httpsEnabled: false
+    tls:
+      mode: SIMPLE
+      credentialName: ""
+
 setupOdkScript: |-
   #!/bin/bash
   echo "writing fresh nginx templates..."

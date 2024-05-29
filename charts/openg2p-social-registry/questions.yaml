@@ -1,28 +1,23 @@
 questions:
 - variable: global.hostname
-  default: socialregistry.dev.openg2p.net
   description: Hostname to access Social Registry
   type: string
   label: Hostname
 - variable: odk-central.enabled
-  default: true
   description: Enabling this install ODK Central.
   type: Boolean
   label: Install ODK Central?
 - variable: minio.enabled
-  default: true
   description: Enabling this install Minio for document store.
   type: Boolean
   label: Install Minio?
 
-- variable: odk-central.global.hostname
-  default: odk.sandbox.openg2p.net
+- variable: odk-central.odk-central-frontend.istio.virtualservice.host
   description: Hostname for ODK Central
   type: string
   label: ODK Central Hostname
   group: ODK Central Settings
 - variable: odk-central.odk-central-backend.envVars.OIDC_ISSUER_URL
-  default: https://keycloak.sandbox.openg2p.net/realms/master
   description: OIDC Issuer Url for ODK Central login
   type: string
   label: OIDC Issuer URL
@@ -39,11 +34,11 @@ questions:
   group: ODK Central Settings
 
 - variable: minio.istio.virtualservice.host
-  default: minio.sandbox.openg2p.net
   description: Hostname for Minio Console
   type: string
   label: Minio Console Hostname
   group: Minio Settings
+
 # The following configs will not work, because of Array type
 # These will have to be edited from yaml.
 # - variable: minio.extraEnvVars[0].value

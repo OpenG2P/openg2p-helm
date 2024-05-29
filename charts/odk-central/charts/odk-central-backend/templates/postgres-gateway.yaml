@@ -1,0 +1,31 @@
+{{- if .Values.postgresql.enabled }}
+{{- if .Values.postgresql.istio.enabled }}
+{{- if .Values.postgresql.istio.gateway.enabled }}
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: {{ include "postgresql.v1.primary.fullname" .Subcharts.postgresql }}
+  labels: {{- include "common.labels.standard" . | nindent 4 }}
+    {{- if .Values.commonLabels }}
+    {{- include "common.tplvalues.render" ( dict "value" .Values.commonLabels "context" $ ) | nindent 4 }}
+    {{- end }}
+  {{- if .Values.commonAnnotations }}
+  annotations: {{- include "common.tplvalues.render" ( dict "value" .Values.commonAnnotations "context" $ ) | nindent 4 }}
+  {{- end }}
+spec:
+  selector:
+    {{ toYaml .Values.postgresql.istio.gateway.ingressController | nindent 4 }}
+  servers:
+  - port:
+      number: {{ .Values.postgresql.istio.gateway.port }}
+      name: tcp-postgres
+      protocol: tcp
+    hosts:
+    - {{ default .Values.global.hostname .Values.postgresql.istio.gateway.host }}
+    {{- if .Values.postgresql.istio.gateway.tls.enabled }}
+    tls:
+      {{ toYaml (omit .Values.postgresql.istio.gateway.tls "enabled") | nindent 6 }}
+    {{- end }}
+{{- end }}
+{{- end }}
+{{- end }}

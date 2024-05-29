@@ -1,6 +1,6 @@
 global:
-  hostname: "openg2p.sandbox.net"
-  mailname: "openg2p.sandbox.net"
+  hostname: socialregistry.openg2p.sandbox.net
+  mailname: openg2p.sandbox.net
 
 istio:
   enabled: true
@@ -8,6 +8,8 @@ istio:
     enabled: true
     host: ""
     gateway: "internal"
+    destination: '{{ .Release.Name }}-odoo'
+    destinationPort: '{{ .Values.odoo.service.port }}'
   gateway:
     enabled: false
     host: ""
@@ -69,15 +71,16 @@ odk-central:
   enabled: true
   odk-central-mail:
     enabled: false
-    envVars:
-      EMAIL_HOST: '{{ .Release.Name }}-mail'
   odk-central-backend:
     envVars:
-      OIDC_ISSUER_URL: ""
+      EMAIL_HOST: '{{ .Release.Name }}-mail'
+      OIDC_ISSUER_URL: https://keycloak.openg2p.sandbox.net/realms/master
       OIDC_CLIENT_ID: ""
       OIDC_CLIENT_SECRET: ""
-    postgresql:
-      nameOverride: odk-central-postgresql
+  odk-central-frontend:
+    istio:
+      virtualservice:
+        host: odk.openg2p.sandbox.net
 
 minio:
   enabled: true
@@ -87,9 +90,9 @@ minio:
 
   extraEnvVars:
   - name: MINIO_IDENTITY_OPENID_CONFIG_URL
-    value: "http://keycloak.openg2p.sandbox.net/realms/master/.well-known/openid-configuration"
+    value: http://keycloak.openg2p.sandbox.net/realms/master/.well-known/openid-configuration
   - name: MINIO_IDENTITY_OPENID_CLIENT_ID
-    value: "openg2p-minio-client-prod"
+    value: openg2p-sr-minio
   - name: MINIO_IDENTITY_OPENID_CLIENT_SECRET
     value: ""
   - name: MINIO_IDENTITY_OPENID_DISPLAY_NAME
@@ -107,8 +110,10 @@ minio:
     enabled: true
     virtualservice:
       enabled: true
-      host: ""
+      host: minio.openg2p.sandbox.net
       gateway: "internal"
+      destination: '{{ .Release.Name }}-minio'
+      destinationPort: 9001
     gateway:
       enabled: false
       host: ""

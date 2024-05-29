@@ -20,9 +20,9 @@ spec:
           x-forwarded-proto: https
     route:
     - destination:
-        host: {{ .Release.Name }}-minio
+        host: {{ tpl .Values.minio.istio.virtualservice.destination $ }}
         port:
-          number: 9001
+          number: {{ .Values.minio.istio.virtualservice.destinationPort }}
 {{- end }}
 {{- end }}
 {{- end }}

@@ -24,8 +24,8 @@ spec:
           x-forwarded-proto: https
     route:
     - destination:
-        host: {{ .Release.Name }}-odoo
+        host: {{ tpl .Values.istio.virtualservice.destination $ }}
         port:
-          number: {{ .Values.odoo.service.port }}
+          number: {{ tpl .Values.istio.virtualservice.destinationPort $ }}
 {{- end }}
 {{- end }}

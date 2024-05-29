@@ -121,6 +121,25 @@ postgresql:
       wal_level = logical
       max_wal_senders = 20
       max_replication_slots = 10
+  istio:
+    enabled: false
+    virtualservice:
+      enabled: true
+      host: "*"
+      gateway: ""
+      matchPort: 5432
+      destination: '{{ include "postgresql.v1.primary.fullname" .Subcharts.postgresql }}'
+      destinationPort: 5432
+    gateway:
+      enabled: true
+      port: 5432
+      host: "*"
+      ingressController:
+        istio: ingressgateway
+      tls:
+        enabled: false
+        mode: SIMPLE
+        credentialName: ""
 
 configJsonTemplate: |-
   {
