@@ -1,8 +1,31 @@
 global:
-  hostname: "openg2p.sandbox.net"
+  pbmsHostname: openg2p.sandbox.net
   selfServiceHostname: "selfservice.openg2p.sandbox.net"
   serviceProviderHostname: "serviceprovider.openg2p.sandbox.net"
+  odkHostname: odk.openg2p.sandbox.net
+  minioHostname: minio.openg2p.sandbox.net
+  sysAdminEmail: admin@openg2p.sandbox.net
   mailname: "openg2p.sandbox.net"
+
+istio:
+  enabled: true
+  virtualservice:
+    enabled: true
+    host: ""
+    gateway: "internal"
+    destination: '{{ .Release.Name }}-odoo'
+    destinationPort: '{{ .Values.odoo.service.port }}'
+  gateway:
+    enabled: false
+    host: ""
+    ingressController:
+      istio: ingressgateway
+    httpTlsRedirect: false
+    httpEnabled: true
+    httpsEnabled: false
+    tls:
+      mode: SIMPLE
+      credentialName: ""
 
 odoo:
   image:
@@ -14,26 +37,16 @@ odoo:
     type: ClusterIP
     port: 80
 
-  odooEmail: admin
+  # TODO: Remove this and use global.sysAdminEmail
+  odooEmail: admin@openg2p.org
 
   postgresql:
-    enabled: false
-    # primary:
-    #   extendedConfiguration: |-
-    #     wal_level = logical
-    #     max_wal_senders = 20
-    #     max_replication_slots = 10
-
-  externalDatabase:
-    host: "postgres-postgresql.postgres"
-    port: 5432
-    user: openg2puser
-    database: openg2pdb
-    create: false
-    postgresqlPostgresUser: "postgres"
-    existingSecret: "postgres-postgresql"
-    existingSecretPasswordKey: "password"
-    existingSecretPostgresPasswordKey: "postgres-password"
+    enabled: true
+    primary:
+      extendedConfiguration: |-
+        wal_level = logical
+        max_wal_senders = 20
+        max_replication_slots = 10
 
   livenessProbe:
     enabled: false
@@ -53,59 +66,134 @@ odoo:
   - name: OPENG2P_SMTP_PORT
     value: "25"
   - name: LOG_HANDLER
-    value: "[':DEBUG']"
+    value: "[':INFO']"
   - name: LOG_DB
-    value: "True"
+    value: "False"
 
 mail:
   enabled: true
-  # domain name of installation
-  fullnameOverride: openg2p-mail
-  mailName: ""
 
-istio:
-  enabled: true
-  virtualservice:
-    enabled: true
-    host: ""
-    gateway: "istio-system/all-hosts"
-  gateway:
-    enabled: false
-    host: ""
-    ingressController:
-      istio: ingressgateway
-    httpTlsRedirect: true
-    tls:
-      enabled: true
-      mode: SIMPLE
-      credentialName: ""
-
-postgresIngress:
+odk-central:
   enabled: false
-  type: istio # Define for type ingress
-  # host not need. Because tcp.
-  istioControllerLabel:
-    istio: ingressgateway
-  port: 5432
+  odk-central-mail:
+    enabled: false
+  odk-central-backend:
+    envVars:
+      EMAIL_HOST: '{{ .Release.Name }}-mail'
+      OIDC_ISSUER_URL: https://keycloak.openg2p.sandbox.net/realms/master
+      OIDC_CLIENT_ID: ""
+      OIDC_CLIENT_SECRET: ""
 
-selfServiceIngress:
-  enabled: true
-  type: istio
-  # TODO: Implement type: ingress 
+minio:
+  enabled: false
+  persistence:
+    enabled: true
+    size: 16Gi
+
+  extraEnvVars:
+  - name: MINIO_IDENTITY_OPENID_CONFIG_URL
+    value: http://keycloak.openg2p.sandbox.net/realms/master/.well-known/openid-configuration
+  - name: MINIO_IDENTITY_OPENID_CLIENT_ID
+    value: openg2p-pbms-minio
+  - name: MINIO_IDENTITY_OPENID_CLIENT_SECRET
+    value: ""
+  - name: MINIO_IDENTITY_OPENID_DISPLAY_NAME
+    value: Keycloak
+  - name: MINIO_IDENTITY_OPENID_CLAIM_NAME
+    value: client_roles
+  - name: MINIO_IDENTITY_OPENID_SCOPES
+    value: openid,profile,email
+  - name: MINIO_IDENTITY_OPENID_REDIRECT_URI_DYNAMIC
+    value: "on"
+  - name: MINIO_IDENTITY_OPENID_CLAIM_USERINFO
+    value: "on"
+
   istio:
     enabled: true
     virtualservice:
       enabled: true
       host: ""
-      gateway: "istio-system/all-hosts"
+      gateway: "internal"
+      destination: '{{ .Release.Name }}-minio'
+      destinationPort: "9001"
+    gateway:
+      enabled: false
+      host: ""
+      ingressController:
+        istio: ingressgateway
+      httpTlsRedirect: false
+      httpEnabled: true
+      httpsEnabled: false
+      tls:
+        mode: SIMPLE
+        credentialName: ""
+
+postgresIngress:
+  enabled: false
+  type: istio
+  # TODO: Implement type: ingress
+  istio:
+    enabled: false
+    virtualservice:
+      enabled: true
+      host: "*"
+      gateway: ""
+      matchPort: 5432
+      destination: '{{ .Release.Name }}-postgresql'
+      destinationPort: "5432"
+    gateway:
+      enabled: true
+      port: 5432
+      host: "*"
+      ingressController:
+        istio: ingressgateway
+      tls:
+        enabled: false
+        mode: SIMPLE
+        credentialName: ""
+
+selfServiceIngress:
+  enabled: true
+  type: istio
+  # TODO: Implement type: ingress
+  istio:
+    virtualservice:
+      enabled: true
+      host: ""
+      gateway: "internal"
+      destination: '{{ .Release.Name }}-odoo'
+      destinationPort: '{{ .Values.odoo.service.port }}'
+    gateway:
+      enabled: false
+      host: ""
+      ingressController:
+        istio: ingressgateway
+      httpTlsRedirect: false
+      httpEnabled: true
+      httpsEnabled: false
+      tls:
+        mode: SIMPLE
+        credentialName: ""
 
 serviceProviderIngress:
   enabled: true
   type: istio
   # TODO: Implement type: ingress
   istio:
-    enabled: true
     virtualservice:
       enabled: true
       host: ""
-      gateway: "istio-system/all-hosts"
+      gateway: "internal"
+      destination: '{{ .Release.Name }}-odoo'
+      destinationPort: '{{ .Values.odoo.service.port }}'
+    gateway:
+      enabled: false
+      host: ""
+      ingressController:
+        istio: ingressgateway
+      httpTlsRedirect: false
+      httpEnabled: true
+      httpsEnabled: false
+      tls:
+        mode: SIMPLE
+        credentialName: ""

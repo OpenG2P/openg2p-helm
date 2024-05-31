@@ -125,3 +125,27 @@ minio:
       tls:
         mode: SIMPLE
         credentialName: ""
+
+postgresIngress:
+  enabled: false
+  type: istio
+  # TODO: Implement type: ingress
+  istio:
+    enabled: false
+    virtualservice:
+      enabled: true
+      host: "*"
+      gateway: ""
+      matchPort: 5432
+      destination: '{{ .Release.Name }}-postgresql'
+      destinationPort: "5432"
+    gateway:
+      enabled: true
+      port: 5432
+      host: "*"
+      ingressController:
+        istio: ingressgateway
+      tls:
+        enabled: false
+        mode: SIMPLE
+        credentialName: ""

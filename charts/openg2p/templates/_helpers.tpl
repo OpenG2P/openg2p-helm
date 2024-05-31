@@ -49,34 +49,3 @@ Selector labels
 app.kubernetes.io/name: {{ include "openg2p.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
-
-{{/* All hostnames */}}
-
-{{/* TODO: perform check here if ingress/istio */}}
-{{- define "openg2p.adminHostname" -}}
-{{- if .Values.istio.virtualservice.host -}}
-{{ .Values.istio.virtualservice.host }}
-{{- else -}}
-{{ .Values.global.hostname }}
-{{- end -}}
-{{- end -}}
-
-{{/* TODO: perform check here if ingress/istio */}}
-{{- define "openg2p.selfServiceHostname" -}}
-{{- if .Values.selfServiceIngress.istio.virtualservice.host -}}
-{{ .Values.selfServiceIngress.istio.virtualservice.host }}
-{{- else -}}
-{{ .Values.global.selfServiceHostname }}
-{{- end -}}
-{{- end -}}
-
-{{/* TODO: perform check here if ingress/istio */}}
-{{- define "openg2p.serviceProviderHostname" -}}
-{{- if .Values.serviceProviderIngress.istio.virtualservice.host -}}
-{{ .Values.serviceProviderIngress.istio.virtualservice.host }}
-{{- else -}}
-{{ .Values.global.serviceProviderHostname }}
-{{- end -}}
-{{- end -}}
-
-{{/* End - All hostnames */}}

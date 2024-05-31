@@ -1,5 +1,6 @@
 {{- if .Values.serviceProviderIngress.enabled }}
 {{- if eq .Values.serviceProviderIngress.type "istio" }}
+{{- if .Values.serviceProviderIngress.istio.virtualservice.enabled }}
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
@@ -8,9 +9,9 @@ metadata:
     {{- include "openg2p.labels" . | nindent 4 }}
 spec:
   hosts:
-  - {{ include "openg2p.serviceProviderHostname" . }}
+  - {{ default .Values.global.serviceProviderHostname .Values.serviceProviderIngress.istio.virtualservice.host | quote }}
   gateways:
-    - {{ .Values.serviceProviderIngress.istio.virtualservice.gateway }}
+  - {{ default (printf "%s-service-provider" (include "openg2p.fullname" .)) .Values.serviceProviderIngress.istio.virtualservice.gateway }}
   http:
   - match:
     - uri:
@@ -31,16 +32,17 @@ spec:
     - uri:
         prefix: /selfservice
     redirect:
-      authority: {{ include "openg2p.selfServiceHostname" . }}
+      authority: {{ default .Values.global.selfServiceHostname .Values.selfServiceIngress.istio.virtualservice.host | quote }}
   - headers:
       request:
         set:
-          x-forwarded-host: {{ include "openg2p.serviceProviderHostname" . }}
+          x-forwarded-host: {{ default .Values.global.serviceProviderHostname .Values.serviceProviderIngress.istio.virtualservice.host | quote }}
           x-forwarded-proto: https
     route:
     - destination:
-        host: {{ include "openg2p.fullname" . }}-odoo
+        host: {{ tpl .Values.serviceProviderIngress.istio.virtualservice.destination $ }}
         port:
-          number: {{ .Values.odoo.service.port }}
+          number: {{ tpl .Values.serviceProviderIngress.istio.virtualservice.destinationPort $ }}
+{{- end }}
 {{- end }}
 {{- end }}

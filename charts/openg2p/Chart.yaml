@@ -1,15 +1,24 @@
 apiVersion: v2
 name: openg2p
-description: A Helm chart for OpenG2P PBMS Package
+description: A Helm chart for OpenG2P PBMS Module
 type: application
 version: 1.2.0
 appVersion: "1.2.0"
 dependencies:
-- name: mail
-  version: 1.2.0
-  condition: mail.enabled
 - name: odoo
   repository: oci://registry-1.docker.io/bitnamicharts
   version: 21.6.5
   condition: odoo.enabled
+- name: minio
+  repository: oci://registry-1.docker.io/bitnamicharts
+  version: 12.12.2
+  condition: minio.enabled
+- name: odk-central
+  version: v2024.1.0
+  condition: odk-central.enabled
+- name: mail
+  version: 1.2.0
+  condition: mail.enabled
 icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+annotations:
+  catalog.cattle.io/display-name: "OpenG2P PBMS"

@@ -1,0 +1,38 @@
+{{- if .Values.selfServiceIngress.enabled }}
+{{- if eq .Values.selfServiceIngress.type "istio" }}
+{{- if .Values.selfServiceIngress.istio.gateway.enabled }}
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: {{ include "openg2p.fullname" . }}-self-service
+  labels:
+    {{- include "openg2p.labels" . | nindent 4 }}
+spec:
+  selector:
+    {{ toYaml .Values.selfServiceIngress.istio.gateway.ingressController | nindent 4 }}
+  servers:
+  {{- if .Values.selfServiceIngress.istio.gateway.httpEnabled }}
+  - port:
+      name: http2
+      number: 8080
+      protocol: HTTP2
+    hosts:
+      - {{ default .Values.global.selfServiceHostname .Values.selfServiceIngress.istio.gateway.host | quote }}
+    {{- if .Values.selfServiceIngress.istio.gateway.httpTlsRedirect }}
+    tls:
+      httpsRedirect: true
+    {{- end }}
+  {{- end }}
+  {{- if .Values.selfServiceIngress.istio.gateway.httpsEnabled }}
+  - port:
+      name: https
+      number: 8443
+      protocol: HTTPS
+    hosts:
+      - {{ default .Values.global.selfServiceHostname .Values.selfServiceIngress.istio.gateway.host | quote }}
+    tls:
+      {{ toYaml (omit .Values.selfServiceIngress.istio.gateway.tls "enabled") | nindent 6 }}
+  {{- end }}
+{{- end }}
+{{- end }}
+{{- end }}

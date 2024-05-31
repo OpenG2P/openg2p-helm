@@ -8,13 +8,9 @@ metadata:
     {{- include "openg2p.labels" . | nindent 4 }}
 spec:
   hosts:
-  - {{ include "openg2p.adminHostname" . }}
+  - {{ default .Values.global.pbmsHostname .Values.istio.virtualservice.host | quote }}
   gateways:
-    {{- if not .Values.istio.virtualservice.gateway }}
-    - {{ include "openg2p.fullname" . }}
-    {{- else }}
-    - {{ .Values.istio.virtualservice.gateway }}
-    {{- end }}
+  - {{ default (include "openg2p.fullname" .) .Values.istio.virtualservice.gateway }}
   http:
   - match:
     - uri:
@@ -26,22 +22,22 @@ spec:
         prefix: /selfservice
     redirect:
       uri: /selfservice
-      authority: {{ include "openg2p.selfServiceHostname" . }}
+      authority: {{ default .Values.global.selfServiceHostname .Values.selfServiceIngress.istio.virtualservice.host | quote }}
   - match:
     - uri:
         prefix: /serviceprovider
     redirect:
       uri: /serviceprovider
-      authority: {{ include "openg2p.serviceProviderHostname" . }}
+      authority: {{ default .Values.global.serviceProviderHostname .Values.serviceProviderIngress.istio.virtualservice.host | quote }}
   - headers:
       request:
         set:
-          x-forwarded-host: {{ include "openg2p.adminHostname" . }}
+          x-forwarded-host: {{ default .Values.global.pbmsHostname .Values.istio.virtualservice.host | quote }}
           x-forwarded-proto: https
     route:
     - destination:
-        host: {{ include "openg2p.fullname" . }}-odoo
+        host: {{ tpl .Values.istio.virtualservice.destination $ }}
         port:
-          number: {{ .Values.odoo.service.port }}
+          number: {{ tpl .Values.istio.virtualservice.destinationPort $ }}
 {{- end }}
 {{- end }}

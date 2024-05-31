@@ -18,7 +18,7 @@ spec:
       {{- if .Values.istio.gateway.host }}
       - {{ .Values.istio.gateway.host }}
       {{- else }}
-      - {{ .Values.global.hostname }}
+      - {{ .Values.global.pbmsHostname }}
       {{- end }}
     {{- if .Values.istio.gateway.httpTlsRedirect }}
     tls:
@@ -32,7 +32,7 @@ spec:
       {{- if .Values.istio.gateway.host }}
       - {{ .Values.istio.gateway.host }}
       {{- else }}
-      - {{ .Values.global.hostname }}
+      - {{ .Values.global.pbmsHostname }}
       {{- end }}
     {{- if .Values.istio.gateway.tls.enabled }}
     tls:

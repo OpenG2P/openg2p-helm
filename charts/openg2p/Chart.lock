@@ -1,9 +1,15 @@
 dependencies:
-- name: mail
-  repository: ""
-  version: 1.2.0
 - name: odoo
   repository: oci://registry-1.docker.io/bitnamicharts
   version: 21.6.5
-digest: sha256:b7b76fa34c2167918a2306daf5e6da9f726115ff4b67fae98366273e698b0c94
-generated: "2024-05-24T20:56:28.363256816+05:30"
+- name: minio
+  repository: oci://registry-1.docker.io/bitnamicharts
+  version: 12.12.2
+- name: odk-central
+  repository: ""
+  version: v2024.1.0
+- name: mail
+  repository: ""
+  version: 1.2.0
+digest: sha256:0b6785a20af8ab7a1f953f5e13c599923fc098bb1abb90c6b1c5db2e0f90ca1e
+generated: "2024-05-31T01:43:59.972812958+05:30"

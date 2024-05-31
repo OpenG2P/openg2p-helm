@@ -9,7 +9,7 @@ metadata:
     {{- include "openg2p.labels" . | nindent 4 }}
 spec:
   hosts:
-  - {{ default .Values.global.pbmsHostname .Values.postgresIngress.istio.virtualservice.host | quote }}
+  - {{ default .Values.global.socialRegistryHostname .Values.postgresIngress.istio.virtualservice.host | quote }}
   gateways:
   - {{ default (printf "%s-postgresql" .Release.Name) .Values.postgresIngress.istio.virtualservice.gateway }}
   tcp:

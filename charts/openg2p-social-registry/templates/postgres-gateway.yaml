@@ -16,7 +16,7 @@ spec:
       name: tcp-postgres
       protocol: tcp
     hosts:
-    - {{ default .Values.global.pbmsHostname .Values.postgresIngress.istio.gateway.host | quote }}
+    - {{ default .Values.global.socialRegistryHostname .Values.postgresIngress.istio.gateway.host | quote }}
     {{- if .Values.postgresIngress.istio.gateway.tls.enabled }}
     tls:
       {{ toYaml (omit .Values.postgresIngress.istio.gateway.tls "enabled") | nindent 6 }}
