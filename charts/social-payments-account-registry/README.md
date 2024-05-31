@@ -1,3 +1,1 @@
-# Social Payments Account Registry Helm Chart
-
-- Refer to [SPAR Deployment](https://docs.openg2p.org/deployment/openg2p-modules-deployment/spar-deployment).
+This helm chart has been moved to [OpenG2P SPAR Deployment](https://github.com/openg2p/openg2p-spar-deployment) repo.

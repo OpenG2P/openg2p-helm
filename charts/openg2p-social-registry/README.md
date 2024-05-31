@@ -1,3 +1,1 @@
-# OpenG2P Social Registry Helm Chart
-
-- Refer to deployment guide [here](https://docs.openg2p.org/social-registry/deployment).
+This helm chart has been moved to [OpenG2P PBMS Deployment](https://github.com/openg2p/openg2p-pbms-deployment) repo.
