@@ -2,10 +2,10 @@ apiVersion: v1
 entries:
   openg2p-social-registry:
   - annotations:
-      catalog.cattle.io/display-name: OpenG2P Social Registry
+      catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-06-18T07:25:09.756502968Z"
+    created: "2024-06-24T10:39:50.227623643Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -23,10 +23,38 @@ entries:
       name: odk-central
       repository: https://openg2p.github.io/openg2p-helm
       version: v2024.1.0
-    - condition: opensearch.enabled
+    - alias: loggingOpensearch
+      condition: loggingOpensearch.enabled
       name: opensearch
       repository: oci://registry-1.docker.io/bitnamicharts
       version: 1.2.0
+    - condition: keymanager.enabled
+      name: keymanager
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.0.1
+    - condition: reporting.enabled
+      name: reporting
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    - condition: reporting-init.enabled
+      name: reporting-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    description: A Helm chart for OpenG2P Social Registry
+    digest: ba59bead0eb0240409b84284aa6aee440680e9937387c508c383a61bde841b2e
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-social-registry
+    type: application
+    urls:
+    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-0.0.0-develop.tgz
+    version: 0.0.0-develop
+  openg2p-social-registry-p2:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2024-06-24T10:39:50.268832253Z"
+    dependencies:
     - condition: superset.enabled
       name: superset
       repository: https://apache.github.io/superset
@@ -45,17 +73,13 @@ entries:
       name: esignet
       repository: https://openg2p.github.io/openg2p-helm
       version: 1.4.0
-    - condition: keymanager.enabled
-      name: keymanager
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 12.0.1
-    description: A Helm chart for OpenG2P Social Registry
-    digest: 21df7ed0ae119ad420d011675df7b67f7555cbeeea6eaa752fbeb3207444816f
+    description: A Helm chart for OpenG2P Social Registry - Part 2
+    digest: 9e211a003cf9c67a97ee4bf27f96fe0f227f562e2cd0dbfb6ac2b81cec767189
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
-    name: openg2p-social-registry
+    name: openg2p-social-registry-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-0.0.0-develop.tgz
+    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-0.0.0-develop.tgz
     version: 0.0.0-develop
   spar:
   - annotations:
@@ -87,4 +111,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-1.0.0.tgz
     version: 1.0.0
-generated: "2024-06-24T05:48:14.229861195Z"
+generated: "2024-06-24T10:39:50.18488432Z"
