@@ -448,28 +448,6 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/openg2p-pbms-p2-0.0.0-develop.tgz
     version: 0.0.0-develop
-  openg2p-selfservice-api:
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2024-07-03T23:57:41.792271082Z"
-    description: A Helm chart for API backend of OpenG2P Self Service Portal
-    digest: be0491d1351166c705bc6605ed8a76ee03e2129670ea7f8c6e22b44b1e6baaea
-    name: openg2p-selfservice-api
-    type: application
-    urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-selfservice-api-0.1.0.tgz
-    version: 0.1.0
-  openg2p-selfservice-ui:
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2024-07-03T23:57:41.792645038Z"
-    description: A Helm chart for UI frontend of OpenG2P Self Service Portal
-    digest: a2b0a14e9f8ee5d1b879365a8bc6b70d6dd998fddf98c6f50bc2bde5bdb1e69f
-    name: openg2p-selfservice-ui
-    type: application
-    urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-selfservice-ui-0.1.0.tgz
-    version: 0.1.0
   openg2p-social-registry:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
@@ -618,34 +596,6 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/reporting-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-  social-payments-account-registry:
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2024-07-03T23:57:41.94072168Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
-    - condition: redis.enabled
-      name: redis
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 18.x.x
-    - condition: spar-g2pconnect-id-mapper.enabled
-      name: spar-g2pconnect-id-mapper
-      repository: ""
-      version: 0.1.0
-    - condition: sunbird-rc-g2p-mapper-registry.enabled
-      name: sunbird-rc-g2p-mapper-registry
-      repository: ""
-      version: 0.1.0
-    description: A Helm chart for Social Payments Account Registry
-    digest: 6c50d36c945db05f4e32451cb936e03c872691e853baa9a4ef25e87ff667b555
-    name: social-payments-account-registry
-    type: application
-    urls:
-    - https://openg2p.github.io/openg2p-helm/social-payments-account-registry-0.1.0.tgz
-    version: 0.1.0
   spar:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
@@ -742,22 +692,6 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-0.0.0-develop.tgz
     version: 0.0.0-develop
-  spar-g2pconnect-id-mapper:
-  - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2024-07-03T23:57:41.986834195Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
-    description: A Helm chart for SPAR G2P Connect ID Mapper
-    digest: fe4220747bfee4b35ce7ac35801f43a25463996e23d84495ea00653118d13aef
-    name: spar-g2pconnect-id-mapper
-    type: application
-    urls:
-    - https://openg2p.github.io/openg2p-helm/spar-g2pconnect-id-mapper-0.1.0.tgz
-    version: 0.1.0
   spar-mapper-api:
   - apiVersion: v2
     created: "2024-07-03T23:57:42.001525443Z"
