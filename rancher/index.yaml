@@ -5,7 +5,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-07-03T23:57:30.835124853Z"
+    created: "2024-07-11T05:07:48.546749526Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -41,19 +41,36 @@ entries:
       repository: https://openg2p.github.io/openg2p-helm
       version: 0.0.0-develop
     description: A Helm chart for OpenG2P PBMS - Part 1
-    digest: bf93d39a4ccb200feb3ef6b2d04bb6b1740d387b310e544172efb74834f98e88
+    digest: 2d35832d8b47f3c2bf2377224764502cf02ff174b1771c380144bbacb8ef60f6
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-pbms
     type: application
     urls:
     - https://openg2p.github.io/openg2p-helm/openg2p-pbms-0.0.0-develop.tgz
     version: 0.0.0-develop
+  openg2p-pbms-beneficiary-portal:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
+    apiVersion: v2
+    created: "2024-07-11T05:07:48.548212355Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 2.x.x
+    description: A Helm chart for OpenG2P PBMS Beneficiary Portal
+    digest: 60f0feea43b7cab6aeb3ede2be56b9248f840b656d0cd6df1cfbe11e87259639
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-pbms-beneficiary-portal
+    type: application
+    urls:
+    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-beneficiary-portal-0.0.0-develop.tgz
+    version: 0.0.0-develop
   openg2p-pbms-p2:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-07-03T23:57:30.882977231Z"
+    created: "2024-07-11T05:07:48.59854901Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -192,4 +209,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-1.0.0.tgz
     version: 1.0.0
-generated: "2024-07-11T04:20:14.562466201Z"
+generated: "2024-07-11T05:07:48.49531082Z"
