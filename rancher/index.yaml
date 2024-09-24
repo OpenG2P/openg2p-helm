@@ -5,7 +5,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-09-16T10:22:13.923553927Z"
+    created: "2024-09-24T03:51:13.201143126Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -41,7 +41,7 @@ entries:
       repository: https://openg2p.github.io/openg2p-helm
       version: 0.0.0-develop
     description: A Helm chart for OpenG2P PBMS - Part 1
-    digest: ba9e645490d062ab220332a8fd051c5e30d3503da69cace23d3674892b77f48f
+    digest: b868afdd83c1ab801a665a7e22e095278f2a33d6b4e9b6a42e27d6333515aca1
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-pbms
     type: application
@@ -52,13 +52,13 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2024-09-16T10:22:13.925052902Z"
+    created: "2024-09-24T03:51:13.202598293Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
       version: 2.x.x
     description: A Helm chart for OpenG2P PBMS Beneficiary Portal
-    digest: 105761d186a61454b94a73dc85ac29796e4789b581f350dec9ea30f0d900011a
+    digest: a4d015ad11e85ae19002109a4af12e1eb3ab37351dd8b987ea71a87e8d8b6696
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-pbms-beneficiary-portal
     type: application
@@ -70,7 +70,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-09-16T10:22:13.975584161Z"
+    created: "2024-09-24T03:51:13.251943863Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -89,9 +89,9 @@ entries:
     - condition: esignet.enabled
       name: esignet
       repository: https://openg2p.github.io/openg2p-helm
-      version: 1.4.0
+      version: 1.4.1
     description: A Helm chart for OpenG2P PBMS - Part 2
-    digest: 8b1f9bb74ff727ea6304287d22c90b8315a02c0de3ddb1eb6cff97713853819a
+    digest: 0c5d86bf97f9cb7352d96bed7562764c441ca0d084eec7e1b7bafc5c518b1992
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-pbms-p2
     type: application
@@ -683,4 +683,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-1.0.0.tgz
     version: 1.0.0
-generated: "2024-09-23T19:32:01.446095968Z"
+generated: "2024-09-24T03:51:13.150173145Z"
