@@ -24,29 +24,6 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/artifactory-12.0.2.tgz
     version: 12.0.2
-  config-server:
-  - apiVersion: v2
-    appVersion: 1.1.2
-    created: "2024-09-24T16:32:41.83365512Z"
-    dependencies:
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: A Helm chart for configuration of MOSIP modules
-    digest: f7e46b7038a9053b73699c03c10412c92675f9e851bbf9713d72b63651f1e7bb
-    home: https://mosip.io
-    keywords:
-    - config-server
-    maintainers:
-    - email: info@mosip.io
-      name: MOSIP
-    name: config-server
-    type: application
-    urls:
-    - https://openg2p.github.io/openg2p-helm/config-server-12.0.1-B4.tgz
-    version: 12.0.1-B4
   debezium:
   - annotations:
       catalog.cattle.io/display-name: Debezium
