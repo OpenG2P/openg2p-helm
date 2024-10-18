@@ -164,7 +164,39 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-10-18T09:20:09.224334573Z"
+    created: "2024-10-18T09:20:33.069653433Z"
+    dependencies:
+    - condition: superset.enabled
+      name: superset
+      repository: https://apache.github.io/superset
+      version: 0.12.11
+    - alias: supersetPostgresql
+      condition: superset.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.x.x
+    - alias: supersetRedis
+      condition: superset.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    - condition: esignet.enabled
+      name: esignet
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.4.1
+    description: A Helm chart for OpenG2P PBMS - Part 2
+    digest: 32277b0655cbdb95a59ee8b3a95157939d023e342c9999815c77d2ac1bc25c14
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-pbms-p2
+    type: application
+    urls:
+    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-p2-1.2.0.tgz
+    version: 1.2.0
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2024-10-18T09:20:33.017856089Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -777,4 +809,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-1.0.0.tgz
     version: 1.0.0
-generated: "2024-10-18T09:20:09.015813009Z"
+generated: "2024-10-18T09:20:32.969156798Z"
