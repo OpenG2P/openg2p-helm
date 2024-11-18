@@ -1961,32 +1961,6 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: WebSub
     apiVersion: v2
-    created: "2024-11-18T06:00:36.563737051Z"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 2.x.x
-    - condition: kafka.enabled
-      name: kafka
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 29.x.x
-    description: A Helm chart for WebSub
-    digest: f1c244cc6925269f6345460182a3656ea6afe4e762ed1db7391beb5aa1f3ec9e
-    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
-    keywords:
-    - mosip
-    - websub
-    maintainers:
-    - email: info@openg2p.org
-      name: OpenG2P
-    name: websub
-    type: application
-    urls:
-    - https://openg2p.github.io/openg2p-helm/websub-12.0.1.tgz
-    version: 12.0.1
-  - annotations:
-      catalog.cattle.io/display-name: WebSub
-    apiVersion: v2
     created: "2024-11-18T06:00:36.554036956Z"
     dependencies:
     - name: common
