@@ -858,6 +858,42 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-0.0.0-develop.tgz
     version: 0.0.0-develop
+  openg2p-sr-bg-tasks:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2024-12-10T05:51:10.984916283Z"
+    dependencies:
+    - condition: common.enabled
+      name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 2.x.x
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 20.x.x
+    - condition: openg2p-sr-bg-tasks-celery-beat-producers.enabled
+      name: openg2p-sr-bg-tasks-celery-beat-producers
+      repository: ""
+      version: 1.0.0
+    - condition: openg2p-sr-bg-tasks-celery-workers.enabled
+      name: openg2p-sr-bg-tasks-celery-workers
+      repository: ""
+      version: 1.0.0
+    description: A Helm chart for OpenG2P SR BG Tasks
+    digest: d2ac478979c88ae37411473e0b1595f582e27940f2ea93f615940d27180f2ba7
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-sr-bg-tasks
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-sr-bg-tasks
+    type: application
+    urls:
+    - https://openg2p.github.io/openg2p-helm/openg2p-sr-bg-tasks-1.0.0.tgz
+    version: 1.0.0
   spar:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
@@ -888,4 +924,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-1.0.0.tgz
     version: 1.0.0
-generated: "2024-12-10T00:51:02.810768525Z"
+generated: "2024-12-10T05:51:10.977237609Z"
