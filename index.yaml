@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   artifactory:
   - apiVersion: v2
-    created: "2024-12-13T10:48:30.430828062Z"
+    created: "2024-12-16T01:47:37.312536362Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -28,7 +28,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: Debezium
     apiVersion: v2
-    created: "2024-12-13T10:48:30.432823789Z"
+    created: "2024-12-16T01:47:37.316580992Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -48,7 +48,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: eSignet
     apiVersion: v2
-    created: "2024-12-13T10:48:30.492429454Z"
+    created: "2024-12-16T01:47:37.442159373Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -95,7 +95,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: eSignet
     apiVersion: v2
-    created: "2024-12-13T10:48:30.463040795Z"
+    created: "2024-12-16T01:47:37.379606227Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -142,7 +142,7 @@ entries:
   g2p-bridge:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-12-13T10:48:30.503404679Z"
+    created: "2024-12-16T01:47:37.462154447Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -164,7 +164,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: Idgenerator
     apiVersion: v2
-    created: "2024-12-13T10:48:30.510328339Z"
+    created: "2024-12-16T01:47:37.478154072Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -196,7 +196,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: Keymanager
     apiVersion: v2
-    created: "2024-12-13T10:48:30.518830808Z"
+    created: "2024-12-16T01:47:37.497331375Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -228,9 +228,19 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/keymanager-12.0.1.tgz
     version: 12.0.1
+  landing:
+  - apiVersion: v2
+    created: "2024-12-16T01:47:37.498202878Z"
+    description: A Helm chart for installing landing page for OpenG2P sandbox.
+    digest: 69f2d8400a3dcf9d974810bba4824d6b5a0a13861f301fb73e1d2c1c40872e4a
+    name: landing
+    type: application
+    urls:
+    - https://openg2p.github.io/openg2p-helm/landing-0.0.0-develop.tgz
+    version: 0.0.0-develop
   mail:
   - apiVersion: v2
-    created: "2024-12-13T10:48:30.519696947Z"
+    created: "2024-12-16T01:47:37.499805017Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -249,7 +259,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: Mimoto
     apiVersion: v2
-    created: "2024-12-13T10:48:30.523822327Z"
+    created: "2024-12-16T01:47:37.505759469Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -276,7 +286,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: Mock Identity System
     apiVersion: v2
-    created: "2024-12-13T10:48:30.541941035Z"
+    created: "2024-12-16T01:47:37.539744953Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -312,7 +322,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: Mock Identity System
     apiVersion: v2
-    created: "2024-12-13T10:48:30.532648454Z"
+    created: "2024-12-16T01:47:37.522880186Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -349,7 +359,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: ODK Central
     apiVersion: v2
-    created: "2024-12-13T10:48:30.571821499Z"
+    created: "2024-12-16T01:47:37.599169513Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -388,7 +398,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: ODK Central
     apiVersion: v2
-    created: "2024-12-13T10:48:30.56309519Z"
+    created: "2024-12-16T01:47:37.581256397Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -426,7 +436,7 @@ entries:
     version: v2024.1.0
   - apiVersion: v2
     appVersion: v2023.1.0
-    created: "2024-12-13T10:48:30.549106267Z"
+    created: "2024-12-16T01:47:37.556365971Z"
     dependencies:
     - condition: odk-central-mail.enabled
       name: odk-central-mail
@@ -463,7 +473,7 @@ entries:
     version: 1.1.0
   odk-central-enketo:
   - apiVersion: v2
-    created: "2024-12-13T10:48:30.552380123Z"
+    created: "2024-12-16T01:47:37.560505725Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -480,7 +490,7 @@ entries:
     - https://openg2p.github.io/openg2p-helm/odk-central-enketo-v2024.2.1.tgz
     version: v2024.2.1
   - apiVersion: v2
-    created: "2024-12-13T10:48:30.551030209Z"
+    created: "2024-12-16T01:47:37.55847489Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -498,7 +508,7 @@ entries:
     version: v2024.1.0
   odk-central-pyxform:
   - apiVersion: v2
-    created: "2024-12-13T10:48:30.554052629Z"
+    created: "2024-12-16T01:47:37.563759626Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -515,7 +525,7 @@ entries:
     - https://openg2p.github.io/openg2p-helm/odk-central-pyxform-v2024.2.1.tgz
     version: v2024.2.1
   - apiVersion: v2
-    created: "2024-12-13T10:48:30.55322928Z"
+    created: "2024-12-16T01:47:37.562074773Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -536,7 +546,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS
     apiVersion: v2
     appVersion: 1.2.0
-    created: "2024-12-13T10:48:30.596606653Z"
+    created: "2024-12-16T01:47:37.652486136Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -564,7 +574,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2024-12-13T10:48:30.577844657Z"
+    created: "2024-12-16T01:47:37.613537118Z"
     dependencies:
     - alias: mail
       condition: mail.enabled
@@ -586,7 +596,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Deduplicator
     apiVersion: v2
-    created: "2024-12-13T10:48:30.605055144Z"
+    created: "2024-12-16T01:47:37.675143578Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -616,7 +626,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank
     apiVersion: v2
-    created: "2024-12-13T10:48:30.616788687Z"
+    created: "2024-12-16T01:47:37.700426239Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -655,7 +665,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge
     apiVersion: v2
-    created: "2024-12-13T10:48:30.643199277Z"
+    created: "2024-12-16T01:47:37.753003845Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -697,7 +707,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge
     apiVersion: v2
-    created: "2024-12-13T10:48:30.629502199Z"
+    created: "2024-12-16T01:47:37.72545932Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -740,7 +750,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-API
     apiVersion: v2
-    created: "2024-12-13T10:48:30.655506452Z"
+    created: "2024-12-16T01:47:37.776485988Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -765,7 +775,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-API
     apiVersion: v2
-    created: "2024-12-13T10:48:30.648874233Z"
+    created: "2024-12-16T01:47:37.763374401Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -791,7 +801,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Celery-Beat-Producers
     apiVersion: v2
-    created: "2024-12-13T10:48:30.677090423Z"
+    created: "2024-12-16T01:47:37.819033651Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -820,7 +830,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Celery-Beat-Producers
     apiVersion: v2
-    created: "2024-12-13T10:48:30.666147387Z"
+    created: "2024-12-16T01:47:37.797465029Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -850,7 +860,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Celery-Beat-Producers
     apiVersion: v2
-    created: "2024-12-13T10:48:30.688906915Z"
+    created: "2024-12-16T01:47:37.839929198Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -880,7 +890,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank-API
     apiVersion: v2
-    created: "2024-12-13T10:48:30.69414208Z"
+    created: "2024-12-16T01:47:37.852581249Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -906,7 +916,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank-Celery
     apiVersion: v2
-    created: "2024-12-13T10:48:30.706248487Z"
+    created: "2024-12-16T01:47:37.874253465Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -937,7 +947,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:30.863085973Z"
+    created: "2024-12-16T01:47:38.199534193Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -984,7 +994,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:30.812101552Z"
+    created: "2024-12-16T01:47:38.086844562Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1031,7 +1041,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:30.760463469Z"
+    created: "2024-12-16T01:47:37.983924084Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1078,7 +1088,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2024-12-13T10:48:30.864627505Z"
+    created: "2024-12-16T01:47:38.202802305Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1096,7 +1106,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:30.965662299Z"
+    created: "2024-12-16T01:47:38.401579749Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1128,7 +1138,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:30.915444701Z"
+    created: "2024-12-16T01:47:38.303039763Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1161,7 +1171,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.51428556Z"
+    created: "2024-12-16T01:47:39.424021958Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1208,7 +1218,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.461877851Z"
+    created: "2024-12-16T01:47:39.324951363Z"
     dependencies:
     - condition: odoo.enabled
       name: sr-landing
@@ -1259,7 +1269,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.401023854Z"
+    created: "2024-12-16T01:47:39.220333722Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1306,7 +1316,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.347543084Z"
+    created: "2024-12-16T01:47:39.114394661Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1353,7 +1363,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.295171139Z"
+    created: "2024-12-16T01:47:39.01057006Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1400,7 +1410,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.241474983Z"
+    created: "2024-12-16T01:47:38.907448834Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1447,7 +1457,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.187825067Z"
+    created: "2024-12-16T01:47:38.807878071Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1494,7 +1504,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.133482221Z"
+    created: "2024-12-16T01:47:38.705534024Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1541,7 +1551,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.077402587Z"
+    created: "2024-12-16T01:47:38.604041019Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1588,7 +1598,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.01775271Z"
+    created: "2024-12-16T01:47:38.502357317Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1636,7 +1646,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:32.044228261Z"
+    created: "2024-12-16T01:47:40.440191314Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1672,7 +1682,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.986904511Z"
+    created: "2024-12-16T01:47:40.326542407Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1708,7 +1718,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.928654017Z"
+    created: "2024-12-16T01:47:40.216056457Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1740,7 +1750,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.877214875Z"
+    created: "2024-12-16T01:47:40.119259427Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1772,7 +1782,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.827128683Z"
+    created: "2024-12-16T01:47:40.022208787Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1804,7 +1814,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.76992986Z"
+    created: "2024-12-16T01:47:39.922201788Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1836,7 +1846,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.720371423Z"
+    created: "2024-12-16T01:47:39.825036714Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1868,7 +1878,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.669507254Z"
+    created: "2024-12-16T01:47:39.729274122Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1900,7 +1910,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.619399074Z"
+    created: "2024-12-16T01:47:39.633480129Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1932,7 +1942,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:31.570095762Z"
+    created: "2024-12-16T01:47:39.536810923Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1969,7 +1979,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:32.060150236Z"
+    created: "2024-12-16T01:47:40.473297155Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -2004,7 +2014,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-13T10:48:32.052364307Z"
+    created: "2024-12-16T01:47:40.458442583Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -2039,7 +2049,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks-Celery-Beat-Producers
     apiVersion: v2
-    created: "2024-12-13T10:48:32.067356285Z"
+    created: "2024-12-16T01:47:40.48659051Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2065,7 +2075,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks-Celery-Workers
     apiVersion: v2
-    created: "2024-12-13T10:48:32.075136957Z"
+    created: "2024-12-16T01:47:40.501638329Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2091,7 +2101,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenSearch Kafka Connector
     apiVersion: v2
-    created: "2024-12-13T10:48:32.078735686Z"
+    created: "2024-12-16T01:47:40.506312873Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2110,7 +2120,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenSearch Kafka Connector
     apiVersion: v2
-    created: "2024-12-13T10:48:32.076364942Z"
+    created: "2024-12-16T01:47:40.503907574Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2130,7 +2140,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting
     apiVersion: v2
-    created: "2024-12-13T10:48:32.113331326Z"
+    created: "2024-12-16T01:47:40.575537368Z"
     dependencies:
     - condition: kafka.enabled
       name: kafka
@@ -2159,7 +2169,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting
     apiVersion: v2
-    created: "2024-12-13T10:48:32.095584297Z"
+    created: "2024-12-16T01:47:40.543700254Z"
     dependencies:
     - condition: kafka.enabled
       name: kafka
@@ -2189,7 +2199,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting Init
     apiVersion: v2
-    created: "2024-12-13T10:48:32.115773922Z"
+    created: "2024-12-16T01:47:40.580885697Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2205,7 +2215,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting Init
     apiVersion: v2
-    created: "2024-12-13T10:48:32.114629994Z"
+    created: "2024-12-16T01:47:40.578078363Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2222,7 +2232,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
     apiVersion: v2
-    created: "2024-12-13T10:48:32.167412592Z"
+    created: "2024-12-16T01:47:40.684149628Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2255,7 +2265,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
     apiVersion: v2
-    created: "2024-12-13T10:48:32.152076071Z"
+    created: "2024-12-16T01:47:40.655855766Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2284,7 +2294,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
     apiVersion: v2
-    created: "2024-12-13T10:48:32.13846589Z"
+    created: "2024-12-16T01:47:40.628419455Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2316,7 +2326,7 @@ entries:
     version: 0.0.0-develop
   spar-mapper-api:
   - apiVersion: v2
-    created: "2024-12-13T10:48:32.181249768Z"
+    created: "2024-12-16T01:47:40.714932933Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2331,7 +2341,7 @@ entries:
     - https://openg2p.github.io/openg2p-helm/spar-mapper-api-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2024-12-13T10:48:32.177186293Z"
+    created: "2024-12-16T01:47:40.703436245Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2346,7 +2356,7 @@ entries:
     - https://openg2p.github.io/openg2p-helm/spar-mapper-api-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2024-12-13T10:48:32.171625517Z"
+    created: "2024-12-16T01:47:40.693431553Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2362,7 +2372,7 @@ entries:
     version: 0.0.0-develop
   spar-self-service-api:
   - apiVersion: v2
-    created: "2024-12-13T10:48:32.195185801Z"
+    created: "2024-12-16T01:47:40.74119252Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2377,7 +2387,7 @@ entries:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-api-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2024-12-13T10:48:32.190421076Z"
+    created: "2024-12-16T01:47:40.733357208Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2392,7 +2402,7 @@ entries:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-api-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2024-12-13T10:48:32.186344327Z"
+    created: "2024-12-16T01:47:40.722986983Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2408,7 +2418,7 @@ entries:
     version: 0.0.0-develop
   spar-self-service-ui:
   - apiVersion: v2
-    created: "2024-12-13T10:48:32.196412955Z"
+    created: "2024-12-16T01:47:40.744113468Z"
     description: A Helm chart for OpenG2P SPAR Self Service UI
     digest: 048eba9631b5f8a208facbc82bf5b39f9b851e02ceb7a258c34e8ba294753a60
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
@@ -2419,7 +2429,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-12-13T10:48:32.196006515Z"
+    created: "2024-12-16T01:47:40.742868412Z"
     description: A Helm chart for UI for Self Service Portal for Social Payments Account
       Registry
     digest: e7ae4c157b5b5f51274ddfea491337cede168d06e26d2ffdfbc23869e8ff5d81
@@ -2429,7 +2439,7 @@ entries:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2024-12-13T10:48:32.195633057Z"
+    created: "2024-12-16T01:47:40.742171126Z"
     description: A Helm chart for OpenG2P SPAR Self Service UI
     digest: 1f4bdf3cc77aa07a1b9fa3fb414af51cf2222169102e2e9369d7ea16ae895b50
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
@@ -2440,7 +2450,7 @@ entries:
     version: 0.0.0-develop
   sr-landing:
   - apiVersion: v2
-    created: "2024-12-13T10:48:32.196851194Z"
+    created: "2024-12-16T01:47:40.745735969Z"
     description: A Helm chart for installing landing page for the Social Registry
     digest: f1b27898f617f2229d6cc1b228cf692de838df3b295d106b8a2ece77786faf68
     name: sr-landing
@@ -2451,7 +2461,7 @@ entries:
   sunbird-rc-core:
   - apiVersion: v2
     appVersion: v0.0.14
-    created: "2024-12-13T10:48:32.208498667Z"
+    created: "2024-12-16T01:47:40.781854712Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2471,7 +2481,7 @@ entries:
   sunbird-rc-g2p-mapper-registry:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2024-12-13T10:48:32.220409866Z"
+    created: "2024-12-16T01:47:40.815084998Z"
     dependencies:
     - alias: registry
       condition: registry.enabled
@@ -2489,7 +2499,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: WebSub
     apiVersion: v2
-    created: "2024-12-13T10:48:32.230384589Z"
+    created: "2024-12-16T01:47:40.834871994Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2512,4 +2522,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/websub-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2024-12-13T10:48:30.429192124Z"
+generated: "2024-12-16T01:47:37.308321055Z"
