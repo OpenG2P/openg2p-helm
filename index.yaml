@@ -1879,42 +1879,6 @@ entries:
     version: 0.0.0-develop
   openg2p-social-registry-p2:
   - annotations:
-      catalog.cattle.io/display-name: OpenG2P Social Registry - Pack 2
-      openg2p.org/add-to-rancher: ""
-    apiVersion: v2
-    created: "2024-12-17T04:21:44.390881056Z"
-    dependencies:
-    - condition: superset.enabled
-      name: superset
-      repository: https://apache.github.io/superset
-      version: 0.12.11
-    - alias: supersetRedis
-      condition: superset.enabled
-      name: redis
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 19.x.x
-    - condition: esignet.enabled
-      name: esignet
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.4.2
-    - alias: esignetRedis
-      condition: esignet.enabled
-      name: redis
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 19.x.x
-    - condition: mock-identity-system.enabled
-      name: mock-identity-system
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 0.9.4
-    description: A Helm chart for OpenG2P Social Registry - Pack 2
-    digest: fd98d79dc7f6816a2b4186c69fa6f713e6eb093966b41609db4b20faeed4afe6
-    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
-    name: openg2p-social-registry-p2
-    type: application
-    urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-2.0.0-develop.tgz
-    version: 2.0.0-develop
-  - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
