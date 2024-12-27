@@ -225,7 +225,39 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-22T14:57:56.041655255Z"
+    created: "2024-12-27T18:11:22.556501147Z"
+    dependencies:
+    - condition: superset.enabled
+      name: superset
+      repository: https://apache.github.io/superset
+      version: 0.12.11
+    - alias: supersetPostgresql
+      condition: superset.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.x.x
+    - alias: supersetRedis
+      condition: superset.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    - condition: esignet.enabled
+      name: esignet
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.4.1
+    description: A Helm chart for OpenG2P PBMS - Part 2
+    digest: ca880a9aa782813ec481a7573df9674086ea5e6d9f711a1009dcb62b670ed8ca
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-pbms-p2
+    type: application
+    urls:
+    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-p2-1.2.3.tgz
+    version: 1.2.3
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2024-12-27T18:11:22.508012503Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -257,7 +289,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-22T14:57:55.993917841Z"
+    created: "2024-12-27T18:11:22.460197628Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -289,7 +321,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2024-12-22T14:57:55.945439569Z"
+    created: "2024-12-27T18:11:22.412776692Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1350,4 +1382,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-1.0.0.tgz
     version: 1.0.0
-generated: "2024-12-22T14:57:55.695084387Z"
+generated: "2024-12-27T18:11:22.363964155Z"
