@@ -603,7 +603,100 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.865174523Z"
+    created: "2025-01-21T16:47:39.337789966Z"
+    dependencies:
+    - condition: odoo.enabled
+      name: odoo
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 26.2.9
+    - condition: mail.enabled
+      name: mail
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.12.2
+    - condition: odk-central.enabled
+      name: odk-central
+      repository: https://openg2p.github.io/openg2p-helm
+      version: v2024.2.2
+    - condition: opensearch.enabled
+      name: opensearch
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 1.2.0
+    - condition: kafka.enabled
+      name: kafka
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 29.x.x
+    - condition: artifactory.enabled
+      name: artifactory
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.0.2
+    - condition: keymanager.enabled
+      name: keymanager
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.0.2
+    - condition: softhsm.enabled
+      name: softhsm
+      repository: https://mosip.github.io/mosip-helm
+      version: 12.0.1
+    - condition: idgenerator.enabled
+      name: idgenerator
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.0.2
+    - condition: reporting.enabled
+      name: reporting
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.3.0-develop
+    - condition: reporting-init.enabled
+      name: reporting-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.3.0-develop
+    - alias: bgTasksRedis
+      condition: openg2p-sr-bg-tasks.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    - condition: openg2p-sr-bg-tasks.enabled
+      name: openg2p-sr-bg-tasks
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.0.0-develop
+    - condition: superset.enabled
+      name: superset
+      repository: https://apache.github.io/superset
+      version: 0.12.11
+    - alias: supersetRedis
+      condition: superset.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    - condition: esignet.enabled
+      name: esignet
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.4.2
+    - alias: esignetRedis
+      condition: esignet.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    - condition: mock-identity-system.enabled
+      name: mock-identity-system
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.9.4
+    description: A Helm chart for OpenG2P Social Registry
+    digest: 660fa7e05d00ff30a3048f7010d1867c9896f203987ea06fe2323407f689deb1
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-social-registry
+    type: application
+    urls:
+    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-2.0.4.tgz
+    version: 2.0.4
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Social Registry
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2025-01-21T16:47:39.26925236Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -696,7 +789,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.806027671Z"
+    created: "2025-01-21T16:47:39.210581897Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -789,7 +882,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.747551635Z"
+    created: "2025-01-21T16:47:39.146450312Z"
     dependencies:
     - condition: sr-landing.enabled
       name: sr-landing
@@ -886,7 +979,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.68909778Z"
+    created: "2025-01-21T16:47:39.077535536Z"
     dependencies:
     - condition: sr-landing.enabled
       name: sr-landing
@@ -983,7 +1076,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.62871959Z"
+    created: "2025-01-21T16:47:39.016893326Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1076,7 +1169,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.568564568Z"
+    created: "2025-01-21T16:47:38.95682682Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1123,7 +1216,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.517164871Z"
+    created: "2025-01-21T16:47:38.890969983Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1170,7 +1263,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.465458944Z"
+    created: "2025-01-21T16:47:38.837866444Z"
     dependencies:
     - condition: sr-landing.enabled
       name: sr-landing
@@ -1230,7 +1323,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.404773686Z"
+    created: "2025-01-21T16:47:38.77680976Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1277,7 +1370,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.353601876Z"
+    created: "2025-01-21T16:47:38.724279846Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1324,7 +1417,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.303749361Z"
+    created: "2025-01-21T16:47:38.67103018Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1371,7 +1464,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.251582711Z"
+    created: "2025-01-21T16:47:38.619490936Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1418,7 +1511,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.199369456Z"
+    created: "2025-01-21T16:47:38.566926277Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1465,7 +1558,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.148945101Z"
+    created: "2025-01-21T16:47:38.51695612Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1512,7 +1605,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.097962691Z"
+    created: "2025-01-21T16:47:38.467176605Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1559,7 +1652,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.047739208Z"
+    created: "2025-01-21T16:47:38.415219952Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1607,7 +1700,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:59.450770657Z"
+    created: "2025-01-21T16:47:39.956087887Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1643,7 +1736,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:59.380234611Z"
+    created: "2025-01-21T16:47:39.889154025Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1679,7 +1772,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:59.318388461Z"
+    created: "2025-01-21T16:47:39.828091645Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1711,7 +1804,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:59.268325872Z"
+    created: "2025-01-21T16:47:39.777910311Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1743,7 +1836,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:59.217625618Z"
+    created: "2025-01-21T16:47:39.722515255Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1775,7 +1868,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:59.169362625Z"
+    created: "2025-01-21T16:47:39.669870688Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1807,7 +1900,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:59.122019503Z"
+    created: "2025-01-21T16:47:39.616038916Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1839,7 +1932,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:59.071785756Z"
+    created: "2025-01-21T16:47:39.565586916Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1871,7 +1964,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:59.021668728Z"
+    created: "2025-01-21T16:47:39.512052122Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1903,7 +1996,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.972829863Z"
+    created: "2025-01-21T16:47:39.460358119Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1935,7 +2028,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-06T08:53:58.921912943Z"
+    created: "2025-01-21T16:47:39.399650959Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -1997,4 +2090,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-1.0.0.tgz
     version: 1.0.0
-generated: "2025-01-21T07:03:14.084283503Z"
+generated: "2025-01-21T16:47:38.363957013Z"
