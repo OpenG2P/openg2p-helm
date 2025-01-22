@@ -16,10 +16,57 @@ entries:
     version: 0.0.0-develop
   openg2p-pbms:
   - annotations:
+      catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2025-01-22T06:05:16.581976771Z"
+    dependencies:
+    - condition: odoo.enabled
+      name: odoo
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 26.2.9
+    - condition: mail.enabled
+      name: mail
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: minio.enabled
+      name: minio
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 12.12.2
+    - condition: odk-central.enabled
+      name: odk-central
+      repository: https://openg2p.github.io/openg2p-helm
+      version: v2024.1.0
+    - alias: loggingOpensearch
+      condition: loggingOpensearch.enabled
+      name: opensearch
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 1.2.0
+    - condition: keymanager.enabled
+      name: keymanager
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.0.1
+    - condition: reporting.enabled
+      name: reporting
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    - condition: reporting-init.enabled
+      name: reporting-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    description: A Helm chart for OpenG2P PBMS - Part 1
+    digest: d5be3dc6fc966a1ecb68123abab575b1e85bd2fd5f825b99075f5e23aeb1cb9d
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-pbms
+    type: application
+    urls:
+    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-2.0.1.tgz
+    version: 2.0.1
+  - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-21T17:05:53.779512745Z"
+    created: "2025-01-22T06:05:16.529232515Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -104,7 +151,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-21T17:05:53.721971284Z"
+    created: "2025-01-22T06:05:16.47283317Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -189,7 +236,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-21T17:05:53.665054953Z"
+    created: "2025-01-22T06:05:16.414598528Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -236,7 +283,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-21T17:05:53.612589901Z"
+    created: "2025-01-22T06:05:16.362347734Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -283,7 +330,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-21T17:05:53.555899112Z"
+    created: "2025-01-22T06:05:16.308841532Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -330,7 +377,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-21T17:05:53.504834148Z"
+    created: "2025-01-22T06:05:16.258222577Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -377,7 +424,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-21T17:05:53.451986143Z"
+    created: "2025-01-22T06:05:16.206495298Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -424,7 +471,23 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2025-01-21T17:05:53.784416956Z"
+    created: "2025-01-22T06:05:16.588970165Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 2.x.x
+    description: A Helm chart for OpenG2P PBMS Beneficiary Portal
+    digest: 616374b61524541b5b9502afa50098d4c24636aa9307ea4b680ef82ed10f104a
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-pbms-beneficiary-portal
+    type: application
+    urls:
+    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-beneficiary-portal-2.0.1.tgz
+    version: 2.0.1
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
+    apiVersion: v2
+    created: "2025-01-22T06:05:16.587512603Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -440,7 +503,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2025-01-21T17:05:53.782919369Z"
+    created: "2025-01-22T06:05:16.586023101Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -456,7 +519,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2025-01-21T17:05:53.781381565Z"
+    created: "2025-01-22T06:05:16.584487713Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -474,7 +537,39 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-21T17:05:53.979542345Z"
+    created: "2025-01-22T06:05:16.839783909Z"
+    dependencies:
+    - condition: superset.enabled
+      name: superset
+      repository: https://apache.github.io/superset
+      version: 0.12.11
+    - alias: supersetPostgresql
+      condition: superset.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.x.x
+    - alias: supersetRedis
+      condition: superset.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    - condition: esignet.enabled
+      name: esignet
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.4.1
+    description: A Helm chart for OpenG2P PBMS - Part 2
+    digest: 64e329b22062658fe70958dea5d0682f764f59fc848a4de46e7bd8ef012b572f
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-pbms-p2
+    type: application
+    urls:
+    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-p2-2.0.1.tgz
+    version: 2.0.1
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2025-01-22T06:05:16.789228912Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -506,7 +601,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-21T17:05:53.931149459Z"
+    created: "2025-01-22T06:05:16.738435588Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -538,7 +633,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-21T17:05:53.882203819Z"
+    created: "2025-01-22T06:05:16.688869167Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -570,7 +665,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-21T17:05:53.833478805Z"
+    created: "2025-01-22T06:05:16.639656488Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -2090,4 +2185,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-1.0.0.tgz
     version: 1.0.0
-generated: "2025-01-21T17:05:53.399763867Z"
+generated: "2025-01-22T06:05:16.153609596Z"
