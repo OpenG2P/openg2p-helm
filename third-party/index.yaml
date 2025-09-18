@@ -6,7 +6,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.30.0
-    created: "2025-09-09T13:21:45.481443386Z"
+    created: "2025-09-18T16:45:03.462436+05:30"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
     digest: 3027e5f251efc1033d23a554812c75cdfa5485e611bac3d80f6d7d7d931f3716
@@ -41,7 +41,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.12.2
-    created: "2025-09-09T13:21:45.49941048Z"
+    created: "2025-09-18T16:45:03.469496+05:30"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -84,7 +84,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.7.1
-    created: "2025-09-09T13:21:45.51583993Z"
+    created: "2025-09-18T16:45:03.475943+05:30"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -127,7 +127,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 24.0.5
-    created: "2025-09-09T13:21:45.530131105Z"
+    created: "2025-09-18T16:45:03.480568+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -169,7 +169,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2023.12.23
-    created: "2025-09-09T13:21:45.534559665Z"
+    created: "2025-09-18T16:45:03.482447+05:30"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -206,7 +206,47 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2025-09-09T13:21:45.547192354Z"
+    created: "2025-09-18T16:45:03.49197+05:30"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Odoo is an open source ERP and CRM platform, formerly known as OpenERP,
+      that can connect a wide variety of business operations such as sales, supply
+      chain, finance, and project management.
+    digest: baf8e43beaaef7726d044ba13a3110af920c791a7327d006995629f6c3d688a6
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/odoo/img/odoo-stack-220x234.png
+    keywords:
+    - odoo
+    - crm
+    - www
+    - http
+    - web
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: odoo
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/odoo
+    urls:
+    - odoo-26.3.0.tgz
+    version: 26.3.0
+  - annotations:
+      category: CRM
+      images: |
+        - name: odoo
+          image: docker.io/bitnami/odoo:17.0.20240605-debian-12-r4
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 17.0.20240605
+    created: "2025-09-18T16:45:03.487603+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -251,7 +291,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.14.0
-    created: "2025-09-09T13:21:45.558826118Z"
+    created: "2025-09-18T16:45:03.495945+05:30"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -288,7 +328,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.4.0
-    created: "2025-09-09T13:21:45.566399358Z"
+    created: "2025-09-18T16:45:03.499079+05:30"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -334,7 +374,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.5
-    created: "2025-09-09T13:21:45.576552988Z"
+    created: "2025-09-18T16:45:03.502729+05:30"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -360,4 +400,4 @@ entries:
     urls:
     - redis-19.6.4.tgz
     version: 19.6.4
-generated: "2025-09-09T13:21:45.479870372Z"
+generated: "2025-09-18T16:45:03.460914+05:30"
