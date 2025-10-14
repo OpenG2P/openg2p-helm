@@ -69,10 +69,10 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.30.0
-    created: "2025-10-13T16:18:35.781996007Z"
+    created: "2025-10-14T18:22:28.919391744+05:30"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
-    digest: f1614173f80905edff547c1259cad640cd1214272d2ee965a6048f246ef340af
+    digest: 51100d6ab9824c904af74258b8fac7791815a6e1102de7b3cd78825d29acc09d
     home: https://bitnami.com
     icon: https://dyltqmyl993wv.cloudfront.net/downloads/logos/bitnami-mark.png
     keywords:
@@ -89,7 +89,7 @@ entries:
     - https://github.com/bitnami/charts/tree/main/bitnami/common
     type: library
     urls:
-    - third-party/common-2.30.0.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/common-2.30.0.tgz
     version: 2.30.0
   debezium:
   - annotations:
@@ -124,7 +124,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.12.2
-    created: "2025-10-13T16:18:35.789316515Z"
+    created: "2025-10-14T18:22:28.929278311+05:30"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -150,7 +150,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/elasticsearch
     urls:
-    - third-party/elasticsearch-19.21.2.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/elasticsearch-19.21.2.tgz
     version: 19.21.2
   esignet:
   - annotations:
@@ -403,7 +403,7 @@ entries:
         - name: jmx-exporter
           image: docker.io/bitnami/jmx-exporter:1.0.1-debian-12-r5
         - name: kafka
-          image: docker.io/bitnami/kafka:3.7.1-debian-12-r4
+          image: docker.io/openg2p/kafka:3.7.1-debian-12-r4
         - name: kubectl
           image: docker.io/bitnami/kubectl:1.30.3-debian-12-r3
         - name: os-shell
@@ -411,21 +411,21 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.7.1
-    created: "2025-10-13T16:18:35.797812851Z"
+    created: "2025-10-14T18:22:28.938985681+05:30"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 13.x.x
+      repository: ""
+      version: 13.4.9
     - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
+      repository: ""
       tags:
       - bitnami-common
-      version: 2.x.x
+      version: 2.20.5
     description: Apache Kafka is a distributed streaming platform designed to build
       real-time pipelines and can be used as a message broker or as a replacement
       for a log aggregation solution for big data applications.
-    digest: 092f9d2947e65ef899547f72cdffd0083bd7afed6fc1e38cd27c90118e475804
+    digest: 45f22c78e86febbc84ba1d229e780d1fefed7f6493fb02defc14b8406bde38fc
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/kafka/img/kafka-stack-220x234.png
     keywords:
@@ -441,34 +441,34 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/kafka
     urls:
-    - third-party/kafka-29.3.14.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/kafka-29.3.14.tgz
     version: 29.3.14
   keycloak:
   - annotations:
       category: DeveloperTools
       images: |
         - name: keycloak
-          image: docker.io/bitnami/keycloak:24.0.5-debian-12-r1
+          image: docker.io/openg2p/keycloak:24.0.5-debian-12-r1
         - name: keycloak-config-cli
           image: docker.io/bitnami/keycloak-config-cli:5.12.0-debian-12-r6
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 24.0.5
-    created: "2025-10-13T16:18:35.805735995Z"
+    created: "2025-10-14T18:22:28.948235516+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
+      repository: ""
+      version: 15.5.12
     - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
+      repository: ""
       tags:
       - bitnami-common
-      version: 2.x.x
+      version: 2.20.3
     description: Keycloak is a high performance Java-based identity and access management
       solution. It lets developers add an authentication layer to their applications
       with minimum effort.
-    digest: 28304888f20bc82fba360e4444ee8fb39547421cfe462c97068d20b28b4cea94
+    digest: af2c58ae92a35089bcf7766efd9c7620463415ce8069b2cfca71cb0ca4370191
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/keycloak/img/keycloak-stack-220x234.png
     keywords:
@@ -481,7 +481,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
     urls:
-    - third-party/keycloak-21.4.5.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/keycloak-21.4.5.tgz
     version: 21.4.5
   keymanager:
   - annotations:
@@ -698,23 +698,23 @@ entries:
         - name: minio-client
           image: docker.io/bitnami/minio-client:2023.12.23-debian-11-r1
         - name: minio
-          image: docker.io/bitnami/minio:2023.12.23-debian-11-r2
+          image: docker.io/openg2p/minio:2023.12.23-debian-11-r2
         - name: os-shell
           image: docker.io/bitnami/os-shell:11-debian-11-r93
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2023.12.23
-    created: "2025-10-13T16:18:35.808212506Z"
+    created: "2025-10-14T18:22:28.951259099+05:30"
     dependencies:
     - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
+      repository: ""
       tags:
       - bitnami-common
-      version: 2.x.x
+      version: 2.14.1
     description: MinIO(R) is an object storage server, compatible with Amazon S3 cloud
       storage service, mainly used for storing unstructured data (such as photos,
       videos, log files, etc.).
-    digest: 5c5d94e9cb0aaa11de5f705c1410d28b8e70dca3fd874c93256169e32d701da0
+    digest: 3193a0892a0869319db74af1ee9c46c5459fae416de50fd44d24cec926791767
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/minio/img/minio-stack-220x234.png
     keywords:
@@ -730,7 +730,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/minio
     urls:
-    - third-party/minio-12.12.2.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/minio-12.12.2.tgz
     version: 12.12.2
   mock-identity-system:
   - annotations:
@@ -1209,47 +1209,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2025-10-13T16:18:32.537512448Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: Odoo is an open source ERP and CRM platform, formerly known as OpenERP,
-      that can connect a wide variety of business operations such as sales, supply
-      chain, finance, and project management.
-    digest: 44131d9ac54e173900c7f1d486af1daf611b93347fdabae93e620925a5104fcd
-    home: https://bitnami.com
-    icon: https://bitnami.com/assets/stacks/odoo/img/odoo-stack-220x234.png
-    keywords:
-    - odoo
-    - crm
-    - www
-    - http
-    - web
-    maintainers:
-    - name: Broadcom, Inc. All Rights Reserved.
-      url: https://github.com/bitnami/charts
-    name: odoo
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/odoo
-    urls:
-    - odoo-26.3.0.tgz
-    version: 26.3.0
-  - annotations:
-      category: CRM
-      images: |
-        - name: odoo
-          image: docker.io/bitnami/odoo:17.0.20240605-debian-12-r4
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 17.0.20240605
-    created: "2025-10-13T16:18:35.822393922Z"
+    created: "2025-10-14T18:22:28.966548588+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1279,31 +1239,31 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/odoo
     urls:
-    - third-party/odoo-26.3.0.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/odoo-26.3.0.tgz
     version: 26.3.0
   - annotations:
       category: CRM
       images: |
         - name: odoo
-          image: docker.io/bitnami/odoo:17.0.20240605-debian-12-r4
+          image: docker.io/openg2p/odoo:17.0.20240605-debian-12-r4
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2025-10-13T16:18:35.814994888Z"
+    created: "2025-10-14T18:22:28.959254657+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
+      repository: ""
+      version: 15.5.12
     - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
+      repository: ""
       tags:
       - bitnami-common
-      version: 2.x.x
+      version: 2.20.3
     description: Odoo is an open source ERP and CRM platform, formerly known as OpenERP,
       that can connect a wide variety of business operations such as sales, supply
       chain, finance, and project management.
-    digest: 1d8d7d75f88a9dfc313fdc3ddfad233a8be75f21e0034a5a9e487c1c4bf0112c
+    digest: 8f702058d3e0d1bc2a981d5fbdfdae8015a8f4cc4c0b7fca51151c9070f3cf4a
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/odoo/img/odoo-stack-220x234.png
     keywords:
@@ -1319,7 +1279,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/odoo
     urls:
-    - third-party/odoo-26.2.9.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/odoo-26.2.9.tgz
     version: 26.2.9
   openg2p:
   - annotations:
@@ -1535,61 +1495,6 @@ entries:
     urls:
     - openg2p-g2p-bridge-2.0.0.tgz
     version: 2.0.0
-  - annotations:
-      catalog.cattle.io/display-name: OpenG2P G2P Bridge
-      openg2p.org/add-to-rancher: ""
-    apiVersion: v2
-    created: "2025-10-13T16:18:32.682513575Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
-    - condition: redis.enabled
-      name: redis
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 19.x.x
-    - condition: artifactory.enabled
-      name: artifactory
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 12.0.2
-    - condition: keymanager.enabled
-      name: keymanager
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 12.1.0
-    - condition: softhsm.enabled
-      name: softhsm
-      repository: https://mosip.github.io/mosip-helm
-      version: 12.0.1
-    - condition: openg2p-g2p-bridge-api.enabled
-      name: openg2p-g2p-bridge-api
-      repository: ""
-      version: 2.0-develop
-    - condition: openg2p-g2p-bridge-celery-beat-producers.enabled
-      name: openg2p-g2p-bridge-celery-beat-producers
-      repository: ""
-      version: 2.0-develop
-    - condition: openg2p-g2p-bridge-celery-workers.enabled
-      name: openg2p-g2p-bridge-celery-workers
-      repository: ""
-      version: 2.0-develop
-    description: A Helm chart for OpenG2P G2P Bridge
-    digest: f6ebf972da29ef442f8aabfb59d1645f6937b0bf58690095c268e60ac58460fe
-    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
-    keywords:
-    - openg2p-g2p-bridge
-    - openg2p-g2p-bridge-api
-    - openg2p-g2p-bridge-celery-beat-producers
-    - openg2p-g2p-bridge-celery-workers
-    - g2p-bridge
-    maintainers:
-    - email: info@openg2p.org
-      name: OpenG2P
-    name: openg2p-g2p-bridge
-    type: application
-    urls:
-    - openg2p-g2p-bridge-2.0-develop.tgz
-    version: 2.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge
       openg2p.org/add-to-rancher: ""
@@ -5412,25 +5317,25 @@ entries:
       category: Analytics
       images: |
         - name: opensearch
-          image: docker.io/bitnami/opensearch:2.14.0-debian-12-r1
+          image: docker.io/openg2p/opensearch:2.14.0-debian-12-r1
         - name: opensearch-dashboards
-          image: docker.io/bitnami/opensearch-dashboards:2.13.0-debian-12-r3
+          image: docker.io/openg2p/opensearch-dashboards:2.13.0-debian-12-r3
         - name: os-shell
           image: docker.io/bitnami/os-shell:12-debian-12-r21
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.14.0
-    created: "2025-10-13T16:18:35.828845234Z"
+    created: "2025-10-14T18:22:28.9727804+05:30"
     dependencies:
     - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
+      repository: ""
       tags:
       - bitnami-common
-      version: 2.x.x
+      version: 2.19.3
     description: OpenSearch is a scalable open-source solution for search, analytics,
       and observability. Features full-text queries, natural language processing,
       custom dictionaries, amongst others.
-    digest: 2a2c899e8d779e71335048d3b47be841dffb041e6b7ae937afb64768db386042
+    digest: cdf12b5c8d720e27f2c1f63d36bb861b3d9b3748f4a5ad5cd930c0e9b0f15867
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/opensearch/img/opensearch-stack-220x234.png
     keywords:
@@ -5442,7 +5347,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/opensearch
     urls:
-    - third-party/opensearch-1.2.0.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/opensearch-1.2.0.tgz
     version: 1.2.0
   opensearch-kafka-connector:
   - annotations:
@@ -5575,21 +5480,21 @@ entries:
         - name: postgres-exporter
           image: docker.io/bitnami/postgres-exporter:0.15.0-debian-12-r43
         - name: postgresql
-          image: docker.io/bitnami/postgresql:16.4.0-debian-12-r14
+          image: docker.io/openg2p/postgresql:16.4.0-debian-12-r14
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.4.0
-    created: "2025-10-13T16:18:35.832789389Z"
+    created: "2025-10-14T18:22:28.978218122+05:30"
     dependencies:
     - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
+      repository: ""
       tags:
       - bitnami-common
-      version: 2.x.x
+      version: 2.23.0
     description: PostgreSQL (Postgres) is an open source object-relational database
       known for reliability and data integrity. ACID-compliant, it supports foreign
       keys, joins, views, triggers and stored procedures.
-    digest: ff9b4218426816b3468e36ace7ad526b5083324ff2e85c2f603d30836a49b270
+    digest: 553f7c56004e009697656541a5da2d3cb38e079ecd9672e2c3243fd5bf0a1aa8
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
     keywords:
@@ -5606,7 +5511,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/postgresql
     urls:
-    - third-party/postgresql-15.5.38.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/postgresql-15.5.38.tgz
     version: 15.5.38
   redis:
   - annotations:
@@ -5617,25 +5522,25 @@ entries:
         - name: os-shell
           image: docker.io/bitnami/os-shell:12-debian-12-r27
         - name: redis
-          image: docker.io/bitnami/redis:7.2.5-debian-12-r4
+          image: docker.io/openg2p/redis:7.2.5-debian-12-r4
         - name: redis-exporter
-          image: docker.io/bitnami/redis-exporter:1.62.0-debian-12-r2
+          image: docker.io/openg2p/redis-exporter:1.62.0-debian-12-r2
         - name: redis-sentinel
           image: docker.io/bitnami/redis-sentinel:7.2.5-debian-12-r4
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.5
-    created: "2025-10-13T16:18:35.838459271Z"
+    created: "2025-10-14T18:22:28.984310452+05:30"
     dependencies:
     - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
+      repository: ""
       tags:
       - bitnami-common
-      version: 2.x.x
+      version: 2.20.5
     description: Redis(R) is an open source, advanced key-value store. It is often
       referred to as a data structure server since keys can contain strings, hashes,
       lists, sets and sorted sets.
-    digest: 9a63af371f3bd4e0146bc61e7cc92ae3b88f8894c648cffb1c19ecc658677e34
+    digest: 0a59edeec34a247bb72e286e8968adf76a754bd6c94c2bcefb052024f8b4e8e5
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -5649,7 +5554,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/redis
     urls:
-    - third-party/redis-19.6.4.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/redis-19.6.4.tgz
     version: 19.6.4
   reporting:
   - annotations:
@@ -6307,4 +6212,4 @@ entries:
     urls:
     - websub-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2025-10-13T16:18:32.332882599Z"
+generated: "2025-10-14T18:22:28.918415096+05:30"
