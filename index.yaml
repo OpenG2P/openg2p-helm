@@ -69,7 +69,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.30.0
-    created: "2025-11-05T05:19:11.975287784Z"
+    created: "2025-11-06T17:37:40.258677983+05:30"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
     digest: 51100d6ab9824c904af74258b8fac7791815a6e1102de7b3cd78825d29acc09d
@@ -89,7 +89,7 @@ entries:
     - https://github.com/bitnami/charts/tree/main/bitnami/common
     type: library
     urls:
-    - third-party/common-2.30.0.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/common-2.30.0.tgz
     version: 2.30.0
   debezium:
   - annotations:
@@ -124,7 +124,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.12.2
-    created: "2025-11-05T05:19:11.982604295Z"
+    created: "2025-11-06T17:37:40.268095562+05:30"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -150,7 +150,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/elasticsearch
     urls:
-    - third-party/elasticsearch-19.21.2.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/elasticsearch-19.21.2.tgz
     version: 19.21.2
   esignet:
   - annotations:
@@ -411,7 +411,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.7.1
-    created: "2025-11-05T05:19:11.990721104Z"
+    created: "2025-11-06T17:37:40.278465074+05:30"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -441,7 +441,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/kafka
     urls:
-    - third-party/kafka-29.3.14.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/kafka-29.3.14.tgz
     version: 29.3.14
   keycloak:
   - annotations:
@@ -454,7 +454,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 24.0.5
-    created: "2025-11-05T05:19:11.997237053Z"
+    created: "2025-11-06T17:37:40.286860502+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -481,7 +481,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
     urls:
-    - third-party/keycloak-21.4.5.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/keycloak-21.4.5.tgz
     version: 21.4.5
   keymanager:
   - annotations:
@@ -728,7 +728,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2023.12.23
-    created: "2025-11-05T05:19:12.000378331Z"
+    created: "2025-11-06T17:37:40.290724788+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -754,7 +754,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/minio
     urls:
-    - third-party/minio-12.12.2.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/minio-12.12.2.tgz
     version: 12.12.2
   mock-identity-system:
   - annotations:
@@ -1260,51 +1260,11 @@ entries:
       category: CRM
       images: |
         - name: odoo
-          image: docker.io/bitnami/odoo:17.0.20240605-debian-12-r4
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 17.0.20240605
-    created: "2025-11-05T05:19:08.762751653Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: Odoo is an open source ERP and CRM platform, formerly known as OpenERP,
-      that can connect a wide variety of business operations such as sales, supply
-      chain, finance, and project management.
-    digest: 44131d9ac54e173900c7f1d486af1daf611b93347fdabae93e620925a5104fcd
-    home: https://bitnami.com
-    icon: https://bitnami.com/assets/stacks/odoo/img/odoo-stack-220x234.png
-    keywords:
-    - odoo
-    - crm
-    - www
-    - http
-    - web
-    maintainers:
-    - name: Broadcom, Inc. All Rights Reserved.
-      url: https://github.com/bitnami/charts
-    name: odoo
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/odoo
-    urls:
-    - odoo-26.3.0.tgz
-    version: 26.3.0
-  - annotations:
-      category: CRM
-      images: |
-        - name: odoo
           image: docker.io/openg2p/odoo:17.0.20240605-debian-12-r4
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2025-11-05T05:19:12.012824239Z"
+    created: "2025-11-06T17:37:40.306366061+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1334,7 +1294,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/odoo
     urls:
-    - third-party/odoo-26.3.0.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/odoo-26.3.0.tgz
     version: 26.3.0
   - annotations:
       category: CRM
@@ -1344,7 +1304,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2025-11-05T05:19:12.006934505Z"
+    created: "2025-11-06T17:37:40.298930502+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1374,7 +1334,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/odoo
     urls:
-    - third-party/odoo-26.2.9.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/odoo-26.2.9.tgz
     version: 26.2.9
   openg2p:
   - annotations:
@@ -1677,61 +1637,6 @@ entries:
     urls:
     - openg2p-g2p-bridge-2.0.0.tgz
     version: 2.0.0
-  - annotations:
-      catalog.cattle.io/display-name: OpenG2P G2P Bridge
-      openg2p.org/add-to-rancher: ""
-    apiVersion: v2
-    created: "2025-11-05T05:19:08.942544677Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
-    - condition: redis.enabled
-      name: redis
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 19.x.x
-    - condition: artifactory.enabled
-      name: artifactory
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 12.0.2
-    - condition: keymanager.enabled
-      name: keymanager
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 12.1.0
-    - condition: softhsm.enabled
-      name: softhsm
-      repository: https://mosip.github.io/mosip-helm
-      version: 12.0.1
-    - condition: openg2p-g2p-bridge-api.enabled
-      name: openg2p-g2p-bridge-api
-      repository: ""
-      version: 2.0-develop
-    - condition: openg2p-g2p-bridge-celery-beat-producers.enabled
-      name: openg2p-g2p-bridge-celery-beat-producers
-      repository: ""
-      version: 2.0-develop
-    - condition: openg2p-g2p-bridge-celery-workers.enabled
-      name: openg2p-g2p-bridge-celery-workers
-      repository: ""
-      version: 2.0-develop
-    description: A Helm chart for OpenG2P G2P Bridge
-    digest: f6ebf972da29ef442f8aabfb59d1645f6937b0bf58690095c268e60ac58460fe
-    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
-    keywords:
-    - openg2p-g2p-bridge
-    - openg2p-g2p-bridge-api
-    - openg2p-g2p-bridge-celery-beat-producers
-    - openg2p-g2p-bridge-celery-workers
-    - g2p-bridge
-    maintainers:
-    - email: info@openg2p.org
-      name: OpenG2P
-    name: openg2p-g2p-bridge
-    type: application
-    urls:
-    - openg2p-g2p-bridge-2.0-develop.tgz
-    version: 2.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge
       openg2p.org/add-to-rancher: ""
@@ -5833,11 +5738,11 @@ entries:
         - name: opensearch-dashboards
           image: docker.io/openg2p/opensearch-dashboards:2.13.0-debian-12-r3
         - name: os-shell
-          image: docker.io/bitnami/os-shell:12-debian-12-r21
+          image: docker.io/openg2p/os-shell:12-debian-12-r21
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.14.0
-    created: "2025-11-05T05:19:12.018687886Z"
+    created: "2025-11-06T17:37:40.313731788+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -5847,7 +5752,7 @@ entries:
     description: OpenSearch is a scalable open-source solution for search, analytics,
       and observability. Features full-text queries, natural language processing,
       custom dictionaries, amongst others.
-    digest: cdf12b5c8d720e27f2c1f63d36bb861b3d9b3748f4a5ad5cd930c0e9b0f15867
+    digest: 79289932f5ffd63412232489b11a1ba761a1b7fb4fba9c0e2cc99f73a4438052
     home: https://bitnami.com
     icon: https://bitnami.com/assets/stacks/opensearch/img/opensearch-stack-220x234.png
     keywords:
@@ -5859,7 +5764,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/opensearch
     urls:
-    - third-party/opensearch-1.2.0.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/opensearch-1.2.0.tgz
     version: 1.2.0
   opensearch-kafka-connector:
   - annotations:
@@ -5996,7 +5901,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.4.0
-    created: "2025-11-05T05:19:12.022424936Z"
+    created: "2025-11-06T17:37:40.318538326+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -6023,7 +5928,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/postgresql
     urls:
-    - third-party/postgresql-15.5.38.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/postgresql-15.5.38.tgz
     version: 15.5.38
   redis:
   - annotations:
@@ -6042,7 +5947,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.5
-    created: "2025-11-05T05:19:12.027888511Z"
+    created: "2025-11-06T17:37:40.325071288+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -6066,7 +5971,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/redis
     urls:
-    - third-party/redis-19.6.4.tgz
+    - https://openg2p.github.io/openg2p-helm/third-party/redis-19.6.4.tgz
     version: 19.6.4
   reporting:
   - annotations:
@@ -6724,4 +6629,4 @@ entries:
     urls:
     - websub-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2025-11-05T05:19:08.565942379Z"
+generated: "2025-11-06T17:37:40.257154085+05:30"
