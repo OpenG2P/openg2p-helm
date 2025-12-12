@@ -106,7 +106,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-09-18T08:20:20.649964054Z"
+    created: "2025-12-12T11:30:38.800504066Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -140,8 +140,68 @@ entries:
       name: openg2p-g2p-bridge-celery-workers
       repository: ""
       version: 2.0.0
+    - condition: openg2p-g2p-bridge-bene-portal-api.enabled
+      name: openg2p-g2p-bridge-bene-portal-api
+      repository: ""
+      version: 2.0.0
     description: A Helm chart for OpenG2P G2P Bridge
-    digest: 4368bb34387b65789ba37d1c47d76a1b501348b9349f38f986d77db7b215e65d
+    digest: 8cad15381c4ee431d4d0b99c3de323a0e44dece0742c94667ca0e6be42c9a3c8
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-g2p-bridge
+    - openg2p-g2p-bridge-api
+    - openg2p-g2p-bridge-celery-beat-producers
+    - openg2p-g2p-bridge-celery-workers
+    - openg2p-g2p-bridge-bene-portal-api
+    - g2p-bridge
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-g2p-bridge
+    type: application
+    urls:
+    - ../openg2p-g2p-bridge-2.0.0.tgz
+    version: 2.0.0
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P G2P Bridge
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2025-12-12T11:30:38.78378646Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.x.x
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    - condition: artifactory.enabled
+      name: artifactory
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.0.2
+    - condition: keymanager.enabled
+      name: keymanager
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.1.0
+    - condition: softhsm.enabled
+      name: softhsm
+      repository: https://mosip.github.io/mosip-helm
+      version: 12.0.1
+    - condition: openg2p-g2p-bridge-api.enabled
+      name: openg2p-g2p-bridge-api
+      repository: ""
+      version: 2.0-develop
+    - condition: openg2p-g2p-bridge-celery-beat-producers.enabled
+      name: openg2p-g2p-bridge-celery-beat-producers
+      repository: ""
+      version: 2.0-develop
+    - condition: openg2p-g2p-bridge-celery-workers.enabled
+      name: openg2p-g2p-bridge-celery-workers
+      repository: ""
+      version: 2.0-develop
+    description: A Helm chart for OpenG2P G2P Bridge
+    digest: f6ebf972da29ef442f8aabfb59d1645f6937b0bf58690095c268e60ac58460fe
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     keywords:
     - openg2p-g2p-bridge
@@ -155,13 +215,13 @@ entries:
     name: openg2p-g2p-bridge
     type: application
     urls:
-    - ../openg2p-g2p-bridge-2.0.0.tgz
-    version: 2.0.0
+    - ../openg2p-g2p-bridge-2.0-develop.tgz
+    version: 2.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-09-18T08:20:20.61976775Z"
+    created: "2025-12-12T11:30:38.768801531Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -204,7 +264,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-09-18T08:20:20.606804076Z"
+    created: "2025-12-12T11:30:38.75579633Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -258,7 +318,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge
     apiVersion: v2
-    created: "2025-09-18T08:20:20.592321972Z"
+    created: "2025-12-12T11:30:38.740587811Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -300,7 +360,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge
     apiVersion: v2
-    created: "2025-09-18T08:20:20.580236205Z"
+    created: "2025-12-12T11:30:38.727220648Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -343,7 +403,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge API
     apiVersion: v2
-    created: "2025-09-18T08:20:20.664164703Z"
+    created: "2025-12-12T11:30:38.814463925Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -365,7 +425,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge API
     apiVersion: v2
-    created: "2025-09-18T08:20:20.662852038Z"
+    created: "2025-12-12T11:30:38.813211687Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -387,7 +447,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-API
     apiVersion: v2
-    created: "2025-09-18T08:20:20.660769565Z"
+    created: "2025-12-12T11:30:38.811924725Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -412,7 +472,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-API
     apiVersion: v2
-    created: "2025-09-18T08:20:20.655570843Z"
+    created: "2025-12-12T11:30:38.805755248Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -434,11 +494,34 @@ entries:
     urls:
     - ../openg2p-g2p-bridge-api-1.0.0.tgz
     version: 1.0.0
+  openg2p-g2p-bridge-bene-portal-api:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P G2P Bridge Beneficiary Portal API
+    apiVersion: v2
+    created: "2025-12-12T11:30:38.815760866Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 2.x.x
+    description: A Helm chart for OpenG2P G2P Bridge Beneficiary Portal API
+    digest: 44066f17b1e789b30a5b2901912d37298043cca2389384448946a886f78cd1bf
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-g2p-bridge
+    - openg2p-g2p-bridge-bene-portal-api
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-g2p-bridge-bene-portal-api
+    type: application
+    urls:
+    - ../openg2p-g2p-bridge-bene-portal-api-2.0.0.tgz
+    version: 2.0.0
   openg2p-g2p-bridge-celery-beat-producers:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge Celery Beat Producers
     apiVersion: v2
-    created: "2025-09-18T08:20:20.688287648Z"
+    created: "2025-12-12T11:30:38.839959308Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -460,7 +543,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge Celery Beat Producers
     apiVersion: v2
-    created: "2025-09-18T08:20:20.687164449Z"
+    created: "2025-12-12T11:30:38.838858513Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -482,7 +565,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Celery-Beat-Producers
     apiVersion: v2
-    created: "2025-09-18T08:20:20.685361746Z"
+    created: "2025-12-12T11:30:38.837735707Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -511,7 +594,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Celery-Beat-Producers
     apiVersion: v2
-    created: "2025-09-18T08:20:20.674697828Z"
+    created: "2025-12-12T11:30:38.826379292Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -541,7 +624,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge Celery Workers
     apiVersion: v2
-    created: "2025-09-18T08:20:20.701645362Z"
+    created: "2025-12-12T11:30:38.853168785Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -563,7 +646,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge Celery Workers
     apiVersion: v2
-    created: "2025-09-18T08:20:20.700260792Z"
+    created: "2025-12-12T11:30:38.852026753Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -585,7 +668,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Celery-Beat-Producers
     apiVersion: v2
-    created: "2025-09-18T08:20:20.698960309Z"
+    created: "2025-12-12T11:30:38.850929645Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -615,7 +698,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank-API
     apiVersion: v2
-    created: "2025-09-18T08:20:20.713514794Z"
+    created: "2025-12-12T11:30:38.865099576Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -640,7 +723,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank-API
     apiVersion: v2
-    created: "2025-09-18T08:20:20.707683796Z"
+    created: "2025-12-12T11:30:38.859211405Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -666,7 +749,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank-Celery
     apiVersion: v2
-    created: "2025-09-18T08:20:20.734195309Z"
+    created: "2025-12-12T11:30:38.888359896Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -695,7 +778,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank-Celery
     apiVersion: v2
-    created: "2025-09-18T08:20:20.723584821Z"
+    created: "2025-12-12T11:30:38.876632219Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -4205,4 +4288,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2025-12-10T16:07:41.923013137Z"
+generated: "2025-12-12T11:30:38.713401917Z"
