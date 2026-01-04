@@ -3539,44 +3539,6 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-04T01:04:29.227828675Z"
-    dependencies:
-    - condition: postgres-init.enabled
-      name: postgres-init
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 0.0.0-develop
-    - condition: odoo.enabled
-      name: odoo
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 26.3.0
-    - condition: idgenerator.enabled
-      name: idgenerator
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 12.0.5
-    - condition: reporting-init.enabled
-      name: reporting-init
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.3.0-develop
-    - condition: redis.enabled
-      name: redis
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 19.6.4
-    - condition: openg2p-registry-bg-tasks.enabled
-      name: openg2p-registry-bg-tasks
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.1.0-develop
-    description: A Helm chart for OpenG2P Registry
-    digest: 21e0dabde470704937abbae54f269eaadefd807bad9cf12711fa1f8f909237f6
-    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
-    name: openg2p-registry
-    type: application
-    urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-registry-4.0.0-develop.tgz
-    version: 4.0.0-develop
-  - annotations:
-      catalog.cattle.io/display-name: OpenG2P Registry
-      openg2p.org/add-to-rancher: ""
-    apiVersion: v2
     created: "2026-01-04T01:04:29.206323958Z"
     dependencies:
     - condition: postgres-init.enabled
