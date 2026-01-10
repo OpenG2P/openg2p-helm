@@ -1,5 +1,19 @@
 apiVersion: v1
 entries:
+  keycloak-init:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Keycloak Init
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-01-10T13:14:19.336747+05:30"
+    description: A Helm chart to initialize Keycloak clients
+    digest: d29a275379f204292f069d4a6f867362b3d50bf28f1cb81f65e0d7335ca5fc0d
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: keycloak-init
+    type: application
+    urls:
+    - ../keycloak-init-0.0.0-develop.tgz
+    version: 0.0.0-develop
   landing:
   - annotations:
       catalog.cattle.io/display-name: Landing Page
@@ -12,7 +26,7 @@ entries:
     name: landing
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/landing-0.0.0-develop.tgz
+    - ../landing-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-commons:
   - annotations:
@@ -4247,4 +4261,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-01-06T07:36:04.555408275Z"
+generated: "2026-01-10T13:14:19.335657+05:30"
