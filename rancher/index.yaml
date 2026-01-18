@@ -1877,7 +1877,45 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-10-18T05:47:47.514857+05:30"
+    created: "2026-01-18T01:14:36.79499543Z"
+    dependencies:
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    - condition: odoo.enabled
+      name: odoo
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 26.3.0
+    - condition: idgenerator.enabled
+      name: idgenerator
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.0.6
+    - condition: reporting-init.enabled
+      name: reporting-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.3.0-develop
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    - condition: openg2p-registry-bg-tasks.enabled
+      name: openg2p-registry-bg-tasks
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0-develop
+    description: A Helm chart for OpenG2P Registry
+    digest: 950a1b039ab43d13dc2680df90cd15bf5db03ad1462fd08b33908dd0e3258a8c
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-registry
+    type: application
+    urls:
+    - ../openg2p-registry-3.0.0-develop.tgz
+    version: 3.0.0-develop
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Registry
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-01-18T01:14:36.773568159Z"
     dependencies:
     - condition: postgres-init.enabled
       name: postgres-init
@@ -1904,45 +1942,7 @@ entries:
       repository: https://openg2p.github.io/openg2p-helm
       version: 1.1.0-develop
     description: A Helm chart for OpenG2P Registry
-    digest: cb64b376c9ac3b70257c7e1f9a97ba83e258b76ca0c46a721d2e1017d84a2614
-    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
-    name: openg2p-registry
-    type: application
-    urls:
-    - ../openg2p-registry-3.0.0-develop.tgz
-    version: 3.0.0-develop
-  - annotations:
-      catalog.cattle.io/display-name: OpenG2P Registry
-      openg2p.org/add-to-rancher: ""
-    apiVersion: v2
-    created: "2025-09-24T06:26:38.066657+05:30"
-    dependencies:
-    - condition: postgres-init.enabled
-      name: postgres-init
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 0.0.0-develop
-    - condition: odoo.enabled
-      name: odoo
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 26.3.0
-    - condition: idgenerator.enabled
-      name: idgenerator
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 12.0.2
-    - condition: reporting-init.enabled
-      name: reporting-init
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.3.0-develop
-    - condition: redis.enabled
-      name: redis
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 19.x.x
-    - condition: openg2p-registry-bg-tasks.enabled
-      name: openg2p-registry-bg-tasks
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.1.0-develop
-    description: A Helm chart for OpenG2P Registry
-    digest: 885765971370eee9bbce0a4bf44cab2e28f5ea3db719e43d26949df5a3ae8bee
+    digest: 22f1fed24cdf7f4c36370e72256c57dca9e48c698bce7931f13106a2b7a2295e
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-registry
     type: application
@@ -1951,10 +1951,52 @@ entries:
     version: 0.0.0-develop
   openg2p-registry-bg-tasks:
   - annotations:
+      catalog.cattle.io/display-name: OpenG2P Registry Background Tasks
+    apiVersion: v2
+    created: "2026-01-18T01:14:36.822518841Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    description: A Helm chart for OpenG2P Registry Background Tasks
+    digest: 343b7b8b587be3cdc5785fdc00828b4a1dc2a77f4e5b2bee7d9b3e390a927120
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-registry-bg-tasks
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-registry-bg-tasks
+    type: application
+    urls:
+    - ../openg2p-registry-bg-tasks-1.1.2.tgz
+    version: 1.1.2
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Registry Background Tasks
+    apiVersion: v2
+    created: "2026-01-18T01:14:36.821188749Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 2.x.x
+    description: A Helm chart for OpenG2P Registry Background Tasks
+    digest: 31bc98feaa847d53df9265b6e0d2f0da1c4b0e62b0e2bf5dc0990566867ccb0c
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-registry-bg-tasks
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-registry-bg-tasks
+    type: application
+    urls:
+    - ../openg2p-registry-bg-tasks-1.1.1.tgz
+    version: 1.1.1
+  - annotations:
       catalog.cattle.io/display-name: OpenG2P-Registry-BG-Tasks
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2025-01-24T06:20:28.166195899Z"
+    created: "2026-01-18T01:14:36.81890687Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -1983,8 +2025,62 @@ entries:
     name: openg2p-registry-bg-tasks
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-registry-bg-tasks-1.1.0.tgz
+    - ../openg2p-registry-bg-tasks-1.1.0.tgz
     version: 1.1.0
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Registry Background Tasks
+    apiVersion: v2
+    created: "2026-01-18T01:14:36.796809011Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    description: A Helm chart for OpenG2P Registry Background Tasks
+    digest: d0ee0090972eeab8fb59faebe9f69bf3b1768d822540fff7deb93d97305d9b6c
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-registry-bg-tasks
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-registry-bg-tasks
+    type: application
+    urls:
+    - ../openg2p-registry-bg-tasks-1.1.0-develop.tgz
+    version: 1.1.0-develop
+  openg2p-registry-gen2:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Registry Gen2
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-01-18T01:14:36.83062663Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    description: A Helm chart for OpenG2P Registry Gen2
+    digest: 586974e99484746dc93523507741f8671f8709c1e0b528456a38c970bb0bae24
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-registry
+    - registry
+    - gen2
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-registry-gen2
+    type: application
+    urls:
+    - ../openg2p-registry-gen2-0.0.0-develop.tgz
+    version: 0.0.0-develop
   openg2p-social-registry:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry
@@ -4261,4 +4357,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-01-17T12:47:44.036386773Z"
+generated: "2026-01-18T01:14:36.754637203Z"
