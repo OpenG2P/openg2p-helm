@@ -31,9 +31,9 @@ entries:
   openg2p-commons:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Commons
-      openg2p.org/add-to-rancher: ""
+      openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2025-11-23T08:31:35.9383807Z"
+    created: "2026-01-21T08:39:48.534371484Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -107,8 +107,8 @@ entries:
       name: redis
       repository: https://openg2p.github.io/openg2p-helm
       version: 19.6.4
-    description: A Helm chart for openg2p-commons
-    digest: 143d4a24a437ceb876f0690ed447d52cbd4ce5baa4c1ac512ef699c808e1c4af
+    description: Helm chart for Common services used by modules
+    digest: 0e3e25be77392a10daeaa26bef47a42fa32b013d0d73aca25e8dc5a2d23fd498
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons
     type: application
@@ -4357,4 +4357,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-01-21T01:07:58.899663239Z"
+generated: "2026-01-21T08:39:48.483222844Z"
