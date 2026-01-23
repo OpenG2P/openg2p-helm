@@ -33,7 +33,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-01-22T16:44:28.829485834Z"
+    created: "2026-01-23T10:56:06.430886486Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -119,12 +119,16 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-01-22T16:44:28.777127249Z"
+    created: "2026-01-23T10:56:06.379338563Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
       repository: https://openg2p.github.io/openg2p-helm
       version: 15.5.38
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0
     - condition: mail.enabled
       name: mail
       repository: https://openg2p.github.io/openg2p-helm
@@ -161,20 +165,13 @@ entries:
       name: superset
       repository: https://apache.github.io/superset
       version: 0.12.11
-    - alias: supersetRedis
-      condition: superset.enabled
-      name: redis
+    - name: redis
       repository: https://openg2p.github.io/openg2p-helm
       version: 19.6.4
     - condition: esignet.enabled
       name: esignet
       repository: https://openg2p.github.io/openg2p-helm
       version: 1.4.3
-    - alias: esignetRedis
-      condition: esignet.enabled
-      name: redis
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 19.6.4
     - condition: mock-identity-system.enabled
       name: mock-identity-system
       repository: https://openg2p.github.io/openg2p-helm
@@ -183,18 +180,8 @@ entries:
       name: odk-central
       repository: https://openg2p.github.io/openg2p-helm
       version: v2025.2.2
-    - alias: odk-central-enketo-redis-main
-      condition: odk-central-enketo-redis-main.enabled
-      name: redis
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 19.6.4
-    - alias: odk-central-enketo-redis-cache
-      condition: odk-central-enketo-redis-cache.enabled
-      name: redis
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 19.6.4
     description: Helm chart for Common services used by modules
-    digest: 6f3433c7be27484ca1cb1945c57ca1a8d439ab51a385833a25f34ce09a44aec9
+    digest: 803c7545b0b3d12049f97e16cc8c1d99f5881a70dc59bbab708418952c428a51
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons
     type: application
@@ -205,7 +192,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-01-22T16:44:28.72633913Z"
+    created: "2026-01-23T10:56:06.32936143Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -4529,4 +4516,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-01-22T16:44:28.674511094Z"
+generated: "2026-01-23T10:56:06.277044465Z"

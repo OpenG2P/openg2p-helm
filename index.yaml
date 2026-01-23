@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   artifactory:
   - apiVersion: v2
-    created: "2026-01-23T16:18:32.811887+05:30"
+    created: "2026-01-23T10:56:02.53693698Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -20,10 +20,10 @@ entries:
     name: artifactory
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/artifactory-12.0.3.tgz
+    - artifactory-12.0.3.tgz
     version: 12.0.3
   - apiVersion: v2
-    created: "2026-01-23T16:18:32.810828+05:30"
+    created: "2026-01-23T10:56:02.534956153Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -41,13 +41,13 @@ entries:
     name: artifactory
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/artifactory-12.0.2.tgz
+    - artifactory-12.0.2.tgz
     version: 12.0.2
   clammit:
   - annotations:
       catalog.cattle.io/display-name: Clammit
     apiVersion: v2
-    created: "2026-01-23T16:18:32.812916+05:30"
+    created: "2026-01-23T10:56:02.538081494Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -61,7 +61,7 @@ entries:
     name: clammit
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/clammit-0.0.0-develop.tgz
+    - clammit-0.0.0-develop.tgz
     version: 0.0.0-develop
   common:
   - annotations:
@@ -69,7 +69,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.30.0
-    created: "2026-01-23T16:18:35.391745+05:30"
+    created: "2026-01-23T10:56:06.146265247Z"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
     digest: 51100d6ab9824c904af74258b8fac7791815a6e1102de7b3cd78825d29acc09d
@@ -89,13 +89,13 @@ entries:
     - https://github.com/bitnami/charts/tree/main/bitnami/common
     type: library
     urls:
-    - https://openg2p.github.io/openg2p-helm/third-party/common-2.30.0.tgz
+    - third-party/common-2.30.0.tgz
     version: 2.30.0
   debezium:
   - annotations:
       catalog.cattle.io/display-name: Debezium
     apiVersion: v2
-    created: "2026-01-23T16:18:32.813747+05:30"
+    created: "2026-01-23T10:56:02.53921144Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -109,7 +109,7 @@ entries:
     name: debezium
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/debezium-2.6.0.tgz
+    - debezium-2.6.0.tgz
     version: 2.6.0
   elasticsearch:
   - annotations:
@@ -124,7 +124,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.12.2
-    created: "2026-01-23T16:18:35.39764+05:30"
+    created: "2026-01-23T10:56:06.153782818Z"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -150,14 +150,14 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/elasticsearch
     urls:
-    - https://openg2p.github.io/openg2p-helm/third-party/elasticsearch-19.21.2.tgz
+    - third-party/elasticsearch-19.21.2.tgz
     version: 19.21.2
   esignet:
   - annotations:
       catalog.cattle.io/display-name: eSignet
     apiVersion: v2
     appVersion: 1.4.1
-    created: "2026-01-23T16:18:32.862552+05:30"
+    created: "2026-01-23T10:56:02.602367474Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -175,13 +175,13 @@ entries:
     name: esignet
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/esignet-1.4.3.tgz
+    - esignet-1.4.3.tgz
     version: 1.4.3
   - annotations:
       catalog.cattle.io/display-name: eSignet
     apiVersion: v2
     appVersion: 1.4.1
-    created: "2026-01-23T16:18:32.861079+05:30"
+    created: "2026-01-23T10:56:02.600179816Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -199,12 +199,12 @@ entries:
     name: esignet
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/esignet-1.4.2.tgz
+    - esignet-1.4.2.tgz
     version: 1.4.2
   - annotations:
       catalog.cattle.io/display-name: eSignet
     apiVersion: v2
-    created: "2026-01-23T16:18:32.858004+05:30"
+    created: "2026-01-23T10:56:02.597151961Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -246,12 +246,12 @@ entries:
     name: esignet
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/esignet-1.4.1.tgz
+    - esignet-1.4.1.tgz
     version: 1.4.1
   - annotations:
       catalog.cattle.io/display-name: eSignet
     apiVersion: v2
-    created: "2026-01-23T16:18:32.834924+05:30"
+    created: "2026-01-23T10:56:02.568822756Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -293,12 +293,12 @@ entries:
     name: esignet
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/esignet-1.4.0.tgz
+    - esignet-1.4.0.tgz
     version: 1.4.0
   g2p-bridge:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-01-23T16:18:32.868917+05:30"
+    created: "2026-01-23T10:56:02.61162978Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -314,14 +314,14 @@ entries:
     name: g2p-bridge
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/g2p-bridge-0.1.0.tgz
+    - g2p-bridge-0.1.0.tgz
     version: 0.1.0
   idgenerator:
   - annotations:
       catalog.cattle.io/display-name: Idgenerator
     apiVersion: v2
     appVersion: 12.0.1
-    created: "2026-01-23T16:18:32.881999+05:30"
+    created: "2026-01-23T10:56:02.630141724Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -343,13 +343,13 @@ entries:
     name: idgenerator
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/idgenerator-12.0.6.tgz
+    - idgenerator-12.0.6.tgz
     version: 12.0.6
   - annotations:
       catalog.cattle.io/display-name: Idgenerator
     apiVersion: v2
     appVersion: 12.0.1
-    created: "2026-01-23T16:18:32.880355+05:30"
+    created: "2026-01-23T10:56:02.628059143Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -371,13 +371,13 @@ entries:
     name: idgenerator
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/idgenerator-12.0.5.tgz
+    - idgenerator-12.0.5.tgz
     version: 12.0.5
   - annotations:
       catalog.cattle.io/display-name: Idgenerator
     apiVersion: v2
     appVersion: 12.0.1
-    created: "2026-01-23T16:18:32.878675+05:30"
+    created: "2026-01-23T10:56:02.625180463Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -395,13 +395,13 @@ entries:
     name: idgenerator
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/idgenerator-12.0.4.tgz
+    - idgenerator-12.0.4.tgz
     version: 12.0.4
   - annotations:
       catalog.cattle.io/display-name: Idgenerator
     apiVersion: v2
     appVersion: 12.0.1
-    created: "2026-01-23T16:18:32.876865+05:30"
+    created: "2026-01-23T10:56:02.623408644Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -419,13 +419,13 @@ entries:
     name: idgenerator
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/idgenerator-12.0.3.tgz
+    - idgenerator-12.0.3.tgz
     version: 12.0.3
   - annotations:
       catalog.cattle.io/display-name: Idgenerator
     apiVersion: v2
     appVersion: 12.0.1
-    created: "2026-01-23T16:18:32.875662+05:30"
+    created: "2026-01-23T10:56:02.621693321Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -443,12 +443,12 @@ entries:
     name: idgenerator
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/idgenerator-12.0.2.tgz
+    - idgenerator-12.0.2.tgz
     version: 12.0.2
   - annotations:
       catalog.cattle.io/display-name: Idgenerator
     apiVersion: v2
-    created: "2026-01-23T16:18:32.874219+05:30"
+    created: "2026-01-23T10:56:02.618924935Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -474,7 +474,7 @@ entries:
     name: idgenerator
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/idgenerator-12.0.1.tgz
+    - idgenerator-12.0.1.tgz
     version: 12.0.1
   kafka:
   - annotations:
@@ -491,7 +491,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.7.1
-    created: "2026-01-23T16:18:35.403192+05:30"
+    created: "2026-01-23T10:56:06.161524844Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -521,7 +521,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/kafka
     urls:
-    - https://openg2p.github.io/openg2p-helm/third-party/kafka-29.3.14.tgz
+    - third-party/kafka-29.3.14.tgz
     version: 29.3.14
   keycloak:
   - annotations:
@@ -534,7 +534,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 24.0.5
-    created: "2026-01-23T16:18:35.408516+05:30"
+    created: "2026-01-23T10:56:06.168885267Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -561,28 +561,28 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
     urls:
-    - https://openg2p.github.io/openg2p-helm/third-party/keycloak-21.4.5.tgz
+    - third-party/keycloak-21.4.5.tgz
     version: 21.4.5
   keycloak-init:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Keycloak Init
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-01-23T16:18:32.882338+05:30"
+    created: "2026-01-23T10:56:02.630441174Z"
     description: Helm chart to initialize Keycloak clients
     digest: d0f7a258318f3e8fda4802a3c88c90741939e223ff08fcb5064df06626c16596
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: keycloak-init
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/keycloak-init-0.0.0-develop.tgz
+    - keycloak-init-0.0.0-develop.tgz
     version: 0.0.0-develop
   keymanager:
   - annotations:
       catalog.cattle.io/display-name: Keymanager
     apiVersion: v2
     appVersion: 12.1.0
-    created: "2026-01-23T16:18:32.89392+05:30"
+    created: "2026-01-23T10:56:02.647432372Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -600,13 +600,13 @@ entries:
     name: keymanager
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/keymanager-12.1.1.tgz
+    - keymanager-12.1.1.tgz
     version: 12.1.1
   - annotations:
       catalog.cattle.io/display-name: Keymanager
     apiVersion: v2
     appVersion: 12.1.0
-    created: "2026-01-23T16:18:32.89258+05:30"
+    created: "2026-01-23T10:56:02.645297663Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -624,13 +624,13 @@ entries:
     name: keymanager
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/keymanager-12.1.0.tgz
+    - keymanager-12.1.0.tgz
     version: 12.1.0
   - annotations:
       catalog.cattle.io/display-name: Keymanager
     apiVersion: v2
     appVersion: 12.0.1
-    created: "2026-01-23T16:18:32.891184+05:30"
+    created: "2026-01-23T10:56:02.642113921Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -648,13 +648,13 @@ entries:
     name: keymanager
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/keymanager-12.0.3.tgz
+    - keymanager-12.0.3.tgz
     version: 12.0.3
   - annotations:
       catalog.cattle.io/display-name: Keymanager
     apiVersion: v2
     appVersion: 12.0.1
-    created: "2026-01-23T16:18:32.890005+05:30"
+    created: "2026-01-23T10:56:02.640429576Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -672,12 +672,12 @@ entries:
     name: keymanager
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/keymanager-12.0.2.tgz
+    - keymanager-12.0.2.tgz
     version: 12.0.2
   - annotations:
       catalog.cattle.io/display-name: Keymanager
     apiVersion: v2
-    created: "2026-01-23T16:18:32.888207+05:30"
+    created: "2026-01-23T10:56:02.638758486Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -707,25 +707,25 @@ entries:
     name: keymanager
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/keymanager-12.0.1.tgz
+    - keymanager-12.0.1.tgz
     version: 12.0.1
   landing:
   - annotations:
       catalog.cattle.io/display-name: Landing Page
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:32.894612+05:30"
+    created: "2026-01-23T10:56:02.647888085Z"
     description: Helm chart for OpenG2P sandbox landing page.
     digest: bbabf92507dcb655d36acc81087b90cc14bce77f9375f05d9ef4f7ef85a76ef0
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: landing
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/landing-0.0.0-develop.tgz
+    - landing-0.0.0-develop.tgz
     version: 0.0.0-develop
   mail:
   - apiVersion: v2
-    created: "2026-01-23T16:18:32.896181+05:30"
+    created: "2026-01-23T10:56:02.649546552Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -738,10 +738,10 @@ entries:
     name: mail
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/mail-1.2.1.tgz
+    - mail-1.2.1.tgz
     version: 1.2.1
   - apiVersion: v2
-    created: "2026-01-23T16:18:32.895535+05:30"
+    created: "2026-01-23T10:56:02.648741854Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -754,13 +754,13 @@ entries:
     name: mail
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/mail-1.2.0.tgz
+    - mail-1.2.0.tgz
     version: 1.2.0
   mimoto:
   - annotations:
       catalog.cattle.io/display-name: Mimoto
     apiVersion: v2
-    created: "2026-01-23T16:18:32.900419+05:30"
+    created: "2026-01-23T10:56:02.656132718Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -781,12 +781,12 @@ entries:
     name: mimoto
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/mimoto-0.13.2.tgz
+    - mimoto-0.13.2.tgz
     version: 0.13.2
   - annotations:
       catalog.cattle.io/display-name: Mimoto
     apiVersion: v2
-    created: "2026-01-23T16:18:32.898131+05:30"
+    created: "2026-01-23T10:56:02.653290645Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -807,7 +807,7 @@ entries:
     name: mimoto
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/mimoto-0.13.1.tgz
+    - mimoto-0.13.1.tgz
     version: 0.13.1
   minio:
   - annotations:
@@ -822,7 +822,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2023.12.23
-    created: "2026-01-23T16:18:35.410885+05:30"
+    created: "2026-01-23T10:56:06.17117723Z"
     dependencies:
     - name: common
       repository: ""
@@ -848,14 +848,14 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/minio
     urls:
-    - https://openg2p.github.io/openg2p-helm/third-party/minio-12.12.2.tgz
+    - third-party/minio-12.12.2.tgz
     version: 12.12.2
   mock-identity-system:
   - annotations:
       catalog.cattle.io/display-name: Mock Identity System
     apiVersion: v2
     appVersion: 0.9.3
-    created: "2026-01-23T16:18:32.915506+05:30"
+    created: "2026-01-23T10:56:02.675817557Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -874,13 +874,13 @@ entries:
     name: mock-identity-system
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/mock-identity-system-0.9.5.tgz
+    - mock-identity-system-0.9.5.tgz
     version: 0.9.5
   - annotations:
       catalog.cattle.io/display-name: Mock Identity System
     apiVersion: v2
     appVersion: 0.9.3
-    created: "2026-01-23T16:18:32.914357+05:30"
+    created: "2026-01-23T10:56:02.674259658Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -899,12 +899,12 @@ entries:
     name: mock-identity-system
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/mock-identity-system-0.9.4.tgz
+    - mock-identity-system-0.9.4.tgz
     version: 0.9.4
   - annotations:
       catalog.cattle.io/display-name: Mock Identity System
     apiVersion: v2
-    created: "2026-01-23T16:18:32.913075+05:30"
+    created: "2026-01-23T10:56:02.672715286Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -935,12 +935,12 @@ entries:
     name: mock-identity-system
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/mock-identity-system-0.9.3.tgz
+    - mock-identity-system-0.9.3.tgz
     version: 0.9.3
   - annotations:
       catalog.cattle.io/display-name: Mock Identity System
     apiVersion: v2
-    created: "2026-01-23T16:18:32.906003+05:30"
+    created: "2026-01-23T10:56:02.66445019Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -971,14 +971,14 @@ entries:
     name: mock-identity-system
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/mock-identity-system-0.9.2.tgz
+    - mock-identity-system-0.9.2.tgz
     version: 0.9.2
   novu:
   - annotations:
       catalog.cattle.io/display-name: novu
     apiVersion: v2
     appVersion: 0.15.0
-    created: "2026-01-23T16:18:32.924402+05:30"
+    created: "2026-01-23T10:56:02.689942561Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -1007,13 +1007,13 @@ entries:
     sources:
     - https://github.com/novuhq/novu/tree/next/docker/kubernetes/helm
     urls:
-    - https://openg2p.github.io/openg2p-helm/novu-0.1.6.tgz
+    - novu-0.1.6.tgz
     version: 0.1.6
   odk-central:
   - annotations:
       catalog.cattle.io/display-name: ODK Central
     apiVersion: v2
-    created: "2026-01-23T16:18:32.961911+05:30"
+    created: "2026-01-23T10:56:02.740364476Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -1038,12 +1038,12 @@ entries:
     name: odk-central
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-v2025.2.2.tgz
+    - odk-central-v2025.2.2.tgz
     version: v2025.2.2
   - annotations:
       catalog.cattle.io/display-name: ODK Central
     apiVersion: v2
-    created: "2026-01-23T16:18:32.959182+05:30"
+    created: "2026-01-23T10:56:02.735935773Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1068,13 +1068,13 @@ entries:
     name: odk-central
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-v2025.2.1.tgz
+    - odk-central-v2025.2.1.tgz
     version: v2025.2.1
   - annotations:
       catalog.cattle.io/display-name: ODK Central
     apiVersion: v2
     appVersion: v2024.2.1
-    created: "2026-01-23T16:18:32.95607+05:30"
+    created: "2026-01-23T10:56:02.731918206Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -1099,13 +1099,13 @@ entries:
     name: odk-central
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-v2024.2.3.tgz
+    - odk-central-v2024.2.3.tgz
     version: v2024.2.3
   - annotations:
       catalog.cattle.io/display-name: ODK Central
     apiVersion: v2
     appVersion: v2024.2.1
-    created: "2026-01-23T16:18:32.953779+05:30"
+    created: "2026-01-23T10:56:02.728085727Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1130,12 +1130,12 @@ entries:
     name: odk-central
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-v2024.2.2.tgz
+    - odk-central-v2024.2.2.tgz
     version: v2024.2.2
   - annotations:
       catalog.cattle.io/display-name: ODK Central
     apiVersion: v2
-    created: "2026-01-23T16:18:32.951507+05:30"
+    created: "2026-01-23T10:56:02.724837472Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1169,12 +1169,12 @@ entries:
     name: odk-central
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-v2024.2.1.tgz
+    - odk-central-v2024.2.1.tgz
     version: v2024.2.1
   - annotations:
       catalog.cattle.io/display-name: ODK Central
     apiVersion: v2
-    created: "2026-01-23T16:18:32.945403+05:30"
+    created: "2026-01-23T10:56:02.715961526Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1208,11 +1208,11 @@ entries:
     name: odk-central
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-v2024.1.0.tgz
+    - odk-central-v2024.1.0.tgz
     version: v2024.1.0
   - apiVersion: v2
     appVersion: v2023.1.0
-    created: "2026-01-23T16:18:32.930527+05:30"
+    created: "2026-01-23T10:56:02.698710443Z"
     dependencies:
     - condition: odk-central-mail.enabled
       name: odk-central-mail
@@ -1245,11 +1245,11 @@ entries:
     name: odk-central
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-1.1.0.tgz
+    - odk-central-1.1.0.tgz
     version: 1.1.0
   odk-central-enketo:
   - apiVersion: v2
-    created: "2026-01-23T16:18:32.936347+05:30"
+    created: "2026-01-23T10:56:02.702975682Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -1263,10 +1263,10 @@ entries:
     name: odk-central-enketo
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-enketo-v2025.2.2.tgz
+    - odk-central-enketo-v2025.2.2.tgz
     version: v2025.2.2
   - apiVersion: v2
-    created: "2026-01-23T16:18:32.935383+05:30"
+    created: "2026-01-23T10:56:02.701983283Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1280,10 +1280,10 @@ entries:
     name: odk-central-enketo
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-enketo-v2025.2.1.tgz
+    - odk-central-enketo-v2025.2.1.tgz
     version: v2025.2.1
   - apiVersion: v2
-    created: "2026-01-23T16:18:32.934211+05:30"
+    created: "2026-01-23T10:56:02.700952803Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1297,10 +1297,10 @@ entries:
     name: odk-central-enketo
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-enketo-v2024.2.1.tgz
+    - odk-central-enketo-v2024.2.1.tgz
     version: v2024.2.1
   - apiVersion: v2
-    created: "2026-01-23T16:18:32.931616+05:30"
+    created: "2026-01-23T10:56:02.699859876Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1314,11 +1314,11 @@ entries:
     name: odk-central-enketo
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-enketo-v2024.1.0.tgz
+    - odk-central-enketo-v2024.1.0.tgz
     version: v2024.1.0
   odk-central-pyxform:
   - apiVersion: v2
-    created: "2026-01-23T16:18:32.939324+05:30"
+    created: "2026-01-23T10:56:02.707038364Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -1332,10 +1332,10 @@ entries:
     name: odk-central-pyxform
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-pyxform-v2025.2.2.tgz
+    - odk-central-pyxform-v2025.2.2.tgz
     version: v2025.2.2
   - apiVersion: v2
-    created: "2026-01-23T16:18:32.938581+05:30"
+    created: "2026-01-23T10:56:02.705614625Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1349,10 +1349,10 @@ entries:
     name: odk-central-pyxform
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-pyxform-v2025.2.1.tgz
+    - odk-central-pyxform-v2025.2.1.tgz
     version: v2025.2.1
   - apiVersion: v2
-    created: "2026-01-23T16:18:32.937632+05:30"
+    created: "2026-01-23T10:56:02.704564979Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1366,10 +1366,10 @@ entries:
     name: odk-central-pyxform
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-pyxform-v2024.2.1.tgz
+    - odk-central-pyxform-v2024.2.1.tgz
     version: v2024.2.1
   - apiVersion: v2
-    created: "2026-01-23T16:18:32.936988+05:30"
+    created: "2026-01-23T10:56:02.70378096Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1383,7 +1383,7 @@ entries:
     name: odk-central-pyxform
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/odk-central-pyxform-v2024.1.0.tgz
+    - odk-central-pyxform-v2024.1.0.tgz
     version: v2024.1.0
   odoo:
   - annotations:
@@ -1394,7 +1394,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2026-01-23T16:18:32.969795+05:30"
+    created: "2026-01-23T10:56:02.751601711Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1424,7 +1424,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/odoo
     urls:
-    - https://openg2p.github.io/openg2p-helm/odoo-26.3.0.tgz
+    - odoo-26.3.0.tgz
     version: 26.3.0
   - annotations:
       category: CRM
@@ -1434,7 +1434,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2026-01-23T16:18:35.420884+05:30"
+    created: "2026-01-23T10:56:06.183640536Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1464,7 +1464,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/odoo
     urls:
-    - https://openg2p.github.io/openg2p-helm/third-party/odoo-26.3.0.tgz
+    - third-party/odoo-26.3.0.tgz
     version: 26.3.0
   - annotations:
       category: CRM
@@ -1474,7 +1474,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2026-01-23T16:18:35.41674+05:30"
+    created: "2026-01-23T10:56:06.177601572Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1504,14 +1504,14 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/odoo
     urls:
-    - https://openg2p.github.io/openg2p-helm/third-party/odoo-26.2.9.tgz
+    - third-party/odoo-26.2.9.tgz
     version: 26.2.9
   openg2p:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS
     apiVersion: v2
     appVersion: 1.2.0
-    created: "2026-01-23T16:18:32.986819+05:30"
+    created: "2026-01-23T10:56:02.776861106Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -1535,11 +1535,11 @@ entries:
     name: openg2p
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-1.2.0.tgz
+    - openg2p-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2026-01-23T16:18:32.974124+05:30"
+    created: "2026-01-23T10:56:02.758367128Z"
     dependencies:
     - alias: mail
       condition: mail.enabled
@@ -1555,14 +1555,14 @@ entries:
     name: openg2p
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-1.1.0.tgz
+    - openg2p-1.1.0.tgz
     version: 1.1.0
   openg2p-commons:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-01-23T16:18:33.104908+05:30"
+    created: "2026-01-23T10:56:02.932736837Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1642,18 +1642,22 @@ entries:
     name: openg2p-commons
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-commons-1.0.0.tgz
+    - openg2p-commons-1.0.0.tgz
     version: 1.0.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-01-23T16:18:33.066776+05:30"
+    created: "2026-01-23T10:56:02.880187651Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
       repository: https://openg2p.github.io/openg2p-helm
       version: 15.5.38
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0
     - condition: mail.enabled
       name: mail
       repository: https://openg2p.github.io/openg2p-helm
@@ -1690,20 +1694,13 @@ entries:
       name: superset
       repository: https://apache.github.io/superset
       version: 0.12.11
-    - alias: supersetRedis
-      condition: superset.enabled
-      name: redis
+    - name: redis
       repository: https://openg2p.github.io/openg2p-helm
       version: 19.6.4
     - condition: esignet.enabled
       name: esignet
       repository: https://openg2p.github.io/openg2p-helm
       version: 1.4.3
-    - alias: esignetRedis
-      condition: esignet.enabled
-      name: redis
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 19.6.4
     - condition: mock-identity-system.enabled
       name: mock-identity-system
       repository: https://openg2p.github.io/openg2p-helm
@@ -1712,29 +1709,19 @@ entries:
       name: odk-central
       repository: https://openg2p.github.io/openg2p-helm
       version: v2025.2.2
-    - alias: odk-central-enketo-redis-main
-      condition: odk-central-enketo-redis-main.enabled
-      name: redis
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 19.6.4
-    - alias: odk-central-enketo-redis-cache
-      condition: odk-central-enketo-redis-cache.enabled
-      name: redis
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 19.6.4
     description: Helm chart for Common services used by modules
-    digest: 6f3433c7be27484ca1cb1945c57ca1a8d439ab51a385833a25f34ce09a44aec9
+    digest: 803c7545b0b3d12049f97e16cc8c1d99f5881a70dc59bbab708418952c428a51
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-commons-1.0.0-develop.tgz
+    - openg2p-commons-1.0.0-develop.tgz
     version: 1.0.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-01-23T16:18:33.024839+05:30"
+    created: "2026-01-23T10:56:02.828444749Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1814,13 +1801,13 @@ entries:
     name: openg2p-commons
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-commons-0.0.0-develop.tgz
+    - openg2p-commons-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-deduplicator:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Deduplicator
     apiVersion: v2
-    created: "2026-01-23T16:18:33.118497+05:30"
+    created: "2026-01-23T10:56:02.939436787Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1844,13 +1831,13 @@ entries:
     name: openg2p-deduplicator
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-deduplicator-0.0.0-develop.tgz
+    - openg2p-deduplicator-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-example-bank:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank
     apiVersion: v2
-    created: "2026-01-23T16:18:33.137805+05:30"
+    created: "2026-01-23T10:56:02.964775893Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -1883,12 +1870,12 @@ entries:
     name: openg2p-example-bank
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-example-bank-1.1.tgz
+    - openg2p-example-bank-1.1.tgz
     version: "1.1"
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank
     apiVersion: v2
-    created: "2026-01-23T16:18:33.128903+05:30"
+    created: "2026-01-23T10:56:02.952021803Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -1921,14 +1908,14 @@ entries:
     name: openg2p-example-bank
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-example-bank-1.0.2.tgz
+    - openg2p-example-bank-1.0.2.tgz
     version: 1.0.2
   openg2p-g2p-bridge:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.20545+05:30"
+    created: "2026-01-23T10:56:03.057647094Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -1953,13 +1940,13 @@ entries:
     name: openg2p-g2p-bridge
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-3.0.0-develop.tgz
+    - openg2p-g2p-bridge-3.0.0-develop.tgz
     version: 3.0.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.20031+05:30"
+    created: "2026-01-23T10:56:03.049855373Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1996,13 +1983,13 @@ entries:
     name: openg2p-g2p-bridge
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-2.0.0.tgz
+    - openg2p-g2p-bridge-2.0.0.tgz
     version: 2.0.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.189313+05:30"
+    created: "2026-01-23T10:56:03.033981375Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2051,13 +2038,13 @@ entries:
     name: openg2p-g2p-bridge
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-2.0-develop.tgz
+    - openg2p-g2p-bridge-2.0-develop.tgz
     version: 2.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.179148+05:30"
+    created: "2026-01-23T10:56:03.019346101Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -2094,13 +2081,13 @@ entries:
     name: openg2p-g2p-bridge
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-1.1.0.tgz
+    - openg2p-g2p-bridge-1.1.0.tgz
     version: 1.1.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.170344+05:30"
+    created: "2026-01-23T10:56:03.006152591Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2149,12 +2136,12 @@ entries:
     name: openg2p-g2p-bridge
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-1.1.0-develop.tgz
+    - openg2p-g2p-bridge-1.1.0-develop.tgz
     version: 1.1.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge
     apiVersion: v2
-    created: "2026-01-23T16:18:33.159993+05:30"
+    created: "2026-01-23T10:56:02.990569418Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -2191,12 +2178,12 @@ entries:
     name: openg2p-g2p-bridge
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-1.0.2.tgz
+    - openg2p-g2p-bridge-1.0.2.tgz
     version: 1.0.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge
     apiVersion: v2
-    created: "2026-01-23T16:18:33.148893+05:30"
+    created: "2026-01-23T10:56:02.97814351Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -2233,13 +2220,13 @@ entries:
     name: openg2p-g2p-bridge
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-1.0.0.tgz
+    - openg2p-g2p-bridge-1.0.0.tgz
     version: 1.0.0
   openg2p-g2p-bridge-api:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge API
     apiVersion: v2
-    created: "2026-01-23T16:18:33.215313+05:30"
+    created: "2026-01-23T10:56:03.071261366Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2256,12 +2243,12 @@ entries:
     name: openg2p-g2p-bridge-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-api-2.0-develop.tgz
+    - openg2p-g2p-bridge-api-2.0-develop.tgz
     version: 2.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge API
     apiVersion: v2
-    created: "2026-01-23T16:18:33.214391+05:30"
+    created: "2026-01-23T10:56:03.070019089Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2278,12 +2265,12 @@ entries:
     name: openg2p-g2p-bridge-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-api-1.1.0-develop.tgz
+    - openg2p-g2p-bridge-api-1.1.0-develop.tgz
     version: 1.1.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-API
     apiVersion: v2
-    created: "2026-01-23T16:18:33.213455+05:30"
+    created: "2026-01-23T10:56:03.068766142Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2303,12 +2290,12 @@ entries:
     name: openg2p-g2p-bridge-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-api-1.0.2.tgz
+    - openg2p-g2p-bridge-api-1.0.2.tgz
     version: 1.0.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-API
     apiVersion: v2
-    created: "2026-01-23T16:18:33.209333+05:30"
+    created: "2026-01-23T10:56:03.062666917Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2328,13 +2315,13 @@ entries:
     name: openg2p-g2p-bridge-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-api-1.0.0.tgz
+    - openg2p-g2p-bridge-api-1.0.0.tgz
     version: 1.0.0
   openg2p-g2p-bridge-bene-portal-api:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge Beneficiary Portal API
     apiVersion: v2
-    created: "2026-01-23T16:18:33.21622+05:30"
+    created: "2026-01-23T10:56:03.07248101Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2351,13 +2338,13 @@ entries:
     name: openg2p-g2p-bridge-bene-portal-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-bene-portal-api-2.0.0.tgz
+    - openg2p-g2p-bridge-bene-portal-api-2.0.0.tgz
     version: 2.0.0
   openg2p-g2p-bridge-celery-beat-producers:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge Celery Beat Producers
     apiVersion: v2
-    created: "2026-01-23T16:18:33.233266+05:30"
+    created: "2026-01-23T10:56:03.106550251Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2374,12 +2361,12 @@ entries:
     name: openg2p-g2p-bridge-celery-beat-producers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-celery-beat-producers-2.0-develop.tgz
+    - openg2p-g2p-bridge-celery-beat-producers-2.0-develop.tgz
     version: 2.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge Celery Beat Producers
     apiVersion: v2
-    created: "2026-01-23T16:18:33.232175+05:30"
+    created: "2026-01-23T10:56:03.105121344Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2396,12 +2383,12 @@ entries:
     name: openg2p-g2p-bridge-celery-beat-producers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-celery-beat-producers-1.1.0-develop.tgz
+    - openg2p-g2p-bridge-celery-beat-producers-1.1.0-develop.tgz
     version: 1.1.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Celery-Beat-Producers
     apiVersion: v2
-    created: "2026-01-23T16:18:33.231312+05:30"
+    created: "2026-01-23T10:56:03.103350567Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2425,12 +2412,12 @@ entries:
     name: openg2p-g2p-bridge-celery-beat-producers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-celery-beat-producers-1.0.2.tgz
+    - openg2p-g2p-bridge-celery-beat-producers-1.0.2.tgz
     version: 1.0.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Celery-Beat-Producers
     apiVersion: v2
-    created: "2026-01-23T16:18:33.223732+05:30"
+    created: "2026-01-23T10:56:03.08854287Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2454,13 +2441,13 @@ entries:
     name: openg2p-g2p-bridge-celery-beat-producers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-celery-beat-producers-1.0.0.tgz
+    - openg2p-g2p-bridge-celery-beat-producers-1.0.0.tgz
     version: 1.0.0
   openg2p-g2p-bridge-celery-workers:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge Celery Workers
     apiVersion: v2
-    created: "2026-01-23T16:18:33.241835+05:30"
+    created: "2026-01-23T10:56:03.127084839Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2477,12 +2464,12 @@ entries:
     name: openg2p-g2p-bridge-celery-workers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-celery-workers-2.0-develop.tgz
+    - openg2p-g2p-bridge-celery-workers-2.0-develop.tgz
     version: 2.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge Celery Workers
     apiVersion: v2
-    created: "2026-01-23T16:18:33.240981+05:30"
+    created: "2026-01-23T10:56:03.125353648Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2499,12 +2486,12 @@ entries:
     name: openg2p-g2p-bridge-celery-workers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-celery-workers-1.1.0-develop.tgz
+    - openg2p-g2p-bridge-celery-workers-1.1.0-develop.tgz
     version: 1.1.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Celery-Beat-Producers
     apiVersion: v2
-    created: "2026-01-23T16:18:33.240126+05:30"
+    created: "2026-01-23T10:56:03.12379708Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2528,13 +2515,13 @@ entries:
     name: openg2p-g2p-bridge-celery-workers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-celery-workers-1.0.2.tgz
+    - openg2p-g2p-bridge-celery-workers-1.0.2.tgz
     version: 1.0.2
   openg2p-g2p-bridge-example-bank-api:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank-API
     apiVersion: v2
-    created: "2026-01-23T16:18:33.24977+05:30"
+    created: "2026-01-23T10:56:03.138192126Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2554,12 +2541,12 @@ entries:
     name: openg2p-g2p-bridge-example-bank-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-example-bank-api-1.1.tgz
+    - openg2p-g2p-bridge-example-bank-api-1.1.tgz
     version: "1.1"
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank-API
     apiVersion: v2
-    created: "2026-01-23T16:18:33.24556+05:30"
+    created: "2026-01-23T10:56:03.13233839Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2579,13 +2566,13 @@ entries:
     name: openg2p-g2p-bridge-example-bank-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-example-bank-api-1.0.2.tgz
+    - openg2p-g2p-bridge-example-bank-api-1.0.2.tgz
     version: 1.0.2
   openg2p-g2p-bridge-example-bank-celery:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank-Celery
     apiVersion: v2
-    created: "2026-01-23T16:18:33.263915+05:30"
+    created: "2026-01-23T10:56:03.16409292Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2609,12 +2596,12 @@ entries:
     name: openg2p-g2p-bridge-example-bank-celery
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-example-bank-celery-1.1.tgz
+    - openg2p-g2p-bridge-example-bank-celery-1.1.tgz
     version: "1.1"
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge-Example-Bank-Celery
     apiVersion: v2
-    created: "2026-01-23T16:18:33.256782+05:30"
+    created: "2026-01-23T10:56:03.15252795Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2638,14 +2625,14 @@ entries:
     name: openg2p-g2p-bridge-example-bank-celery
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-example-bank-celery-1.0.2.tgz
+    - openg2p-g2p-bridge-example-bank-celery-1.0.2.tgz
     version: 1.0.2
   openg2p-pbms:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.651339+05:30"
+    created: "2026-01-23T10:56:03.751264438Z"
     dependencies:
     - condition: postgres-init.enabled
       name: postgres-init
@@ -2665,13 +2652,13 @@ entries:
     name: openg2p-pbms
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-4.0.0-develop.tgz
+    - openg2p-pbms-4.0.0-develop.tgz
     version: 4.0.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.639417+05:30"
+    created: "2026-01-23T10:56:03.734282823Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -2707,13 +2694,13 @@ entries:
     name: openg2p-pbms
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-3.0.0.tgz
+    - openg2p-pbms-3.0.0.tgz
     version: 3.0.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.62343+05:30"
+    created: "2026-01-23T10:56:03.707204947Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -2792,13 +2779,13 @@ entries:
     name: openg2p-pbms
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-2.0.3.tgz
+    - openg2p-pbms-2.0.3.tgz
     version: 2.0.3
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.587412+05:30"
+    created: "2026-01-23T10:56:03.650390307Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -2877,13 +2864,13 @@ entries:
     name: openg2p-pbms
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-2.0.2.tgz
+    - openg2p-pbms-2.0.2.tgz
     version: 2.0.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.551722+05:30"
+    created: "2026-01-23T10:56:03.593617493Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -2962,13 +2949,13 @@ entries:
     name: openg2p-pbms
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-2.0.1.tgz
+    - openg2p-pbms-2.0.1.tgz
     version: 2.0.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.516023+05:30"
+    created: "2026-01-23T10:56:03.537626865Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -3047,13 +3034,13 @@ entries:
     name: openg2p-pbms
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-2.0.0.tgz
+    - openg2p-pbms-2.0.0.tgz
     version: 2.0.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.47923+05:30"
+    created: "2026-01-23T10:56:03.482005682Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -3132,13 +3119,13 @@ entries:
     name: openg2p-pbms
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-2.0.0-develop.tgz
+    - openg2p-pbms-2.0.0-develop.tgz
     version: 2.0.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.441811+05:30"
+    created: "2026-01-23T10:56:03.426001799Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -3179,13 +3166,13 @@ entries:
     name: openg2p-pbms
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-1.2.3.tgz
+    - openg2p-pbms-1.2.3.tgz
     version: 1.2.3
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.402092+05:30"
+    created: "2026-01-23T10:56:03.374349443Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -3226,13 +3213,13 @@ entries:
     name: openg2p-pbms
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-1.2.2.tgz
+    - openg2p-pbms-1.2.2.tgz
     version: 1.2.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.362716+05:30"
+    created: "2026-01-23T10:56:03.322746958Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -3273,13 +3260,13 @@ entries:
     name: openg2p-pbms
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-1.2.0.tgz
+    - openg2p-pbms-1.2.0.tgz
     version: 1.2.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.330114+05:30"
+    created: "2026-01-23T10:56:03.272797652Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -3320,13 +3307,13 @@ entries:
     name: openg2p-pbms
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-1.2.0-develop.tgz
+    - openg2p-pbms-1.2.0-develop.tgz
     version: 1.2.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.296802+05:30"
+    created: "2026-01-23T10:56:03.219559277Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -3367,13 +3354,13 @@ entries:
     name: openg2p-pbms
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-0.0.0-develop.tgz
+    - openg2p-pbms-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-pbms-beneficiary-portal:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2026-01-23T16:18:33.656855+05:30"
+    created: "2026-01-23T10:56:03.759357368Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3384,12 +3371,12 @@ entries:
     name: openg2p-pbms-beneficiary-portal
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-beneficiary-portal-2.0.2.tgz
+    - openg2p-pbms-beneficiary-portal-2.0.2.tgz
     version: 2.0.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2026-01-23T16:18:33.655853+05:30"
+    created: "2026-01-23T10:56:03.757954249Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3400,12 +3387,12 @@ entries:
     name: openg2p-pbms-beneficiary-portal
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-beneficiary-portal-2.0.1.tgz
+    - openg2p-pbms-beneficiary-portal-2.0.1.tgz
     version: 2.0.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2026-01-23T16:18:33.654849+05:30"
+    created: "2026-01-23T10:56:03.756520303Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3416,12 +3403,12 @@ entries:
     name: openg2p-pbms-beneficiary-portal
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-beneficiary-portal-2.0.0.tgz
+    - openg2p-pbms-beneficiary-portal-2.0.0.tgz
     version: 2.0.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2026-01-23T16:18:33.653615+05:30"
+    created: "2026-01-23T10:56:03.754251113Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3432,12 +3419,12 @@ entries:
     name: openg2p-pbms-beneficiary-portal
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-beneficiary-portal-2.0.0-develop.tgz
+    - openg2p-pbms-beneficiary-portal-2.0.0-develop.tgz
     version: 2.0.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2026-01-23T16:18:33.652589+05:30"
+    created: "2026-01-23T10:56:03.752766622Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3448,13 +3435,13 @@ entries:
     name: openg2p-pbms-beneficiary-portal
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-beneficiary-portal-0.0.0-develop.tgz
+    - openg2p-pbms-beneficiary-portal-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-pbms-bg-task:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P PBMS Background Task
     apiVersion: v2
-    created: "2026-01-23T16:18:33.667688+05:30"
+    created: "2026-01-23T10:56:03.77537959Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -3503,13 +3490,13 @@ entries:
     name: openg2p-pbms-bg-task
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-bg-task-3.0.0.tgz
+    - openg2p-pbms-bg-task-3.0.0.tgz
     version: 3.0.0
   openg2p-pbms-bg-task-api:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Background Task API
     apiVersion: v2
-    created: "2026-01-23T16:18:33.668608+05:30"
+    created: "2026-01-23T10:56:03.776594856Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3526,13 +3513,13 @@ entries:
     name: openg2p-pbms-bg-task-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-bg-task-api-3.0.0.tgz
+    - openg2p-pbms-bg-task-api-3.0.0.tgz
     version: 3.0.0
   openg2p-pbms-bg-task-celery-beat-producers:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Background Task Celery Beat Producers
     apiVersion: v2
-    created: "2026-01-23T16:18:33.669437+05:30"
+    created: "2026-01-23T10:56:03.777721577Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3549,13 +3536,13 @@ entries:
     name: openg2p-pbms-bg-task-celery-beat-producers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-bg-task-celery-beat-producers-3.0.0.tgz
+    - openg2p-pbms-bg-task-celery-beat-producers-3.0.0.tgz
     version: 3.0.0
   openg2p-pbms-bg-task-celery-workers:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Background Task Celery Workers
     apiVersion: v2
-    created: "2026-01-23T16:18:33.670294+05:30"
+    created: "2026-01-23T10:56:03.778892931Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3572,14 +3559,14 @@ entries:
     name: openg2p-pbms-bg-task-celery-workers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-bg-task-celery-workers-3.0.0.tgz
+    - openg2p-pbms-bg-task-celery-workers-3.0.0.tgz
     version: 3.0.0
   openg2p-pbms-p2:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.829539+05:30"
+    created: "2026-01-23T10:56:04.022666423Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -3605,13 +3592,13 @@ entries:
     name: openg2p-pbms-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-p2-2.0.1.tgz
+    - openg2p-pbms-p2-2.0.1.tgz
     version: 2.0.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.797925+05:30"
+    created: "2026-01-23T10:56:03.975395598Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -3637,13 +3624,13 @@ entries:
     name: openg2p-pbms-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-p2-1.2.3.tgz
+    - openg2p-pbms-p2-1.2.3.tgz
     version: 1.2.3
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.766282+05:30"
+    created: "2026-01-23T10:56:03.927016347Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -3669,13 +3656,13 @@ entries:
     name: openg2p-pbms-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-p2-1.2.2.tgz
+    - openg2p-pbms-p2-1.2.2.tgz
     version: 1.2.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.734914+05:30"
+    created: "2026-01-23T10:56:03.87892068Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -3701,13 +3688,13 @@ entries:
     name: openg2p-pbms-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-p2-1.2.0.tgz
+    - openg2p-pbms-p2-1.2.0.tgz
     version: 1.2.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.703143+05:30"
+    created: "2026-01-23T10:56:03.82980816Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -3733,14 +3720,14 @@ entries:
     name: openg2p-pbms-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-pbms-p2-0.0.0-develop.tgz
+    - openg2p-pbms-p2-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-registry:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.855509+05:30"
+    created: "2026-01-23T10:56:04.063386988Z"
     dependencies:
     - condition: postgres-init.enabled
       name: postgres-init
@@ -3772,13 +3759,13 @@ entries:
     name: openg2p-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-registry-3.0.0-develop.tgz
+    - openg2p-registry-3.0.0-develop.tgz
     version: 3.0.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.840989+05:30"
+    created: "2026-01-23T10:56:04.040777457Z"
     dependencies:
     - condition: postgres-init.enabled
       name: postgres-init
@@ -3810,13 +3797,13 @@ entries:
     name: openg2p-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-registry-0.0.0-develop.tgz
+    - openg2p-registry-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-registry-bg-tasks:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Registry Background Tasks
     apiVersion: v2
-    created: "2026-01-23T16:18:33.872161+05:30"
+    created: "2026-01-23T10:56:04.08832254Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3832,12 +3819,12 @@ entries:
     name: openg2p-registry-bg-tasks
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-registry-bg-tasks-1.1.2.tgz
+    - openg2p-registry-bg-tasks-1.1.2.tgz
     version: 1.1.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Registry Background Tasks
     apiVersion: v2
-    created: "2026-01-23T16:18:33.871243+05:30"
+    created: "2026-01-23T10:56:04.087091604Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -3853,13 +3840,13 @@ entries:
     name: openg2p-registry-bg-tasks
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-registry-bg-tasks-1.1.1.tgz
+    - openg2p-registry-bg-tasks-1.1.1.tgz
     version: 1.1.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-Registry-BG-Tasks
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.870014+05:30"
+    created: "2026-01-23T10:56:04.085829099Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -3888,12 +3875,12 @@ entries:
     name: openg2p-registry-bg-tasks
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-registry-bg-tasks-1.1.0.tgz
+    - openg2p-registry-bg-tasks-1.1.0.tgz
     version: 1.1.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Registry Background Tasks
     apiVersion: v2
-    created: "2026-01-23T16:18:33.857146+05:30"
+    created: "2026-01-23T10:56:04.065139581Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3909,14 +3896,14 @@ entries:
     name: openg2p-registry-bg-tasks
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-registry-bg-tasks-1.1.0-develop.tgz
+    - openg2p-registry-bg-tasks-1.1.0-develop.tgz
     version: 1.1.0-develop
   openg2p-registry-gen2:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Registry Gen2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.877891+05:30"
+    created: "2026-01-23T10:56:04.095662599Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3942,14 +3929,14 @@ entries:
     name: openg2p-registry-gen2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-registry-gen2-0.0.0-develop.tgz
+    - openg2p-registry-gen2-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-social-registry:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.722891+05:30"
+    created: "2026-01-23T10:56:05.313259678Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4046,13 +4033,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-2.1.0-develop.tgz
+    - openg2p-social-registry-2.1.0-develop.tgz
     version: 2.1.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.637083+05:30"
+    created: "2026-01-23T10:56:05.255304794Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4139,13 +4126,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-2.0.8.tgz
+    - openg2p-social-registry-2.0.8.tgz
     version: 2.0.8
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.596022+05:30"
+    created: "2026-01-23T10:56:05.198505926Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4232,13 +4219,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-2.0.7.tgz
+    - openg2p-social-registry-2.0.7.tgz
     version: 2.0.7
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.549492+05:30"
+    created: "2026-01-23T10:56:05.139626859Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4325,13 +4312,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-2.0.6.tgz
+    - openg2p-social-registry-2.0.6.tgz
     version: 2.0.6
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.510392+05:30"
+    created: "2026-01-23T10:56:05.080557311Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4418,13 +4405,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-2.0.5.tgz
+    - openg2p-social-registry-2.0.5.tgz
     version: 2.0.5
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.472307+05:30"
+    created: "2026-01-23T10:56:05.021821567Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4511,13 +4498,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-2.0.4.tgz
+    - openg2p-social-registry-2.0.4.tgz
     version: 2.0.4
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.432359+05:30"
+    created: "2026-01-23T10:56:04.962309542Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4604,13 +4591,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-2.0.3.tgz
+    - openg2p-social-registry-2.0.3.tgz
     version: 2.0.3
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.393318+05:30"
+    created: "2026-01-23T10:56:04.903702008Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4697,13 +4684,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-2.0.2.tgz
+    - openg2p-social-registry-2.0.2.tgz
     version: 2.0.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.355929+05:30"
+    created: "2026-01-23T10:56:04.843454486Z"
     dependencies:
     - condition: sr-landing.enabled
       name: sr-landing
@@ -4794,13 +4781,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-2.0.1.tgz
+    - openg2p-social-registry-2.0.1.tgz
     version: 2.0.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.317848+05:30"
+    created: "2026-01-23T10:56:04.782873377Z"
     dependencies:
     - condition: sr-landing.enabled
       name: sr-landing
@@ -4891,13 +4878,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-2.0.0.tgz
+    - openg2p-social-registry-2.0.0.tgz
     version: 2.0.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.279984+05:30"
+    created: "2026-01-23T10:56:04.723225017Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4984,13 +4971,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-2.0.0-develop.tgz
+    - openg2p-social-registry-2.0.0-develop.tgz
     version: 2.0.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.243137+05:30"
+    created: "2026-01-23T10:56:04.66579913Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -5031,13 +5018,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-1.4.2.tgz
+    - openg2p-social-registry-1.4.2.tgz
     version: 1.4.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.210514+05:30"
+    created: "2026-01-23T10:56:04.615765893Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -5078,13 +5065,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-1.4.0.tgz
+    - openg2p-social-registry-1.4.0.tgz
     version: 1.4.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.177422+05:30"
+    created: "2026-01-23T10:56:04.564082045Z"
     dependencies:
     - condition: sr-landing.enabled
       name: sr-landing
@@ -5138,13 +5125,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-1.4.0-develop.tgz
+    - openg2p-social-registry-1.4.0-develop.tgz
     version: 1.4.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.139434+05:30"
+    created: "2026-01-23T10:56:04.505265604Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -5185,13 +5172,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-1.3.2.tgz
+    - openg2p-social-registry-1.3.2.tgz
     version: 1.3.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.106395+05:30"
+    created: "2026-01-23T10:56:04.453697033Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -5232,13 +5219,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-1.3.1.tgz
+    - openg2p-social-registry-1.3.1.tgz
     version: 1.3.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.073607+05:30"
+    created: "2026-01-23T10:56:04.402666491Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -5279,13 +5266,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-1.3.0.tgz
+    - openg2p-social-registry-1.3.0.tgz
     version: 1.3.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.041627+05:30"
+    created: "2026-01-23T10:56:04.351087933Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -5326,13 +5313,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-1.3.0-develop.tgz
+    - openg2p-social-registry-1.3.0-develop.tgz
     version: 1.3.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.008887+05:30"
+    created: "2026-01-23T10:56:04.300461025Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -5373,13 +5360,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-1.2.2.tgz
+    - openg2p-social-registry-1.2.2.tgz
     version: 1.2.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.976498+05:30"
+    created: "2026-01-23T10:56:04.250188865Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -5420,13 +5407,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-1.2.1.tgz
+    - openg2p-social-registry-1.2.1.tgz
     version: 1.2.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.943821+05:30"
+    created: "2026-01-23T10:56:04.200351683Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -5467,13 +5454,13 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-1.2.0.tgz
+    - openg2p-social-registry-1.2.0.tgz
     version: 1.2.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:33.910983+05:30"
+    created: "2026-01-23T10:56:04.147983578Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -5514,14 +5501,14 @@ entries:
     name: openg2p-social-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-0.0.0-develop.tgz
+    - openg2p-social-registry-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-social-registry-p2:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:35.184764+05:30"
+    created: "2026-01-23T10:56:05.868531402Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5551,13 +5538,13 @@ entries:
     name: openg2p-social-registry-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-1.4.2.tgz
+    - openg2p-social-registry-p2-1.4.2.tgz
     version: 1.4.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:35.145567+05:30"
+    created: "2026-01-23T10:56:05.814092369Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5587,13 +5574,13 @@ entries:
     name: openg2p-social-registry-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-1.4.0.tgz
+    - openg2p-social-registry-p2-1.4.0.tgz
     version: 1.4.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:35.105762+05:30"
+    created: "2026-01-23T10:56:05.759176674Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5619,13 +5606,13 @@ entries:
     name: openg2p-social-registry-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-1.4.0-develop.tgz
+    - openg2p-social-registry-p2-1.4.0-develop.tgz
     version: 1.4.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:35.067188+05:30"
+    created: "2026-01-23T10:56:05.711519854Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5651,13 +5638,13 @@ entries:
     name: openg2p-social-registry-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-1.3.2.tgz
+    - openg2p-social-registry-p2-1.3.2.tgz
     version: 1.3.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:35.029103+05:30"
+    created: "2026-01-23T10:56:05.661950546Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5683,13 +5670,13 @@ entries:
     name: openg2p-social-registry-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-1.3.1.tgz
+    - openg2p-social-registry-p2-1.3.1.tgz
     version: 1.3.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.991369+05:30"
+    created: "2026-01-23T10:56:05.613992143Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5715,13 +5702,13 @@ entries:
     name: openg2p-social-registry-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-1.3.0.tgz
+    - openg2p-social-registry-p2-1.3.0.tgz
     version: 1.3.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.952678+05:30"
+    created: "2026-01-23T10:56:05.567498384Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5747,13 +5734,13 @@ entries:
     name: openg2p-social-registry-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-1.3.0-develop.tgz
+    - openg2p-social-registry-p2-1.3.0-develop.tgz
     version: 1.3.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.907534+05:30"
+    created: "2026-01-23T10:56:05.518853533Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5779,13 +5766,13 @@ entries:
     name: openg2p-social-registry-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-1.2.2.tgz
+    - openg2p-social-registry-p2-1.2.2.tgz
     version: 1.2.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.86749+05:30"
+    created: "2026-01-23T10:56:05.470334716Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5811,13 +5798,13 @@ entries:
     name: openg2p-social-registry-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-1.2.1.tgz
+    - openg2p-social-registry-p2-1.2.1.tgz
     version: 1.2.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.828962+05:30"
+    created: "2026-01-23T10:56:05.421546068Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5843,13 +5830,13 @@ entries:
     name: openg2p-social-registry-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-1.2.0.tgz
+    - openg2p-social-registry-p2-1.2.0.tgz
     version: 1.2.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Social Registry - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:34.774937+05:30"
+    created: "2026-01-23T10:56:05.372204078Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5879,13 +5866,13 @@ entries:
     name: openg2p-social-registry-p2
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-social-registry-p2-0.0.0-develop.tgz
+    - openg2p-social-registry-p2-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-sr-bg-tasks:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks
     apiVersion: v2
-    created: "2026-01-23T16:18:35.200454+05:30"
+    created: "2026-01-23T10:56:05.889766071Z"
     dependencies:
     - condition: openg2p-sr-bg-tasks-celery-beat-producers.enabled
       name: openg2p-sr-bg-tasks-celery-beat-producers
@@ -5906,13 +5893,13 @@ entries:
     name: openg2p-sr-bg-tasks
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-sr-bg-tasks-1.0.2.tgz
+    - openg2p-sr-bg-tasks-1.0.2.tgz
     version: 1.0.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:35.198382+05:30"
+    created: "2026-01-23T10:56:05.887370994Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -5941,13 +5928,13 @@ entries:
     name: openg2p-sr-bg-tasks
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-sr-bg-tasks-1.0.1.tgz
+    - openg2p-sr-bg-tasks-1.0.1.tgz
     version: 1.0.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:35.192292+05:30"
+    created: "2026-01-23T10:56:05.879411161Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -5976,12 +5963,12 @@ entries:
     name: openg2p-sr-bg-tasks
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-sr-bg-tasks-1.0.0.tgz
+    - openg2p-sr-bg-tasks-1.0.0.tgz
     version: 1.0.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks
     apiVersion: v2
-    created: "2026-01-23T16:18:35.187006+05:30"
+    created: "2026-01-23T10:56:05.870959009Z"
     dependencies:
     - condition: openg2p-sr-bg-tasks-celery-beat-producers.enabled
       name: openg2p-sr-bg-tasks-celery-beat-producers
@@ -6002,13 +5989,13 @@ entries:
     name: openg2p-sr-bg-tasks
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-sr-bg-tasks-1.0.0-develop.tgz
+    - openg2p-sr-bg-tasks-1.0.0-develop.tgz
     version: 1.0.0-develop
   openg2p-sr-bg-tasks-celery-beat-producers:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks-Celery-Beat-Producers
     apiVersion: v2
-    created: "2026-01-23T16:18:35.210135+05:30"
+    created: "2026-01-23T10:56:05.899208875Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6024,12 +6011,12 @@ entries:
     name: openg2p-sr-bg-tasks-celery-beat-producers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-sr-bg-tasks-celery-beat-producers-1.0.2.tgz
+    - openg2p-sr-bg-tasks-celery-beat-producers-1.0.2.tgz
     version: 1.0.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks-Celery-Beat-Producers
     apiVersion: v2
-    created: "2026-01-23T16:18:35.209191+05:30"
+    created: "2026-01-23T10:56:05.898116889Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6049,12 +6036,12 @@ entries:
     name: openg2p-sr-bg-tasks-celery-beat-producers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-sr-bg-tasks-celery-beat-producers-1.0.1.tgz
+    - openg2p-sr-bg-tasks-celery-beat-producers-1.0.1.tgz
     version: 1.0.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks-Celery-Beat-Producers
     apiVersion: v2
-    created: "2026-01-23T16:18:35.201451+05:30"
+    created: "2026-01-23T10:56:05.890806089Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6070,13 +6057,13 @@ entries:
     name: openg2p-sr-bg-tasks-celery-beat-producers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-sr-bg-tasks-celery-beat-producers-1.0.0-develop.tgz
+    - openg2p-sr-bg-tasks-celery-beat-producers-1.0.0-develop.tgz
     version: 1.0.0-develop
   openg2p-sr-bg-tasks-celery-workers:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks-Celery-Workers
     apiVersion: v2
-    created: "2026-01-23T16:18:35.218863+05:30"
+    created: "2026-01-23T10:56:05.909222482Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6092,12 +6079,12 @@ entries:
     name: openg2p-sr-bg-tasks-celery-workers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-sr-bg-tasks-celery-workers-1.0.2.tgz
+    - openg2p-sr-bg-tasks-celery-workers-1.0.2.tgz
     version: 1.0.2
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks-Celery-Workers
     apiVersion: v2
-    created: "2026-01-23T16:18:35.217469+05:30"
+    created: "2026-01-23T10:56:05.908128673Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6117,12 +6104,12 @@ entries:
     name: openg2p-sr-bg-tasks-celery-workers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-sr-bg-tasks-celery-workers-1.0.1.tgz
+    - openg2p-sr-bg-tasks-celery-workers-1.0.1.tgz
     version: 1.0.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P-SR-BG-Tasks-Celery-Workers
     apiVersion: v2
-    created: "2026-01-23T16:18:35.211098+05:30"
+    created: "2026-01-23T10:56:05.900266726Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6138,13 +6125,13 @@ entries:
     name: openg2p-sr-bg-tasks-celery-workers
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-sr-bg-tasks-celery-workers-1.0.0-develop.tgz
+    - openg2p-sr-bg-tasks-celery-workers-1.0.0-develop.tgz
     version: 1.0.0-develop
   openg2p-websub-print-listener:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P WebSub Print Listener
     apiVersion: v2
-    created: "2026-01-23T16:18:35.220783+05:30"
+    created: "2026-01-23T10:56:05.910419023Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6164,7 +6151,7 @@ entries:
     name: openg2p-websub-print-listener
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-websub-print-listener-0.0.0-develop.tgz
+    - openg2p-websub-print-listener-0.0.0-develop.tgz
     version: 0.0.0-develop
   opensearch:
   - annotations:
@@ -6179,7 +6166,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.14.0
-    created: "2026-01-23T16:18:35.424757+05:30"
+    created: "2026-01-23T10:56:06.188948216Z"
     dependencies:
     - name: common
       repository: ""
@@ -6201,13 +6188,13 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/opensearch
     urls:
-    - https://openg2p.github.io/openg2p-helm/third-party/opensearch-1.2.0.tgz
+    - third-party/opensearch-1.2.0.tgz
     version: 1.2.0
   opensearch-kafka-connector:
   - annotations:
       catalog.cattle.io/display-name: OpenSearch Kafka Connector
     apiVersion: v2
-    created: "2026-01-23T16:18:35.226154+05:30"
+    created: "2026-01-23T10:56:05.917122868Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6221,12 +6208,12 @@ entries:
     name: opensearch-kafka-connector
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/opensearch-kafka-connector-1.3.0.tgz
+    - opensearch-kafka-connector-1.3.0.tgz
     version: 1.3.0
   - annotations:
       catalog.cattle.io/display-name: OpenSearch Kafka Connector
     apiVersion: v2
-    created: "2026-01-23T16:18:35.225206+05:30"
+    created: "2026-01-23T10:56:05.915108066Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6240,12 +6227,12 @@ entries:
     name: opensearch-kafka-connector
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/opensearch-kafka-connector-1.3.0-develop.tgz
+    - opensearch-kafka-connector-1.3.0-develop.tgz
     version: 1.3.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenSearch Kafka Connector
     apiVersion: v2
-    created: "2026-01-23T16:18:35.224249+05:30"
+    created: "2026-01-23T10:56:05.913937423Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6259,12 +6246,12 @@ entries:
     name: opensearch-kafka-connector
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/opensearch-kafka-connector-1.2.0.tgz
+    - opensearch-kafka-connector-1.2.0.tgz
     version: 1.2.0
   - annotations:
       catalog.cattle.io/display-name: OpenSearch Kafka Connector
     apiVersion: v2
-    created: "2026-01-23T16:18:35.223309+05:30"
+    created: "2026-01-23T10:56:05.912766581Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6278,12 +6265,12 @@ entries:
     name: opensearch-kafka-connector
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/opensearch-kafka-connector-1.2.0-develop.tgz
+    - opensearch-kafka-connector-1.2.0-develop.tgz
     version: 1.2.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenSearch Kafka Connector
     apiVersion: v2
-    created: "2026-01-23T16:18:35.221888+05:30"
+    created: "2026-01-23T10:56:05.911594856Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6297,14 +6284,14 @@ entries:
     name: opensearch-kafka-connector
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/opensearch-kafka-connector-0.0.0-develop.tgz
+    - opensearch-kafka-connector-0.0.0-develop.tgz
     version: 0.0.0-develop
   postgres-init:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PostgreSQL Init
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:35.227373+05:30"
+    created: "2026-01-23T10:56:05.918475788Z"
     description: A generic Helm chart to run a PostgreSQL database initialization
       job.
     digest: 4724fbb3d0a72596f8f195c16c47b938397e428eb1e4049984acd6514e76adef
@@ -6323,13 +6310,13 @@ entries:
     - https://github.com/openg2p/postgres-init
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/postgres-init-1.1.0.tgz
+    - postgres-init-1.1.0.tgz
     version: 1.1.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PostgreSQL Init
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:35.227149+05:30"
+    created: "2026-01-23T10:56:05.918165477Z"
     description: A generic Helm chart to run a PostgreSQL database initialization
       job.
     digest: 013e087adc845cb50c0381c9cdebe6182a91d288d7663b07e55ca44423683e56
@@ -6348,13 +6335,13 @@ entries:
     - https://github.com/openg2p/postgres-init
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/postgres-init-1.0.0.tgz
+    - postgres-init-1.0.0.tgz
     version: 1.0.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PostgreSQL Init
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:35.226699+05:30"
+    created: "2026-01-23T10:56:05.917837212Z"
     description: A generic Helm chart to run a PostgreSQL database initialization
       job.
     digest: 49005cd324b6b0094c31c112a457b2c34ae6b580578cc657cd36be1817fe9c23
@@ -6373,7 +6360,7 @@ entries:
     - https://github.com/openg2p/postgres-init
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/postgres-init-0.0.0-develop.tgz
+    - postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
   postgresql:
   - annotations:
@@ -6388,7 +6375,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.4.0
-    created: "2026-01-23T16:18:35.429398+05:30"
+    created: "2026-01-23T10:56:06.193628492Z"
     dependencies:
     - name: common
       repository: ""
@@ -6415,7 +6402,7 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/postgresql
     urls:
-    - https://openg2p.github.io/openg2p-helm/third-party/postgresql-15.5.38.tgz
+    - third-party/postgresql-15.5.38.tgz
     version: 15.5.38
   redis:
   - annotations:
@@ -6434,7 +6421,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.5
-    created: "2026-01-23T16:18:35.432744+05:30"
+    created: "2026-01-23T10:56:06.198043793Z"
     dependencies:
     - name: common
       repository: ""
@@ -6458,13 +6445,13 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/redis
     urls:
-    - https://openg2p.github.io/openg2p-helm/third-party/redis-19.6.4.tgz
+    - third-party/redis-19.6.4.tgz
     version: 19.6.4
   reporting:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting
     apiVersion: v2
-    created: "2026-01-23T16:18:35.270023+05:30"
+    created: "2026-01-23T10:56:05.974177732Z"
     dependencies:
     - condition: debezium.enabled
       name: debezium
@@ -6480,12 +6467,12 @@ entries:
     name: reporting
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/reporting-1.3.0.tgz
+    - reporting-1.3.0.tgz
     version: 1.3.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting
     apiVersion: v2
-    created: "2026-01-23T16:18:35.267679+05:30"
+    created: "2026-01-23T10:56:05.971785221Z"
     dependencies:
     - condition: debezium.enabled
       name: debezium
@@ -6501,12 +6488,12 @@ entries:
     name: reporting
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/reporting-1.3.0-develop.tgz
+    - reporting-1.3.0-develop.tgz
     version: 1.3.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting
     apiVersion: v2
-    created: "2026-01-23T16:18:35.265406+05:30"
+    created: "2026-01-23T10:56:05.968416951Z"
     dependencies:
     - condition: kafka.enabled
       name: kafka
@@ -6530,12 +6517,12 @@ entries:
     name: reporting
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/reporting-1.2.0.tgz
+    - reporting-1.2.0.tgz
     version: 1.2.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting
     apiVersion: v2
-    created: "2026-01-23T16:18:35.253037+05:30"
+    created: "2026-01-23T10:56:05.952460801Z"
     dependencies:
     - condition: kafka.enabled
       name: kafka
@@ -6559,12 +6546,12 @@ entries:
     name: reporting
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/reporting-1.2.0-develop.tgz
+    - reporting-1.2.0-develop.tgz
     version: 1.2.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting
     apiVersion: v2
-    created: "2026-01-23T16:18:35.24031+05:30"
+    created: "2026-01-23T10:56:05.935493521Z"
     dependencies:
     - condition: kafka.enabled
       name: kafka
@@ -6588,13 +6575,13 @@ entries:
     name: reporting
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/reporting-0.0.0-develop.tgz
+    - reporting-0.0.0-develop.tgz
     version: 0.0.0-develop
   reporting-init:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting Init
     apiVersion: v2
-    created: "2026-01-23T16:18:35.275527+05:30"
+    created: "2026-01-23T10:56:05.981551302Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6605,12 +6592,12 @@ entries:
     name: reporting-init
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/reporting-init-1.3.0.tgz
+    - reporting-init-1.3.0.tgz
     version: 1.3.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting Init
     apiVersion: v2
-    created: "2026-01-23T16:18:35.274234+05:30"
+    created: "2026-01-23T10:56:05.980273127Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6621,12 +6608,12 @@ entries:
     name: reporting-init
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/reporting-init-1.3.0-develop.tgz
+    - reporting-init-1.3.0-develop.tgz
     version: 1.3.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting Init
     apiVersion: v2
-    created: "2026-01-23T16:18:35.273118+05:30"
+    created: "2026-01-23T10:56:05.979012657Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6637,12 +6624,12 @@ entries:
     name: reporting-init
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/reporting-init-1.2.0.tgz
+    - reporting-init-1.2.0.tgz
     version: 1.2.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting Init
     apiVersion: v2
-    created: "2026-01-23T16:18:35.272227+05:30"
+    created: "2026-01-23T10:56:05.977453628Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6653,12 +6640,12 @@ entries:
     name: reporting-init
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/reporting-init-1.2.0-develop.tgz
+    - reporting-init-1.2.0-develop.tgz
     version: 1.2.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Reporting Init
     apiVersion: v2
-    created: "2026-01-23T16:18:35.271164+05:30"
+    created: "2026-01-23T10:56:05.975416803Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6669,14 +6656,14 @@ entries:
     name: reporting-init
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/reporting-init-0.0.0-develop.tgz
+    - reporting-init-0.0.0-develop.tgz
     version: 0.0.0-develop
   spar:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-01-23T16:18:35.328539+05:30"
+    created: "2026-01-23T10:56:06.056798262Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -6691,12 +6678,12 @@ entries:
     name: spar
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-2.0.0-develop.tgz
+    - spar-2.0.0-develop.tgz
     version: 2.0.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
     apiVersion: v2
-    created: "2026-01-23T16:18:35.327059+05:30"
+    created: "2026-01-23T10:56:06.05506193Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6724,12 +6711,12 @@ entries:
     name: spar
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-1.1.0.tgz
+    - spar-1.1.0.tgz
     version: 1.1.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
     apiVersion: v2
-    created: "2026-01-23T16:18:35.311941+05:30"
+    created: "2026-01-23T10:56:06.032888874Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6769,12 +6756,12 @@ entries:
     name: spar
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-1.1.0-develop.tgz
+    - spar-1.1.0-develop.tgz
     version: 1.1.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
     apiVersion: v2
-    created: "2026-01-23T16:18:35.300416+05:30"
+    created: "2026-01-23T10:56:06.016895302Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6798,12 +6785,12 @@ entries:
     name: spar
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-1.0.0.tgz
+    - spar-1.0.0.tgz
     version: 1.0.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
     apiVersion: v2
-    created: "2026-01-23T16:18:35.291351+05:30"
+    created: "2026-01-23T10:56:06.003162475Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6831,11 +6818,11 @@ entries:
     name: spar
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-0.0.0-develop.tgz
+    - spar-0.0.0-develop.tgz
     version: 0.0.0-develop
   spar-mapper-api:
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.340661+05:30"
+    created: "2026-01-23T10:56:06.074353974Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6847,10 +6834,10 @@ entries:
     name: spar-mapper-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-mapper-api-1.1.0.tgz
+    - spar-mapper-api-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.337805+05:30"
+    created: "2026-01-23T10:56:06.070459009Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6862,10 +6849,10 @@ entries:
     name: spar-mapper-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-mapper-api-1.1.0-develop.tgz
+    - spar-mapper-api-1.1.0-develop.tgz
     version: 1.1.0-develop
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.334494+05:30"
+    created: "2026-01-23T10:56:06.065356887Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6877,10 +6864,10 @@ entries:
     name: spar-mapper-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-mapper-api-1.0.0.tgz
+    - spar-mapper-api-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.3316+05:30"
+    created: "2026-01-23T10:56:06.061452734Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6892,11 +6879,11 @@ entries:
     name: spar-mapper-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-mapper-api-0.0.0-develop.tgz
+    - spar-mapper-api-0.0.0-develop.tgz
     version: 0.0.0-develop
   spar-self-service-api:
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.350941+05:30"
+    created: "2026-01-23T10:56:06.089778188Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6908,10 +6895,10 @@ entries:
     name: spar-self-service-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-api-1.1.0.tgz
+    - spar-self-service-api-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.347834+05:30"
+    created: "2026-01-23T10:56:06.085661768Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6922,10 +6909,10 @@ entries:
     name: spar-self-service-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-api-1.1.0-develop.tgz
+    - spar-self-service-api-1.1.0-develop.tgz
     version: 1.1.0-develop
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.34669+05:30"
+    created: "2026-01-23T10:56:06.08312311Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6937,10 +6924,10 @@ entries:
     name: spar-self-service-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-api-1.0.0.tgz
+    - spar-self-service-api-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.343904+05:30"
+    created: "2026-01-23T10:56:06.07918294Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6952,21 +6939,21 @@ entries:
     name: spar-self-service-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-api-0.0.0-develop.tgz
+    - spar-self-service-api-0.0.0-develop.tgz
     version: 0.0.0-develop
   spar-self-service-ui:
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.354287+05:30"
+    created: "2026-01-23T10:56:06.093139743Z"
     description: A Helm chart for OpenG2P SPAR Self Service UI
     digest: 0145b41af386653b0dbec35f68b0503ada767ba217b12002a01cdb630e8a993a
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: spar-self-service-ui
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-1.1.0.tgz
+    - spar-self-service-ui-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.353942+05:30"
+    created: "2026-01-23T10:56:06.092720407Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6977,82 +6964,82 @@ entries:
     name: spar-self-service-ui
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-1.1.0-develop.tgz
+    - spar-self-service-ui-1.1.0-develop.tgz
     version: 1.1.0-develop
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.352839+05:30"
+    created: "2026-01-23T10:56:06.09092189Z"
     description: A Helm chart for OpenG2P SPAR Self Service UI
     digest: 048eba9631b5f8a208facbc82bf5b39f9b851e02ceb7a258c34e8ba294753a60
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: spar-self-service-ui
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-1.0.0.tgz
+    - spar-self-service-ui-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-01-23T16:18:35.351904+05:30"
+    created: "2026-01-23T10:56:06.09051556Z"
     description: A Helm chart for UI for Self Service Portal for Social Payments Account
       Registry
     digest: e7ae4c157b5b5f51274ddfea491337cede168d06e26d2ffdfbc23869e8ff5d81
     name: spar-self-service-ui
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.1.0.tgz
+    - spar-self-service-ui-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.351438+05:30"
+    created: "2026-01-23T10:56:06.090181023Z"
     description: A Helm chart for OpenG2P SPAR Self Service UI
     digest: 4b6bde14a5f7cb8993b6ce525c158b1855492143c7b23aa8fccb75484f929e10
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: spar-self-service-ui
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
+    - spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
   sr-landing:
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.35591+05:30"
+    created: "2026-01-23T10:56:06.09483063Z"
     description: A Helm chart for installing landing page for the Social Registry
     digest: 3043fa664d2687d57fb135db322fc47ea549f739696ac90f095cc8d2917f14da
     name: sr-landing
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/sr-landing-2.0.1.tgz
+    - sr-landing-2.0.1.tgz
     version: 2.0.1
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.355568+05:30"
+    created: "2026-01-23T10:56:06.094398881Z"
     description: A Helm chart for installing landing page for the Social Registry
     digest: 876b5d9db7939a74ffbd93a1219baab8a915d9e43304ec6d88116f790a17bb6a
     name: sr-landing
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/sr-landing-2.0.0.tgz
+    - sr-landing-2.0.0.tgz
     version: 2.0.0
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.355074+05:30"
+    created: "2026-01-23T10:56:06.093985597Z"
     description: A Helm chart for installing landing page for the Social Registry
     digest: 683f0b8bf78b9bb0e4d468c0ff9cdcd637d3d1060dd78e1e666e8c6b7aa9b335
     name: sr-landing
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/sr-landing-2.0.0-develop.tgz
+    - sr-landing-2.0.0-develop.tgz
     version: 2.0.0-develop
   - apiVersion: v2
-    created: "2026-01-23T16:18:35.354599+05:30"
+    created: "2026-01-23T10:56:06.09353857Z"
     description: A Helm chart for installing landing page for the Social Registry
     digest: 57c63e7e62576bd9e2b8c8f010dd863dbf2abb75a6a20d9309bb6b184568982f
     name: sr-landing
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/sr-landing-1.4.0-develop.tgz
+    - sr-landing-1.4.0-develop.tgz
     version: 1.4.0-develop
   strapi:
   - annotations:
       catalog.cattle.io/display-name: Strapi
     apiVersion: v2
     appVersion: 4.25.0
-    created: "2026-01-23T16:18:35.359596+05:30"
+    created: "2026-01-23T10:56:06.100694216Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -7072,12 +7059,12 @@ entries:
     name: strapi
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/strapi-1.0.0.tgz
+    - strapi-1.0.0.tgz
     version: 1.0.0
   sunbird-rc-core:
   - apiVersion: v2
     appVersion: v0.0.14
-    created: "2026-01-23T16:18:35.367481+05:30"
+    created: "2026-01-23T10:56:06.112504927Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -7092,12 +7079,12 @@ entries:
     name: sunbird-rc-core
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/sunbird-rc-core-0.1.0.tgz
+    - sunbird-rc-core-0.1.0.tgz
     version: 0.1.0
   sunbird-rc-g2p-mapper-registry:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2026-01-23T16:18:35.37624+05:30"
+    created: "2026-01-23T10:56:06.124907741Z"
     dependencies:
     - alias: registry
       condition: registry.enabled
@@ -7109,13 +7096,13 @@ entries:
     name: sunbird-rc-g2p-mapper-registry
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
+    - sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
   websub:
   - annotations:
       catalog.cattle.io/display-name: WebSub
     apiVersion: v2
-    created: "2026-01-23T16:18:35.390909+05:30"
+    created: "2026-01-23T10:56:06.145510212Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -7136,12 +7123,12 @@ entries:
     name: websub
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/websub-12.0.1.tgz
+    - websub-12.0.1.tgz
     version: 12.0.1
   - annotations:
       catalog.cattle.io/display-name: WebSub
     apiVersion: v2
-    created: "2026-01-23T16:18:35.383308+05:30"
+    created: "2026-01-23T10:56:06.134228734Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -7162,6 +7149,6 @@ entries:
     name: websub
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/websub-0.0.0-develop.tgz
+    - websub-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-01-23T16:18:32.808839+05:30"
+generated: "2026-01-23T10:56:02.533412341Z"
