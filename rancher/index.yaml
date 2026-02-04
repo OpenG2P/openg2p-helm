@@ -1017,34 +1017,6 @@ entries:
     urls:
     - ../openg2p-g2p-bridge-example-bank-celery-1.0.2.tgz
     version: 1.0.2
-  openg2p-gen2-master-data:
-  - annotations:
-      catalog.cattle.io/display-name: OpenG2P Master Data
-      openg2p.org/add-to-rancher: ""
-    apiVersion: v2
-    created: "2026-02-04T06:59:47.030960416Z"
-    dependencies:
-    - name: common
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 2.30.0
-    - condition: postgres-init.enabled
-      name: postgres-init
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.1.0
-    description: Helm chart for OpenG2P Master Data Service
-    digest: 824d5f2c96eabbc7a648cee1f12749702e21837ade6137f1c850f7af00c7db26
-    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
-    keywords:
-    - openg2p
-    - gen2-master-data
-    maintainers:
-    - email: info@openg2p.org
-      name: OpenG2P
-    name: openg2p-gen2-master-data
-    type: application
-    urls:
-    - ../openg2p-gen2-master-data-0.0.0-develop.tgz
-    version: 0.0.0-develop
   openg2p-pbms:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS
