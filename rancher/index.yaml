@@ -33,7 +33,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-02-13T05:26:53.15436754Z"
+    created: "2026-03-23T08:45:43.191904122Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -115,7 +115,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-02-13T05:26:53.102458923Z"
+    created: "2026-03-23T08:45:43.138796033Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -201,7 +201,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-02-13T05:26:53.049252978Z"
+    created: "2026-03-23T08:45:43.084598928Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -250,10 +250,6 @@ entries:
     - name: redis
       repository: https://openg2p.github.io/openg2p-helm
       version: 19.6.4
-    - alias: redis-auth
-      name: redis
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 19.6.4
     - condition: esignet.enabled
       name: esignet
       repository: https://openg2p.github.io/openg2p-helm
@@ -267,7 +263,7 @@ entries:
       repository: https://openg2p.github.io/openg2p-helm
       version: v2025.2.2
     description: Helm chart for Common services used by modules
-    digest: 8feeedb6c9981a4f5ddedbbe88fcd9de03571cdb43838354270310b7ba052e43
+    digest: 66643f14a730f491f0a6059b0cd9ba134f5b1d26aae40bd7332a335de54313d4
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons
     type: application
@@ -278,7 +274,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-02-13T05:26:52.999715213Z"
+    created: "2026-03-23T08:45:43.034545574Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -4743,4 +4739,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-03-23T00:24:16.196474163Z"
+generated: "2026-03-23T08:45:42.982719941Z"
