@@ -2363,7 +2363,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-02-10T16:12:16.995409729Z"
+    created: "2026-03-29T12:12:10.720683827Z"
     dependencies:
     - condition: postgres-init.enabled
       name: postgres-init
@@ -2401,7 +2401,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-02-10T16:12:16.97305606Z"
+    created: "2026-03-29T12:12:10.697390195Z"
     dependencies:
     - condition: postgres-init.enabled
       name: postgres-init
@@ -2439,7 +2439,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Registry Background Tasks
     apiVersion: v2
-    created: "2026-02-10T16:12:17.017783179Z"
+    created: "2026-03-29T12:12:10.751007887Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -2460,7 +2460,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Registry Background Tasks
     apiVersion: v2
-    created: "2026-02-10T16:12:17.016527618Z"
+    created: "2026-03-29T12:12:10.749729362Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -2482,7 +2482,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P-Registry-BG-Tasks
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-02-10T16:12:17.015306752Z"
+    created: "2026-03-29T12:12:10.748442754Z"
     dependencies:
     - condition: common.enabled
       name: common
@@ -2516,7 +2516,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Registry Background Tasks
     apiVersion: v2
-    created: "2026-02-10T16:12:16.997136638Z"
+    created: "2026-03-29T12:12:10.723993934Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -2539,7 +2539,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Registry Gen2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-02-10T16:12:17.026090991Z"
+    created: "2026-03-29T12:12:10.764282318Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -2552,8 +2552,13 @@ entries:
       name: redis
       repository: https://openg2p.github.io/openg2p-helm
       version: 19.6.4
+    - alias: idgenerator
+      condition: idgenerator.enabled
+      name: openg2p-id-generator
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
     description: A Helm chart for OpenG2P Registry Gen2
-    digest: 9ebc0543b2bec8c8b8ac0ffbeab2bbecefdd80da1180081e0670f4cbf26f4700
+    digest: b81e47cb65264cef899d783f6bb9aecb2641427e0711a2e830472412c8f4bb54
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     keywords:
     - openg2p-registry
@@ -4956,4 +4961,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-03-29T07:28:19.52071119Z"
+generated: "2026-03-29T12:12:10.67923058Z"
