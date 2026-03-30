@@ -1207,6 +1207,34 @@ entries:
     urls:
     - ../openg2p-g2p-bridge-example-bank-celery-1.0.2.tgz
     version: 1.0.2
+  openg2p-iam-service:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P IAM Service
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-03-30T11:13:54.477983507Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    description: A Helm chart for OpenG2P IAM Service
+    digest: 4b6f995c6f783d215d53011f6cf93b01d27837c28a88da4d8c65150fda21a817
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-iam-service
+    - iam
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-iam-service
+    type: application
+    urls:
+    - ../openg2p-iam-service-0.0.0-develop.tgz
+    version: 0.0.0-develop
   openg2p-id-generator:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P ID Generator
@@ -4961,4 +4989,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-03-30T08:03:39.70550224Z"
+generated: "2026-03-30T11:13:54.476331466Z"
