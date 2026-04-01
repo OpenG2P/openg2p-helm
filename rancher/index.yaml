@@ -447,7 +447,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Base
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-03-30T17:12:55.278261402Z"
+    created: "2026-04-01T01:39:00.869292207Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -484,13 +484,17 @@ entries:
       name: redis
       repository: https://openg2p.github.io/openg2p-helm
       version: 19.6.4
+    - condition: keycloak.enabled
+      name: keycloak
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 21.4.5
     - condition: keycloak-init.enabled
       name: keycloak-init
       repository: https://openg2p.github.io/openg2p-helm
       version: 0.0.0-develop
     description: Helm chart for OpenG2P Commons infrastructure (databases, message
       queues, init jobs)
-    digest: 3da4c4d81ab6fa67864bcc0da9322d59a0274b39b89fd52a3323a985c7c40723
+    digest: de449fa7f45627cb27c2e5174d5b3e3c5c093205800aec72f0ece7776f9b3da7
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons-base
     type: application
@@ -502,7 +506,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-03-30T11:30:21.16911182Z"
+    created: "2026-04-01T01:39:00.896723375Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -542,7 +546,7 @@ entries:
       repository: https://openg2p.github.io/openg2p-helm
       version: 0.0.0-develop
     description: Helm chart for OpenG2P Commons application services
-    digest: 3f60a9bfaf3a208b235e495caa95b4aae96d2afc81079b5a8bc83a359d45fe1d
+    digest: ee33e41879e0fd964de4f129c1141613d2ff12443a40b3f92687174e056ddcef
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons-services
     type: application
@@ -5034,4 +5038,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-04-01T00:48:25.512720195Z"
+generated: "2026-04-01T01:39:00.831733986Z"
