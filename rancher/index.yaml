@@ -1248,7 +1248,34 @@ entries:
       catalog.cattle.io/display-name: OpenG2P ID Generator
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-04-17T06:15:43.012682401Z"
+    created: "2026-04-17T06:38:42.242097459Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    description: A Helm chart for OpenG2P ID Generator Service
+    digest: 6c5ba3369052ff7d38ef0953ac169c18b7f4d0ae5bf5cdef4069b28479e235e6
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - id-generator
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-id-generator
+    type: application
+    urls:
+    - ../openg2p-id-generator-1.0.0-develop.tgz
+    version: 1.0.0-develop
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P ID Generator
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-04-17T06:38:42.240535691Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5038,4 +5065,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-04-17T06:15:43.00958822Z"
+generated: "2026-04-17T06:38:42.23868275Z"
