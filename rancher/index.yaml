@@ -1330,7 +1330,34 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Master Data
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-04-17T12:36:50.471271202Z"
+    created: "2026-04-17T12:38:04.32237191Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0
+    description: Helm chart for OpenG2P Master Data Service
+    digest: c31d42f4d5d8b2a472413fef999f3e5038a9cc16a2a8279755647357416625f6
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - master-data
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-master-data
+    type: application
+    urls:
+    - ../openg2p-master-data-1.0.0-develop.tgz
+    version: 1.0.0-develop
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Master Data
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-04-17T12:38:04.320915939Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5112,4 +5139,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-04-17T12:36:50.469484613Z"
+generated: "2026-04-17T12:38:04.319225431Z"
