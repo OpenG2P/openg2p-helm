@@ -532,13 +532,13 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-04-18T08:20:11.065190327Z"
+    created: "2026-04-19T00:40:17.772438995Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
       name: openg2p-master-data
       repository: https://openg2p.github.io/openg2p-helm
-      version: 1.0.0
+      version: 0.0.0-develop
     - condition: artifactory.enabled
       name: artifactory
       repository: https://openg2p.github.io/openg2p-helm
@@ -572,7 +572,7 @@ entries:
       repository: https://openg2p.github.io/openg2p-helm
       version: 1.0.0
     description: Helm chart for OpenG2P Commons application services
-    digest: cdedf2ecccc33d12b064eb77e4c5973b0e701016b902cc710724fec6742ae6e9
+    digest: fbc2a6043d9f20c700e2e8c9dd9fb1b9923f3fc119d6d71ada04d1368285d64e
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons-services
     type: application
@@ -5257,4 +5257,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-04-19T00:38:51.703834148Z"
+generated: "2026-04-19T00:40:17.744782382Z"
