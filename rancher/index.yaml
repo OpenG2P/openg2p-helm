@@ -80,6 +80,36 @@ entries:
     urls:
     - ../landing-0.0.0-develop.tgz
     version: 0.0.0-develop
+  openg2p-audit-manager:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Audit Manager
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-04-22T16:37:08.530858069Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    description: A Helm chart for OpenG2P Audit Manager Service
+    digest: 671ac18c5f198b5478d16b2956a4efca6da7ba268e6c6be11b8fd545829f15ea
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - audit-manager
+    - audit
+    - cloudevents
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-audit-manager
+    type: application
+    urls:
+    - ../openg2p-audit-manager-1.0.0.tgz
+    version: 1.0.0
   openg2p-commons:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Commons
@@ -5472,4 +5502,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-04-22T06:28:37.784251195Z"
+generated: "2026-04-22T16:37:08.529002322Z"
