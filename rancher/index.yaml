@@ -851,61 +851,6 @@ entries:
     - ../openg2p-g2p-bridge-2.0.0.tgz
     version: 2.0.0
   - annotations:
-      catalog.cattle.io/display-name: OpenG2P G2P Bridge
-      openg2p.org/add-to-rancher: ""
-    apiVersion: v2
-    created: "2026-04-23T06:47:20.989099668Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
-    - condition: redis.enabled
-      name: redis
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 19.x.x
-    - condition: artifactory.enabled
-      name: artifactory
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 12.0.2
-    - condition: keymanager.enabled
-      name: keymanager
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 12.1.0
-    - condition: softhsm.enabled
-      name: softhsm
-      repository: https://mosip.github.io/mosip-helm
-      version: 12.0.1
-    - condition: openg2p-g2p-bridge-api.enabled
-      name: openg2p-g2p-bridge-api
-      repository: ""
-      version: 2.0-develop
-    - condition: openg2p-g2p-bridge-celery-beat-producers.enabled
-      name: openg2p-g2p-bridge-celery-beat-producers
-      repository: ""
-      version: 2.0-develop
-    - condition: openg2p-g2p-bridge-celery-workers.enabled
-      name: openg2p-g2p-bridge-celery-workers
-      repository: ""
-      version: 2.0-develop
-    description: A Helm chart for OpenG2P G2P Bridge
-    digest: f6ebf972da29ef442f8aabfb59d1645f6937b0bf58690095c268e60ac58460fe
-    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
-    keywords:
-    - openg2p-g2p-bridge
-    - openg2p-g2p-bridge-api
-    - openg2p-g2p-bridge-celery-beat-producers
-    - openg2p-g2p-bridge-celery-workers
-    - g2p-bridge
-    maintainers:
-    - email: info@openg2p.org
-      name: OpenG2P
-    name: openg2p-g2p-bridge
-    type: application
-    urls:
-    - ../openg2p-g2p-bridge-2.0-develop.tgz
-    version: 2.0-develop
-  - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
@@ -1720,7 +1665,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-04-22T06:28:37.795570032Z"
+    created: "2026-04-23T08:10:03.028823624Z"
     dependencies:
     - name: openg2p-registry
       repository: https://openg2p.github.io/openg2p-helm
@@ -1729,7 +1674,7 @@ entries:
       of the OpenG2P Registry Gen 2 base chart. Supplies NSR-branded Docker images
       and NSR-specific ID-generator configuration; all infrastructure, templates and
       defaults come from the base chart. '
-    digest: f8fb744b2e9dfa9af8e26b8291939998c393df7c5c533db57e90fa79aa829f65
+    digest: 86a844fca9e63ae5de02f9fcefde540e678c681c691a555344ad1d6b4189657f
     home: https://openg2p.org
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     keywords:
@@ -5588,4 +5533,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-04-23T06:47:20.932270307Z"
+generated: "2026-04-23T08:10:03.017911416Z"
