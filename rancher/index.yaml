@@ -563,7 +563,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Base
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-04-27T08:14:46.756460229Z"
+    created: "2026-04-29T09:51:38.646811965Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -621,7 +621,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Base
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-04-27T08:14:46.721035475Z"
+    created: "2026-04-29T09:51:38.608572994Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -665,10 +665,10 @@ entries:
     - condition: keycloak-init.enabled
       name: keycloak-init
       repository: https://openg2p.github.io/openg2p-helm
-      version: 1.1.0
+      version: 1.1.0-develop
     description: Helm chart for OpenG2P Commons infrastructure (databases, message
       queues, init jobs)
-    digest: 518c0263a66bd20ce356f75ad8a9a522ed202db17a22ae2cd3ad8ffa8e4444b6
+    digest: aeacdfda648bce62844b777861292127934d808ac4f7369772c4ea053253da9f
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons-base
     type: application
@@ -680,7 +680,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-04-29T08:51:15.343013179Z"
+    created: "2026-04-29T09:51:38.707692992Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -731,7 +731,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-04-29T08:51:15.315986135Z"
+    created: "2026-04-29T09:51:38.678759891Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -778,8 +778,12 @@ entries:
       name: openg2p-staff-portal-ui
       repository: https://openg2p.github.io/openg2p-helm
       version: 0.0.0-develop
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0-develop
     description: Helm chart for OpenG2P Commons application services
-    digest: 429a688d4c5abea733a03fc3048eef0dadcfdb4bf676e7b184976f30d1146540
+    digest: 4263b615e5aa695fba631f5778973f05823dbe97597c5325727c210bfa168ba9
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons-services
     type: application
@@ -5579,4 +5583,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-04-29T08:51:15.285427236Z"
+generated: "2026-04-29T09:51:38.571656397Z"
