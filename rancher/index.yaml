@@ -790,6 +790,42 @@ entries:
     urls:
     - ../openg2p-commons-services-2.0.0-develop.tgz
     version: 2.0.0-develop
+  openg2p-farmer-registry:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Farmer Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      catalog.cattle.io/release-name: openg2p-farmer-registry
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    appVersion: develop
+    created: "2026-05-01T05:35:44.85410735Z"
+    dependencies:
+    - name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    description: 'OpenG2P Farmer Registry — thin wrapper chart on top of the OpenG2P
+      Registry Gen 2 base chart. Supplies Farmer-Registry-branded Docker images and
+      Farmer-Registry-specific ID-generator configuration; all infrastructure, templates
+      and defaults come from the base chart. '
+    digest: a9e18965288bccce7c3574b06b25d9f3ffc1412aa49972c45479f61ef4d75500
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - farmer-registry
+    - registry
+    - agriculture
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-farmer-registry
+    sources:
+    - https://github.com/OpenG2P/farmer-registry
+    type: application
+    urls:
+    - ../openg2p-farmer-registry-0.0.0-develop.tgz
+    version: 0.0.0-develop
   openg2p-g2p-bridge:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P Bridge
@@ -5583,4 +5619,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-04-29T09:56:13.962004338Z"
+generated: "2026-05-01T05:35:44.842518386Z"
