@@ -932,7 +932,7 @@ entries:
       catalog.cattle.io/release-name: openg2p-farmer-registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-05-09T08:29:38.235633248Z"
+    created: "2026-05-12T07:08:31.157565822Z"
     dependencies:
     - name: openg2p-registry
       repository: https://openg2p.github.io/openg2p-helm
@@ -963,11 +963,44 @@ entries:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/display-name: OpenG2P Farmer Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-05-12T07:08:31.146980295Z"
+    dependencies:
+    - name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 4.1.0-develop
+    description: 'OpenG2P Farmer Registry — thin wrapper chart on top of the OpenG2P
+      Registry Gen 2 base chart. Supplies Farmer-Registry-branded Docker images and
+      Farmer-Registry-specific ID-generator configuration; all infrastructure, templates
+      and defaults come from the base chart. '
+    digest: 4370195c40d5ca1e045db9f70ee2b77c0b5a8e53a903e81dab46fdc68c1fb8e7
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - farmer-registry
+    - registry
+    - agriculture
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-farmer-registry
+    sources:
+    - https://github.com/OpenG2P/farmer-registry
+    type: application
+    urls:
+    - ../openg2p-farmer-registry-1.1.0-develop.tgz
+    version: 1.1.0-develop
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Farmer Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
       catalog.cattle.io/release-name: openg2p-farmer-registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-05-09T08:29:38.223903553Z"
+    created: "2026-05-12T07:08:31.135889708Z"
     dependencies:
     - name: openg2p-registry
       repository: https://openg2p.github.io/openg2p-helm
@@ -5892,4 +5925,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-05-12T04:52:29.774325019Z"
+generated: "2026-05-12T07:08:31.124893822Z"
