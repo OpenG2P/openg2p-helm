@@ -1947,7 +1947,41 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-05-15T12:16:07.439160868Z"
+    created: "2026-05-27T01:02:54.187807209Z"
+    dependencies:
+    - name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 4.1.0-g2p4929
+    description: 'OpenG2P National Social Registry (NSR) — thin wrapper chart on top
+      of the OpenG2P Registry Gen 2 base chart. Supplies NSR-branded Docker images
+      and NSR-specific ID-generator configuration; all infrastructure, templates and
+      defaults come from the base chart. '
+    digest: d210fcb834d3b19913496ba975169698851c738e4a6e4eb6edb0b6d67d4c1321
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - social-registry
+    - nsr
+    - registry
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-nsr
+    sources:
+    - https://github.com/OpenG2P/national-social-registry
+    type: application
+    urls:
+    - ../openg2p-nsr-0.0.0-g2p4929.tgz
+    version: 0.0.0-g2p4929
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P NSR
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    appVersion: develop
+    created: "2026-05-27T01:02:54.178083491Z"
     dependencies:
     - name: openg2p-registry
       repository: https://openg2p.github.io/openg2p-helm
@@ -5965,4 +5999,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-05-27T01:01:41.078671858Z"
+generated: "2026-05-27T01:02:54.169195088Z"
