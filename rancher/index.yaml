@@ -1947,7 +1947,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-05-29T07:28:45.271345747Z"
+    created: "2026-05-30T03:56:50.804009971Z"
     dependencies:
     - name: openg2p-registry
       repository: https://openg2p.github.io/openg2p-helm
@@ -1981,16 +1981,39 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-05-29T07:28:45.257837865Z"
+    created: "2026-05-30T03:56:50.797183798Z"
     dependencies:
-    - name: openg2p-registry
+    - name: common
       repository: https://openg2p.github.io/openg2p-helm
-      version: 4.1.0-develop
-    description: 'OpenG2P National Social Registry (NSR) — thin wrapper chart on top
-      of the OpenG2P Registry Gen 2 base chart. Supplies NSR-branded Docker images
-      and NSR-specific ID-generator configuration; all infrastructure, templates and
-      defaults come from the base chart. '
-    digest: 19621a76949064732b98b9c46b642b636b973b3a7601c8bda3810b54beefc721
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    - alias: idgenerator
+      condition: idgenerator.enabled
+      name: openg2p-id-generator
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.0.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    - condition: openg2p-awe.enabled
+      name: openg2p-awe
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    description: 'OpenG2P National Social Registry (NSR) — a self-sufficient Helm
+      chart for the NSR registry stack (staff portal API/UI, partner API, celery beat/worker,
+      db-seed, id-generator). Supplies NSR-branded Docker images and NSR-specific
+      ID-generator configuration. Previously a thin wrapper over the openg2p-registry
+      base chart; that chart''s templates and defaults now live directly in this chart,
+      so it no longer depends on openg2p-registry. '
+    digest: 02bf8344f1253da519541d30db3cde0e727ae3d31add2fc382287f58d52ab479
     home: https://openg2p.org
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     keywords:
@@ -5999,4 +6022,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-05-29T07:28:45.246105931Z"
+generated: "2026-05-30T03:56:50.789073079Z"
