@@ -163,7 +163,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-01T01:13:35.942747595Z"
+    created: "2026-06-01T05:31:59.388389554Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -176,9 +176,13 @@ entries:
       name: redis
       repository: https://openg2p.github.io/openg2p-helm
       version: 19.6.4
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
     description: Helm chart for OpenG2P G2P Bridge (with optional bundled Example
       Bank simulator)
-    digest: 8f4723604fca66a5c6a45ee641563964e52d3413ab4325a407338a05d83dd3cc
+    digest: 32c1dbbffec06302ce7fe3830d01a4e3da1ef939a455140d07e181bf1ea4f3bb
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     keywords:
     - openg2p-bridge
@@ -6253,4 +6257,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-06-01T01:13:35.933807735Z"
+generated: "2026-06-01T05:31:59.381558732Z"
