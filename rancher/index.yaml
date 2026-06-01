@@ -157,6 +157,40 @@ entries:
     urls:
     - ../openg2p-awe-0.0.0-develop.tgz
     version: 0.0.0-develop
+  openg2p-bridge:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Bridge
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    appVersion: develop
+    created: "2026-06-01T01:13:35.942747595Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    description: Helm chart for OpenG2P G2P Bridge (with optional bundled Example
+      Bank simulator)
+    digest: 8f4723604fca66a5c6a45ee641563964e52d3413ab4325a407338a05d83dd3cc
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-bridge
+    - g2p-bridge
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-bridge
+    type: application
+    urls:
+    - ../openg2p-bridge-0.0.0-develop.tgz
+    version: 0.0.0-develop
   openg2p-commons:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Commons
@@ -6219,4 +6253,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-05-30T23:59:00.824229488Z"
+generated: "2026-06-01T01:13:35.933807735Z"
