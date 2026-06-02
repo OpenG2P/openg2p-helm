@@ -5923,7 +5923,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-02T00:47:42.116494699Z"
+    created: "2026-06-02T08:47:58.102635295Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5938,12 +5938,12 @@ entries:
     name: spar
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-2.0.0-develop.tgz
+    - ../spar-2.0.0-develop.tgz
     version: 2.0.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
     apiVersion: v2
-    created: "2026-06-02T00:47:42.114599505Z"
+    created: "2026-06-02T08:47:58.100732214Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -5971,12 +5971,12 @@ entries:
     name: spar
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-1.1.0.tgz
+    - ../spar-1.1.0.tgz
     version: 1.1.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
     apiVersion: v2
-    created: "2026-06-02T00:47:42.092982924Z"
+    created: "2026-06-02T08:47:58.079264272Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6016,12 +6016,12 @@ entries:
     name: spar
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-1.1.0-develop.tgz
+    - ../spar-1.1.0-develop.tgz
     version: 1.1.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
     apiVersion: v2
-    created: "2026-06-02T00:47:42.076018328Z"
+    created: "2026-06-02T08:47:58.062400452Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6045,13 +6045,13 @@ entries:
     name: spar
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-1.0.0.tgz
+    - ../spar-1.0.0.tgz
     version: 1.0.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-02T00:47:42.062332584Z"
+    created: "2026-06-02T08:47:58.048834505Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -6065,16 +6065,16 @@ entries:
       repository: https://openg2p.github.io/openg2p-helm
       version: 1.1.1
     description: A Helm chart for OpenG2P SPAR
-    digest: 193cdd498fc2ee46b7f5a026f4bb6563b0359a5a9005dc298e91e8ec7b7d33c1
+    digest: eff3173dd78362c385f5531023641ddd2ac9a3662dbd8ef06af27156dc2af528
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: spar
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-0.0.0-develop.tgz
+    - ../spar-0.0.0-develop.tgz
     version: 0.0.0-develop
   spar-mapper-api:
   - apiVersion: v2
-    created: "2026-06-02T00:47:42.135924723Z"
+    created: "2026-06-02T08:47:58.121618559Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6086,10 +6086,10 @@ entries:
     name: spar-mapper-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-mapper-api-1.1.0.tgz
+    - ../spar-mapper-api-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2026-06-02T00:47:42.130679179Z"
+    created: "2026-06-02T08:47:58.116605614Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6101,10 +6101,10 @@ entries:
     name: spar-mapper-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-mapper-api-1.1.0-develop.tgz
+    - ../spar-mapper-api-1.1.0-develop.tgz
     version: 1.1.0-develop
   - apiVersion: v2
-    created: "2026-06-02T00:47:42.125829181Z"
+    created: "2026-06-02T08:47:58.112555035Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6116,10 +6116,10 @@ entries:
     name: spar-mapper-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-mapper-api-1.0.0.tgz
+    - ../spar-mapper-api-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2026-06-02T00:47:42.121433551Z"
+    created: "2026-06-02T08:47:58.107594258Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6131,11 +6131,11 @@ entries:
     name: spar-mapper-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-mapper-api-0.0.0-develop.tgz
+    - ../spar-mapper-api-0.0.0-develop.tgz
     version: 0.0.0-develop
   spar-self-service-api:
   - apiVersion: v2
-    created: "2026-06-02T00:47:42.151519236Z"
+    created: "2026-06-02T08:47:58.137241725Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6147,10 +6147,10 @@ entries:
     name: spar-self-service-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-api-1.1.0.tgz
+    - ../spar-self-service-api-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2026-06-02T00:47:42.146701366Z"
+    created: "2026-06-02T08:47:58.133188962Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6161,10 +6161,10 @@ entries:
     name: spar-self-service-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-api-1.1.0-develop.tgz
+    - ../spar-self-service-api-1.1.0-develop.tgz
     version: 1.1.0-develop
   - apiVersion: v2
-    created: "2026-06-02T00:47:42.144939954Z"
+    created: "2026-06-02T08:47:58.130761373Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6176,10 +6176,10 @@ entries:
     name: spar-self-service-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-api-1.0.0.tgz
+    - ../spar-self-service-api-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2026-06-02T00:47:42.140203776Z"
+    created: "2026-06-02T08:47:58.126602842Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -6191,21 +6191,21 @@ entries:
     name: spar-self-service-api
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-api-0.0.0-develop.tgz
+    - ../spar-self-service-api-0.0.0-develop.tgz
     version: 0.0.0-develop
   spar-self-service-ui:
   - apiVersion: v2
-    created: "2026-06-02T00:47:42.155041766Z"
+    created: "2026-06-02T08:47:58.140986413Z"
     description: A Helm chart for OpenG2P SPAR Self Service UI
     digest: 0145b41af386653b0dbec35f68b0503ada767ba217b12002a01cdb630e8a993a
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: spar-self-service-ui
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-1.1.0.tgz
+    - ../spar-self-service-ui-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2026-06-02T00:47:42.154060022Z"
+    created: "2026-06-02T08:47:58.140560948Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -6216,37 +6216,37 @@ entries:
     name: spar-self-service-ui
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-1.1.0-develop.tgz
+    - ../spar-self-service-ui-1.1.0-develop.tgz
     version: 1.1.0-develop
   - apiVersion: v2
-    created: "2026-06-02T00:47:42.1527301Z"
+    created: "2026-06-02T08:47:58.139440217Z"
     description: A Helm chart for OpenG2P SPAR Self Service UI
     digest: 048eba9631b5f8a208facbc82bf5b39f9b851e02ceb7a258c34e8ba294753a60
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: spar-self-service-ui
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-1.0.0.tgz
+    - ../spar-self-service-ui-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2026-06-02T00:47:42.152300493Z"
+    created: "2026-06-02T08:47:58.139020474Z"
     description: A Helm chart for UI for Self Service Portal for Social Payments Account
       Registry
     digest: e7ae4c157b5b5f51274ddfea491337cede168d06e26d2ffdfbc23869e8ff5d81
     name: spar-self-service-ui
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.1.0.tgz
+    - ../spar-self-service-ui-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2026-06-02T00:47:42.151952148Z"
+    created: "2026-06-02T08:47:58.138599398Z"
     description: A Helm chart for OpenG2P SPAR Self Service UI
     digest: 4b6bde14a5f7cb8993b6ce525c158b1855492143c7b23aa8fccb75484f929e10
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: spar-self-service-ui
     type: application
     urls:
-    - https://openg2p.github.io/openg2p-helm/spar-self-service-ui-0.0.0-develop.tgz
+    - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-06-02T04:59:30.174443407Z"
+generated: "2026-06-02T08:47:58.04645257Z"
