@@ -672,7 +672,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Base
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-05-30T23:59:00.974702477Z"
+    created: "2026-06-05T00:19:28.749656989Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -730,7 +730,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Base
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-05-30T23:59:00.937171854Z"
+    created: "2026-06-05T00:19:28.713677672Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -788,7 +788,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Base
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-05-30T23:59:00.899187538Z"
+    created: "2026-06-05T00:19:28.67734227Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -844,9 +844,10 @@ entries:
     version: 2.0.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Commons Base
+      catalog.cattle.io/release-name: commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-05-30T23:59:00.861800377Z"
+    created: "2026-06-05T00:19:28.641604027Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -893,7 +894,7 @@ entries:
       version: 1.1.0-develop
     description: Helm chart for OpenG2P Commons infrastructure (databases, message
       queues, init jobs)
-    digest: 795e4c9d0e8a1ba1dbf3eee36f4d4c916b6d65f85d6659ed1bc8aaf41369ab2a
+    digest: 9aa27b09d83036038ec5bb472e13d5b07f837321e647981dbe4423b5afb8cf98
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons-base
     type: application
@@ -905,7 +906,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-05-30T05:48:19.337982417Z"
+    created: "2026-06-05T00:19:28.870470189Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -968,7 +969,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-05-30T05:48:19.306966565Z"
+    created: "2026-06-05T00:19:28.83990221Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1019,7 +1020,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-05-30T05:48:19.280515503Z"
+    created: "2026-06-05T00:19:28.8131821Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1080,9 +1081,10 @@ entries:
     version: 2.0.0-develop
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Commons Services
+      catalog.cattle.io/release-name: commons-services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-05-30T05:48:19.249633362Z"
+    created: "2026-06-05T00:19:28.780562068Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1134,7 +1136,7 @@ entries:
       repository: https://openg2p.github.io/openg2p-helm
       version: 1.1.0-develop
     description: Helm chart for OpenG2P Commons application services
-    digest: 2f3a404652e02621ee1b2cfd710d8713d02f93ccb036c41b2d86855acbac7725
+    digest: 83661a62cff4f3be5c5a2d25672f0502537de952f5bb5be9339a6690c276d7fa
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons-services
     type: application
@@ -6333,4 +6335,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-06-04T15:51:29.817297167Z"
+generated: "2026-06-05T00:19:28.605114149Z"
