@@ -672,7 +672,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Base
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-06-05T00:19:28.749656989Z"
+    created: "2026-06-06T06:26:48.098709563Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -730,7 +730,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Base
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-06-05T00:19:28.713677672Z"
+    created: "2026-06-06T06:26:48.054748361Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -788,7 +788,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Base
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-06-05T00:19:28.67734227Z"
+    created: "2026-06-06T06:26:48.016000289Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -847,7 +847,7 @@ entries:
       catalog.cattle.io/release-name: commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-06-05T00:19:28.641604027Z"
+    created: "2026-06-06T06:26:47.973001312Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -865,10 +865,6 @@ entries:
       name: minio
       repository: https://openg2p.github.io/openg2p-helm
       version: 12.12.2
-    - condition: opensearch.enabled
-      name: opensearch
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.2.0
     - condition: kafka.enabled
       name: kafka
       repository: https://openg2p.github.io/openg2p-helm
@@ -894,7 +890,7 @@ entries:
       version: 1.1.0-develop
     description: Helm chart for OpenG2P Commons infrastructure (databases, message
       queues, init jobs)
-    digest: 9aa27b09d83036038ec5bb472e13d5b07f837321e647981dbe4423b5afb8cf98
+    digest: 45c1324d7f1ef04e83971c692914928c201cf46a4c653ad579af8c3ab2b99851
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons-base
     type: application
@@ -906,7 +902,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-06-05T00:19:28.870470189Z"
+    created: "2026-06-06T06:26:48.265036182Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -969,7 +965,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-06-05T00:19:28.83990221Z"
+    created: "2026-06-06T06:26:48.220025887Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1020,7 +1016,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-06-05T00:19:28.8131821Z"
+    created: "2026-06-06T06:26:48.180299456Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1084,7 +1080,7 @@ entries:
       catalog.cattle.io/release-name: commons-services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-06-05T00:19:28.780562068Z"
+    created: "2026-06-06T06:26:48.136462798Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1136,7 +1132,7 @@ entries:
       repository: https://openg2p.github.io/openg2p-helm
       version: 1.1.0-develop
     description: Helm chart for OpenG2P Commons application services
-    digest: 83661a62cff4f3be5c5a2d25672f0502537de952f5bb5be9339a6690c276d7fa
+    digest: 2d0adee749d2f26368e70af349e56bc994f71d453da1985c719e16da8758f6ef
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons-services
     type: application
@@ -6335,4 +6331,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-06-05T10:24:02.156859206Z"
+generated: "2026-06-06T06:26:47.937186098Z"
