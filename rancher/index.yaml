@@ -1147,7 +1147,7 @@ entries:
       catalog.cattle.io/release-name: openg2p-farmer-registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-11T07:54:12.162737627Z"
+    created: "2026-06-11T14:12:45.933908462Z"
     dependencies:
     - name: openg2p-registry
       repository: https://openg2p.github.io/openg2p-helm
@@ -1180,7 +1180,7 @@ entries:
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-11T07:54:12.151753261Z"
+    created: "2026-06-11T14:12:45.922605438Z"
     dependencies:
     - name: openg2p-registry
       repository: https://openg2p.github.io/openg2p-helm
@@ -1211,20 +1211,42 @@ entries:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/display-name: OpenG2P Farmer Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
-      catalog.cattle.io/release-name: openg2p-farmer-registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-11T07:54:12.140123086Z"
+    created: "2026-06-11T14:12:45.910965041Z"
     dependencies:
-    - name: openg2p-registry
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    - alias: idgenerator
+      condition: idgenerator.enabled
+      name: openg2p-id-generator
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.0.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    - condition: openg2p-awe.enabled
+      name: openg2p-awe
       repository: https://openg2p.github.io/openg2p-helm
       version: 0.0.0-develop
-    description: 'OpenG2P Farmer Registry — thin wrapper chart on top of the OpenG2P
-      Registry Gen 2 base chart. Supplies Farmer-Registry-branded Docker images and
-      Farmer-Registry-specific ID-generator configuration; all infrastructure, templates
-      and defaults come from the base chart. '
-    digest: a785d15497defbbb368101e5d9c4f876242cd9774ba6e613ef57930c78b40e0d
+    description: 'OpenG2P Farmer Registry — a self-sufficient Helm chart for the Farmer
+      Registry stack (staff portal API/UI, partner API, celery beat/worker, db-seed,
+      id-generator). Supplies Farmer-Registry-branded Docker images and Farmer-Registry-specific
+      ID-generator configuration. Previously a thin wrapper over the openg2p-registry
+      base chart; that chart''s templates and defaults now live directly in this chart,
+      so it no longer depends on openg2p-registry. '
+    digest: 4790cf7e815bad6a94c81ec0e93077273c85903cbc54ef28eb20786f002a6042
     home: https://openg2p.org
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     keywords:
@@ -6331,4 +6353,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-06-11T14:09:43.607994893Z"
+generated: "2026-06-11T14:12:45.896868301Z"
