@@ -1140,10 +1140,67 @@ entries:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/display-name: OpenG2P Farmer Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    appVersion: develop
+    created: "2026-06-14T15:46:53.59526534Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    - alias: idgenerator
+      condition: idgenerator.enabled
+      name: openg2p-id-generator
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.0.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    - condition: openg2p-awe.enabled
+      name: openg2p-awe
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    description: 'OpenG2P Farmer Registry — a self-sufficient Helm chart for the Farmer
+      Registry stack (staff portal API/UI, partner API, celery beat/worker, db-seed,
+      id-generator). Supplies Farmer-Registry-branded Docker images and Farmer-Registry-specific
+      ID-generator configuration. Previously a thin wrapper over the openg2p-registry
+      base chart; that chart''s templates and defaults now live directly in this chart,
+      so it no longer depends on openg2p-registry. '
+    digest: 8d934c3bb32febccab0cafde0ddcbb3277eba7cb6681b658d90b3bf00d7504f1
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - farmer-registry
+    - registry
+    - agriculture
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-farmer-registry
+    sources:
+    - https://github.com/OpenG2P/farmer-registry
+    type: application
+    urls:
+    - ../openg2p-farmer-registry-1.1.1.tgz
+    version: 1.1.1
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Farmer Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
       catalog.cattle.io/release-name: openg2p-farmer-registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-14T15:42:39.80340665Z"
+    created: "2026-06-14T15:46:53.581229391Z"
     dependencies:
     - name: openg2p-registry
       repository: https://openg2p.github.io/openg2p-helm
@@ -1176,7 +1233,7 @@ entries:
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-14T15:42:39.793027631Z"
+    created: "2026-06-14T15:46:53.569244999Z"
     dependencies:
     - name: openg2p-registry
       repository: https://openg2p.github.io/openg2p-helm
@@ -1210,7 +1267,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-14T15:42:39.780630014Z"
+    created: "2026-06-14T15:46:53.557785872Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -1267,7 +1324,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-14T15:42:39.76654643Z"
+    created: "2026-06-14T15:46:53.543640684Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -1324,7 +1381,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-14T15:42:39.753179502Z"
+    created: "2026-06-14T15:46:53.530557596Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -6463,4 +6520,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-06-14T15:42:39.738929393Z"
+generated: "2026-06-14T15:46:53.515127346Z"
