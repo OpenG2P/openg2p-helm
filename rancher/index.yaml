@@ -1143,7 +1143,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-15T00:23:14.997433993Z"
+    created: "2026-06-15T02:17:34.458562586Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -1151,7 +1151,7 @@ entries:
     - condition: postgres-init.enabled
       name: postgres-init
       repository: https://openg2p.github.io/openg2p-helm
-      version: 1.1.0
+      version: 0.0.0-develop
     - condition: redis.enabled
       name: redis
       repository: https://openg2p.github.io/openg2p-helm
@@ -1175,7 +1175,7 @@ entries:
       ID-generator configuration. Previously a thin wrapper over the openg2p-registry
       base chart; that chart''s templates and defaults now live directly in this chart,
       so it no longer depends on openg2p-registry. '
-    digest: 64ed31175ed6fe34f4bb322b61f33792948b55c14415fd8122303def06c375cd
+    digest: 1df90e0a482bfa210d33761380e63ff1b0d9583fe5793aa186f3fb0d0e94fd79
     home: https://openg2p.org
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     keywords:
@@ -1200,7 +1200,7 @@ entries:
       catalog.cattle.io/release-name: openg2p-farmer-registry
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-15T00:23:14.984568252Z"
+    created: "2026-06-15T02:17:34.444182435Z"
     dependencies:
     - name: openg2p-registry
       repository: https://openg2p.github.io/openg2p-helm
@@ -1233,7 +1233,7 @@ entries:
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-15T00:23:14.972865081Z"
+    created: "2026-06-15T02:17:34.433359466Z"
     dependencies:
     - name: openg2p-registry
       repository: https://openg2p.github.io/openg2p-helm
@@ -1267,7 +1267,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-15T00:23:14.961395252Z"
+    created: "2026-06-15T02:17:34.422225991Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -1324,7 +1324,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-15T00:23:14.94860316Z"
+    created: "2026-06-15T02:17:34.408234616Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -1381,7 +1381,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-15T00:23:14.935002845Z"
+    created: "2026-06-15T02:17:34.394990355Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -6520,4 +6520,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-06-15T02:01:57.200892889Z"
+generated: "2026-06-15T02:17:34.380677883Z"
