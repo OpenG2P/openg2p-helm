@@ -2351,7 +2351,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-15T00:30:02.854061676Z"
+    created: "2026-06-15T01:08:12.079733288Z"
     dependencies:
     - name: openg2p-registry
       repository: https://openg2p.github.io/openg2p-helm
@@ -2385,7 +2385,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-15T00:30:02.841570008Z"
+    created: "2026-06-15T01:08:12.067908779Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -2393,7 +2393,7 @@ entries:
     - condition: postgres-init.enabled
       name: postgres-init
       repository: https://openg2p.github.io/openg2p-helm
-      version: 1.1.0
+      version: 0.0.0-develop
     - condition: redis.enabled
       name: redis
       repository: https://openg2p.github.io/openg2p-helm
@@ -2417,7 +2417,7 @@ entries:
       ID-generator configuration. Previously a thin wrapper over the openg2p-registry
       base chart; that chart''s templates and defaults now live directly in this chart,
       so it no longer depends on openg2p-registry. '
-    digest: 1da474cd60902a9a0464c04562352ce830f92da5ee0b6e70d56279912491ce40
+    digest: de387a3141c93fc32eb643a968de67a1d1872cb52cbd2b39de618a74a99cd64a
     home: https://openg2p.org
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     keywords:
@@ -6520,4 +6520,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-06-15T00:30:02.827928612Z"
+generated: "2026-06-15T01:08:12.053657879Z"
