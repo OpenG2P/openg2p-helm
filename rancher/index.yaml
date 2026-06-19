@@ -186,7 +186,40 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Approval Workflow Engine
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-05-26T05:06:48.031378364Z"
+    created: "2026-06-19T08:32:51.962365997Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0-develop
+    description: A Helm chart for the OpenG2P Approval Workflow Engine
+    digest: 099a9a20c8ef9af82700166b646bf3e051c8b29db1f0033a5325689ba475606c
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - approval
+    - workflow
+    - awe
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-awe
+    type: application
+    urls:
+    - ../openg2p-awe-1.0.0-develop.tgz
+    version: 1.0.0-develop
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Approval Workflow Engine
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-06-19T08:32:51.959636146Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -6601,4 +6634,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-06-19T07:28:12.82051332Z"
+generated: "2026-06-19T08:32:51.957229891Z"
