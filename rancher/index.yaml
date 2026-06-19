@@ -2129,7 +2129,34 @@ entries:
       catalog.cattle.io/display-name: OpenG2P IAM Service
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-19T06:54:52.618414622Z"
+    created: "2026-06-19T07:20:40.793603185Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0
+    description: A Helm chart for OpenG2P IAM Service
+    digest: 2b5ae605b2ec5319e188cd6db103064841eb21c1ceba5d704bfdd9640ce8e16b
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-iam-service
+    - iam
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-iam-service
+    type: application
+    urls:
+    - ../openg2p-iam-service-1.2.1.tgz
+    version: 1.2.1
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P IAM Service
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-06-19T07:20:40.791968672Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -2156,7 +2183,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P IAM Service
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-19T06:54:52.616704716Z"
+    created: "2026-06-19T07:20:40.789454055Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -2183,7 +2210,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P IAM Service
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-19T06:54:52.614970293Z"
+    created: "2026-06-19T07:20:40.78777071Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -2210,7 +2237,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P IAM Service
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-19T06:54:52.613299064Z"
+    created: "2026-06-19T07:20:40.786079683Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -6574,4 +6601,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-06-19T06:54:52.610490461Z"
+generated: "2026-06-19T07:20:40.784156535Z"
