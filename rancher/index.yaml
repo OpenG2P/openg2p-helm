@@ -365,7 +365,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-26T01:20:53.021874548Z"
+    created: "2026-06-27T01:47:46.814258407Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -401,8 +401,44 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Bridge
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
+    created: "2026-06-27T01:47:46.803800899Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: Helm chart for OpenG2P G2P Bridge (with optional bundled Example
+      Bank simulator)
+    digest: 8757ed9a6234b9ccc5389463bcb1e3bdfeaf8e5b4ab69beefd6677c6e06cd556
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-bridge
+    - g2p-bridge
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-bridge
+    type: application
+    urls:
+    - ../openg2p-bridge-0.0.0-g2p5209.tgz
+    version: 0.0.0-g2p5209
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Bridge
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
     appVersion: develop
-    created: "2026-06-26T01:20:53.002968928Z"
+    created: "2026-06-27T01:47:46.780909389Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -439,7 +475,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-26T01:20:52.992604612Z"
+    created: "2026-06-27T01:47:46.771134455Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -476,7 +512,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-26T01:20:52.983215354Z"
+    created: "2026-06-27T01:47:46.76158571Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -513,7 +549,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-26T01:20:52.973969293Z"
+    created: "2026-06-27T01:47:46.751176078Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -550,7 +586,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-06-26T01:20:53.012692944Z"
+    created: "2026-06-27T01:47:46.790811907Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
