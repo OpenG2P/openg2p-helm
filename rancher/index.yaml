@@ -3697,7 +3697,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-30T10:48:14.55180221Z"
+    created: "2026-06-30T11:05:05.066482622Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3722,7 +3722,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-30T10:48:14.548365961Z"
+    created: "2026-06-30T11:05:05.064014899Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3747,7 +3747,32 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-30T10:48:14.540174391Z"
+    created: "2026-06-30T11:05:05.057874198Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: A Helm chart for OpenG2P SPAR - June 2026 Edition
+    digest: 8c87628db400d676631deb6a21aada909ce1f5a4eadbd8a6d8e1868fc64a77fd
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-spar
+    type: application
+    urls:
+    - ../openg2p-spar-0.0.0-develop.26.tgz
+    version: 0.0.0-develop.26
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P SPAR
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-06-30T11:05:05.055289825Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3772,7 +3797,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-30T10:48:14.535755383Z"
+    created: "2026-06-30T11:05:05.051552542Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3797,7 +3822,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-06-30T10:48:14.544241728Z"
+    created: "2026-06-30T11:05:05.060479002Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -4335,4 +4360,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-06-30T10:48:14.532061273Z"
+generated: "2026-06-30T11:05:05.048601963Z"
