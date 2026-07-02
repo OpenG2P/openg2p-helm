@@ -121,63 +121,6 @@ entries:
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    appVersion: "1.0"
-    created: "2026-07-02T07:48:19.66796682Z"
-    dependencies:
-    - name: common
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 2.30.0
-    - condition: postgres-init.enabled
-      name: postgres-init
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 0.0.0-develop
-    - condition: redis.enabled
-      name: redis
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 19.6.4
-    - alias: idgenerator
-      condition: idgenerator.enabled
-      name: openg2p-id-generator
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.0.0
-    - condition: keycloak-init.enabled
-      name: keycloak-init
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.1.1
-    - condition: openg2p-awe.enabled
-      name: openg2p-awe
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.0.0
-    description: 'OpenG2P National Social Registry (NSR) — a self-sufficient Helm
-      chart for the NSR registry stack (staff portal API/UI, partner API, celery beat/worker,
-      db-seed, id-generator). Supplies NSR-branded Docker images and NSR-specific
-      ID-generator configuration. Previously a thin wrapper over the openg2p-registry
-      base chart; that chart''s templates and defaults now live directly in this chart,
-      so it no longer depends on openg2p-registry. '
-    digest: eaf5ab87d77cc3c662b90764f320d262b529cc61cfe0ffe20c99d0ca4820da6f
-    home: https://openg2p.org
-    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
-    keywords:
-    - openg2p
-    - social-registry
-    - nsr
-    - registry
-    maintainers:
-    - email: info@openg2p.org
-      name: OpenG2P
-    name: mowsa-nsr
-    sources:
-    - https://github.com/OpenG2P/openg2p-registry-nsr-extensions
-    type: application
-    urls:
-    - ../mowsa-nsr-1.tgz
-    version: "1"
-  - annotations:
-      catalog.cattle.io/certified: partner
-      catalog.cattle.io/display-name: OpenG2P MOWSA NSR
-      catalog.cattle.io/kube-version: '>=1.23.0-0'
-      openg2p.org/add-to-rancher: ""
-    apiVersion: v2
     appVersion: 1.0.0-develop
     created: "2026-07-02T07:48:19.61772686Z"
     dependencies:
@@ -4375,6 +4318,39 @@ entries:
     urls:
     - ../openg2p-staff-portal-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
+  partner-management:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Partner Management
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-07-02T09:06:29.970283889Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: Helm chart for the OpenG2P Partner Management service (API + admin
+      UI)
+    digest: dbe0a57fb59add42d91dd261f5c4753eda5ada388134f5bff8b6ab34c9f22da8
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - partner-management
+    - openg2p
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: partner-management
+    type: application
+    urls:
+    - ../partner-management-0.0.0-develop.1.tgz
+    version: 0.0.0-develop.1
   postgres-init:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PostgreSQL Init
@@ -4807,4 +4783,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-02T07:48:19.586409332Z"
+generated: "2026-07-02T09:06:29.966798843Z"
