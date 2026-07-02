@@ -1105,7 +1105,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-06-16T04:39:31.333164118Z"
+    created: "2026-07-02T04:33:18.881387145Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1168,7 +1168,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-06-16T04:39:31.301909253Z"
+    created: "2026-07-02T04:33:18.848116489Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1219,7 +1219,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-06-16T04:39:31.273956643Z"
+    created: "2026-07-02T04:33:18.819852375Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1283,7 +1283,7 @@ entries:
       catalog.cattle.io/release-name: commons-services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-06-16T04:39:31.242803788Z"
+    created: "2026-07-02T04:33:18.788720847Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1326,12 +1326,16 @@ entries:
       name: openg2p-staff-portal-ui
       repository: https://openg2p.github.io/openg2p-helm
       version: 0.0.0-develop
+    - condition: openg2p-awe.enabled
+      name: openg2p-awe
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
     - condition: keycloak-init.enabled
       name: keycloak-init
       repository: https://openg2p.github.io/openg2p-helm
       version: 1.1.1
     description: Helm chart for OpenG2P Commons application services
-    digest: ba6e1dd11df60ea49bfa3cad947edb595253516067965dd9f80f44fa8c4481d2
+    digest: 69f368d4b3e680aa05e209c12dc492a280f06ac41bdfc9698e6f99ab18b8623c
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons-services
     type: application
@@ -4632,4 +4636,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-02T00:54:37.919294592Z"
+generated: "2026-07-02T04:33:18.756487164Z"
