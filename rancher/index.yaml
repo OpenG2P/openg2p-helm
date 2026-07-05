@@ -4581,7 +4581,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T01:43:22.203754601Z"
+    created: "2026-07-05T10:58:42.046451838Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -4606,7 +4606,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T01:43:22.200146359Z"
+    created: "2026-07-05T10:58:42.042858823Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -4631,7 +4631,32 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T01:43:22.195443632Z"
+    created: "2026-07-05T10:58:42.037019551Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: A Helm chart for OpenG2P SPAR - June 2026 Edition
+    digest: 8f4af461d12a57ba4fd825ce0036ce20cd0bd032a0c56f40a9cd754979d8bc97
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-spar
+    type: application
+    urls:
+    - ../openg2p-spar-0.0.0-develop.30.tgz
+    version: 0.0.0-develop.30
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P SPAR
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-07-05T10:58:42.034485992Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -4656,7 +4681,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T01:43:22.192515729Z"
+    created: "2026-07-05T10:58:42.031977922Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -4681,7 +4706,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T01:43:22.187918819Z"
+    created: "2026-07-05T10:58:42.028283543Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -4706,7 +4731,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T01:43:22.183933088Z"
+    created: "2026-07-05T10:58:42.025605214Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -4731,7 +4756,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T01:43:22.179696638Z"
+    created: "2026-07-05T10:58:42.022856012Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -4756,7 +4781,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T01:43:22.177237786Z"
+    created: "2026-07-05T10:58:42.01898543Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -4781,7 +4806,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T01:43:22.197680616Z"
+    created: "2026-07-05T10:58:42.040334573Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5448,4 +5473,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-05T01:43:22.174565575Z"
+generated: "2026-07-05T10:58:42.016222704Z"
