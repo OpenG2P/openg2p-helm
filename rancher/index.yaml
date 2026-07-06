@@ -5021,7 +5021,39 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Partner Management
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T15:53:47.093510822Z"
+    created: "2026-07-06T01:02:10.401973862Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: Helm chart for the OpenG2P Partner Management service (API + admin
+      UI)
+    digest: 088e0512f8a4665d0947c203390545fd434aec6d154fbd861771991a6cf1b01c
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - partner-management
+    - openg2p
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: partner-management
+    type: application
+    urls:
+    - ../partner-management-0.0.0-develop.6.tgz
+    version: 0.0.0-develop.6
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Partner Management
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-07-06T01:02:10.399748324Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5053,7 +5085,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Partner Management
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T15:53:47.091210362Z"
+    created: "2026-07-06T01:02:10.396675825Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5085,7 +5117,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Partner Management
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T15:53:47.087921082Z"
+    created: "2026-07-06T01:02:10.394488618Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5117,7 +5149,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Partner Management
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T15:53:47.085537208Z"
+    created: "2026-07-06T01:02:10.392117496Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5149,7 +5181,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Partner Management
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-05T15:53:47.083043336Z"
+    created: "2026-07-06T01:02:10.389174175Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5609,4 +5641,4 @@ entries:
     urls:
     - ../spar-self-service-ui-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-06T00:41:57.777309021Z"
+generated: "2026-07-06T01:02:10.386794359Z"
