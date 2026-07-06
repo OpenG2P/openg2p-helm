@@ -7,8 +7,65 @@ entries:
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
+    appVersion: 1.1.0-develop.5
+    created: "2026-07-06T12:57:50.948797807Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    - alias: idgenerator
+      condition: idgenerator.enabled
+      name: openg2p-id-generator
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.0.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    - condition: openg2p-awe.enabled
+      name: openg2p-awe
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0-develop
+    description: 'OpenG2P National Social Registry (NSR) — a self-sufficient Helm
+      chart for the NSR registry stack (staff portal API/UI, partner API, celery beat/worker,
+      db-seed, id-generator). Supplies NSR-branded Docker images and NSR-specific
+      ID-generator configuration. Previously a thin wrapper over the openg2p-registry
+      base chart; that chart''s templates and defaults now live directly in this chart,
+      so it no longer depends on openg2p-registry. '
+    digest: 9cb6574ef5cd21bd2325e975874578431951dd649ceae2c4a755ccfb692de076
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - social-registry
+    - nsr
+    - registry
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: mowsa-nsr
+    sources:
+    - https://github.com/OpenG2P/openg2p-registry-nsr-extensions
+    type: application
+    urls:
+    - ../mowsa-nsr-1.1.0-develop.5.tgz
+    version: 1.1.0-develop.5
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P MOWSA NSR
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
     appVersion: 1.1.0-develop.4
-    created: "2026-07-06T12:36:00.416748748Z"
+    created: "2026-07-06T12:57:50.931019215Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -65,7 +122,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: 1.1.0-develop.3
-    created: "2026-07-06T12:36:00.398690963Z"
+    created: "2026-07-06T12:57:50.91213453Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -122,7 +179,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: 1.1.0-develop.2
-    created: "2026-07-06T12:36:00.383150516Z"
+    created: "2026-07-06T12:57:50.897823431Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -179,7 +236,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: 1.1.0-develop.1
-    created: "2026-07-06T12:36:00.365853909Z"
+    created: "2026-07-06T12:57:50.881717952Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -236,7 +293,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: 1.1.0-develop
-    created: "2026-07-06T12:36:00.432037091Z"
+    created: "2026-07-06T12:57:50.964791554Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -293,7 +350,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: 1.0.1
-    created: "2026-07-06T12:36:00.350417469Z"
+    created: "2026-07-06T12:57:50.867295699Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -350,7 +407,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-06T12:36:00.332277603Z"
+    created: "2026-07-06T12:57:50.851046681Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -407,7 +464,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: "1.0"
-    created: "2026-07-06T12:36:00.450271366Z"
+    created: "2026-07-06T12:57:50.981796574Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -464,7 +521,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: 1.0.0-develop
-    created: "2026-07-06T12:36:00.316363132Z"
+    created: "2026-07-06T12:57:50.836337244Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -521,7 +578,7 @@ entries:
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
     appVersion: develop
-    created: "2026-07-06T12:36:00.298571793Z"
+    created: "2026-07-06T12:57:50.819665812Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5866,4 +5923,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-06T12:36:00.283932966Z"
+generated: "2026-07-06T12:57:50.79501831Z"
