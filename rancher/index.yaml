@@ -2855,7 +2855,34 @@ entries:
       catalog.cattle.io/display-name: OpenG2P IAM Service
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-06T05:47:26.678576354Z"
+    created: "2026-07-06T06:44:02.773209938Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    description: A Helm chart for OpenG2P IAM Service
+    digest: 58fcb4979cc9e13910c555d5d2809de37b35fb34bd6397b20a4618607cd279f3
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-iam-service
+    - iam
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-iam-service
+    type: application
+    urls:
+    - ../openg2p-iam-service-1.3.0-develop.tgz
+    version: 1.3.0-develop
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P IAM Service
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-07-06T06:44:02.771401797Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -2882,7 +2909,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P IAM Service
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-06T05:47:26.676833123Z"
+    created: "2026-07-06T06:44:02.768767848Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -2909,7 +2936,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P IAM Service
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-06T05:47:26.675152168Z"
+    created: "2026-07-06T06:44:02.767086356Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -2936,7 +2963,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P IAM Service
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-06T05:47:26.67234283Z"
+    created: "2026-07-06T06:44:02.765316362Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -2963,7 +2990,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P IAM Service
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-06T05:47:26.670724823Z"
+    created: "2026-07-06T06:44:02.763120594Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5378,4 +5405,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-06T06:10:26.645666758Z"
+generated: "2026-07-06T06:44:02.760551642Z"
