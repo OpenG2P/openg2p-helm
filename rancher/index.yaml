@@ -4146,7 +4146,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:05.151814655Z"
+    created: "2026-07-07T00:57:47.467445064Z"
     dependencies:
     - condition: postgres-init.enabled
       name: postgres-init
@@ -4172,7 +4172,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:05.132591832Z"
+    created: "2026-07-07T00:57:47.449183287Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4214,7 +4214,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:05.105411981Z"
+    created: "2026-07-07T00:57:47.423528564Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4299,7 +4299,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:05.047554387Z"
+    created: "2026-07-07T00:57:47.365135384Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4384,7 +4384,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:04.98631314Z"
+    created: "2026-07-07T00:57:47.30797434Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4469,7 +4469,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:04.928015694Z"
+    created: "2026-07-07T00:57:47.251155026Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4554,7 +4554,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:04.865903888Z"
+    created: "2026-07-07T00:57:47.192700043Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4639,7 +4639,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:04.808734829Z"
+    created: "2026-07-07T00:57:47.135309297Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4686,7 +4686,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:04.758958463Z"
+    created: "2026-07-07T00:57:47.083956889Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4733,7 +4733,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:04.708511823Z"
+    created: "2026-07-07T00:57:47.032598452Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4780,7 +4780,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:04.658516444Z"
+    created: "2026-07-07T00:57:46.979698218Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4827,7 +4827,33 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:04.557771078Z"
+    created: "2026-07-07T00:57:46.879399636Z"
+    dependencies:
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    - condition: odoo.enabled
+      name: odoo
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 26.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    description: Helm chart for OpenG2P PBMS
+    digest: 0db035f8fe3956d59077e097a4f116a5a92b28254194a4f33dbf822769590c42
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-pbms
+    type: application
+    urls:
+    - ../openg2p-pbms-0.0.0-develop.2.tgz
+    version: 0.0.0-develop.2
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P PBMS
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-07-07T00:57:46.861399889Z"
     dependencies:
     - condition: postgres-init.enabled
       name: postgres-init
@@ -4853,7 +4879,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 1
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:04.608453128Z"
+    created: "2026-07-07T00:57:46.930199945Z"
     dependencies:
     - condition: odoo.enabled
       name: odoo
@@ -4900,7 +4926,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2026-07-07T00:30:05.160195998Z"
+    created: "2026-07-07T00:57:47.475411588Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -4916,7 +4942,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2026-07-07T00:30:05.158756016Z"
+    created: "2026-07-07T00:57:47.474015505Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -4932,7 +4958,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2026-07-07T00:30:05.157288803Z"
+    created: "2026-07-07T00:57:47.471749832Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -4948,7 +4974,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2026-07-07T00:30:05.155839413Z"
+    created: "2026-07-07T00:57:47.470323703Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -4964,7 +4990,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Beneficiary Portal
     apiVersion: v2
-    created: "2026-07-07T00:30:05.15329859Z"
+    created: "2026-07-07T00:57:47.468904105Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -4981,7 +5007,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P G2P PBMS Background Task
     apiVersion: v2
-    created: "2026-07-07T00:30:05.177655292Z"
+    created: "2026-07-07T00:57:47.492077416Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -5036,7 +5062,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Background Task API
     apiVersion: v2
-    created: "2026-07-07T00:30:05.179072992Z"
+    created: "2026-07-07T00:57:47.493381837Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5059,7 +5085,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Background Task Celery Beat Producers
     apiVersion: v2
-    created: "2026-07-07T00:30:05.18082934Z"
+    created: "2026-07-07T00:57:47.494518074Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5082,7 +5108,7 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS Background Task Celery Workers
     apiVersion: v2
-    created: "2026-07-07T00:30:05.182563524Z"
+    created: "2026-07-07T00:57:47.495746834Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -5106,7 +5132,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:05.436941216Z"
+    created: "2026-07-07T00:57:47.739526296Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5138,7 +5164,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:05.386568084Z"
+    created: "2026-07-07T00:57:47.692087503Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5170,7 +5196,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:05.336914008Z"
+    created: "2026-07-07T00:57:47.643868918Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5202,7 +5228,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:05.284606878Z"
+    created: "2026-07-07T00:57:47.596047185Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5234,7 +5260,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P PBMS - Part 2
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T00:30:05.235490766Z"
+    created: "2026-07-07T00:57:47.547025172Z"
     dependencies:
     - condition: superset.enabled
       name: superset
@@ -5892,4 +5918,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-07T00:30:04.539229567Z"
+generated: "2026-07-07T00:57:46.842884617Z"
