@@ -1679,7 +1679,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-07-06T01:02:57.43786126Z"
+    created: "2026-07-08T05:06:22.674206813Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1742,7 +1742,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-07-06T01:02:57.405940665Z"
+    created: "2026-07-08T05:06:22.641286238Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1793,7 +1793,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-07-06T01:02:57.377798336Z"
+    created: "2026-07-08T05:06:22.614710887Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1857,7 +1857,79 @@ entries:
       catalog.cattle.io/release-name: commons-services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-07-06T01:02:57.314192494Z"
+    created: "2026-07-08T05:06:22.551628966Z"
+    dependencies:
+    - alias: masterData
+      condition: masterData.enabled
+      name: openg2p-master-data
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    - condition: artifactory.enabled
+      name: artifactory
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.0.3
+    - condition: keymanager.enabled
+      name: keymanager
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.1.1
+    - condition: superset.enabled
+      name: superset
+      repository: https://apache.github.io/superset
+      version: 0.12.11
+    - condition: esignet.enabled
+      name: esignet
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.4.3
+    - condition: mock-identity-system.enabled
+      name: mock-identity-system
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.9.5
+    - condition: odk-central.enabled
+      name: odk-central
+      repository: https://openg2p.github.io/openg2p-helm
+      version: v2025.2.2
+    - condition: openg2p-iam-service.enabled
+      name: openg2p-iam-service
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    - condition: openg2p-audit-manager.enabled
+      name: openg2p-audit-manager
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    - condition: openg2p-staff-portal-ui.enabled
+      name: openg2p-staff-portal-ui
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    - condition: openg2p-awe.enabled
+      name: openg2p-awe
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    - condition: partner-management.enabled
+      name: partner-management
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.5
+    - condition: openg2p-consent-manager.enabled
+      name: openg2p-consent-manager
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.18
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: Helm chart for OpenG2P Commons application services
+    digest: d0afacacbf1d8b2db2cb775314f35b13943be18ee958766bae8991a1296b1d98
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-commons-services
+    type: application
+    urls:
+    - ../openg2p-commons-services-0.0.0-develop.131.tgz
+    version: 0.0.0-develop.131
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Commons Services
+      catalog.cattle.io/release-name: commons-services
+      openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
+    apiVersion: v2
+    created: "2026-07-08T05:06:22.517082016Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1925,7 +1997,7 @@ entries:
       catalog.cattle.io/release-name: commons-services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-07-06T01:02:57.280147122Z"
+    created: "2026-07-08T05:06:22.483688908Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -1993,7 +2065,7 @@ entries:
       catalog.cattle.io/release-name: commons-services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-07-06T01:02:57.246058658Z"
+    created: "2026-07-08T05:06:22.450832115Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -2061,7 +2133,7 @@ entries:
       catalog.cattle.io/release-name: commons-services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-07-06T01:02:57.212435158Z"
+    created: "2026-07-08T05:06:22.418992805Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -2125,7 +2197,7 @@ entries:
       catalog.cattle.io/release-name: commons-services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
     apiVersion: v2
-    created: "2026-07-06T01:02:57.34568834Z"
+    created: "2026-07-08T05:06:22.582297455Z"
     dependencies:
     - alias: masterData
       condition: masterData.enabled
@@ -5944,4 +6016,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-07T13:17:09.526673355Z"
+generated: "2026-07-08T05:06:22.387215071Z"
