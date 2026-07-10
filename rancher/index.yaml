@@ -2388,6 +2388,39 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Consent Manager
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
+    appVersion: 0.0.0-develop.38
+    created: "2026-07-10T13:41:48.433221233Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: Helm chart for the OpenG2P Consent Manager (PDP for outbound data
+      sharing)
+    digest: 1828cb49737a1b222460077dccb459418ac1f947dc96bb750f25477e46aa2250
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - consent-manager
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-consent-manager
+    type: application
+    urls:
+    - ../openg2p-consent-manager-0.0.0-develop.38.tgz
+    version: 0.0.0-develop.38
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Consent Manager
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
     appVersion: develop
     created: "2026-07-06T09:54:43.273164341Z"
     dependencies:
@@ -6364,4 +6397,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-10T12:33:20.909803755Z"
+generated: "2026-07-10T13:41:48.430141837Z"
