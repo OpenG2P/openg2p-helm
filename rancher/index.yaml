@@ -3739,7 +3739,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Master Data
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T13:17:09.53234671Z"
+    created: "2026-07-10T00:48:42.065884429Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3766,7 +3766,7 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Master Data
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T13:17:09.530017763Z"
+    created: "2026-07-10T00:48:42.064329798Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -3793,7 +3793,34 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Master Data
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    created: "2026-07-07T13:17:09.528463833Z"
+    created: "2026-07-10T00:48:42.060606414Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    description: Helm chart for OpenG2P Master Data Service
+    digest: f9d01226d5403723543283f9ce4c0ded89a46983100b871b425e1ef35dfdd8d2
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - master-data
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-master-data
+    type: application
+    urls:
+    - ../openg2p-master-data-0.0.0-develop.8.tgz
+    version: 0.0.0-develop.8
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Master Data
+      openg2p.org/add-to-rancher: ""
+    apiVersion: v2
+    created: "2026-07-10T00:48:42.062613878Z"
     dependencies:
     - name: common
       repository: https://openg2p.github.io/openg2p-helm
@@ -6183,4 +6210,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-09T12:46:36.340821413Z"
+generated: "2026-07-10T00:48:42.057988914Z"
