@@ -1700,6 +1700,64 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Base
       catalog.cattle.io/release-name: commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
+      org.opencontainers.image.revision: 7328c8cb68ea317ab117e8531853c469a753fe8f
+      org.opencontainers.image.source: https://github.com/OpenG2P/openg2p-commons-deployment
+    apiVersion: v2
+    appVersion: 0.0.0-develop.167
+    created: "2026-07-13T10:47:17.259750659Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 15.5.38
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: mail.enabled
+      name: mail
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.2
+    - condition: minio.enabled
+      name: minio
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.12.2
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 29.3.14
+    - condition: softhsm.enabled
+      name: softhsm
+      repository: https://mosip.github.io/mosip-helm
+      version: 12.0.1
+    - name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    - alias: redis-auth
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    - condition: keycloak.enabled
+      name: keycloak
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 21.4.5
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: Helm chart for OpenG2P Commons infrastructure (databases, message
+      queues, init jobs)
+    digest: ed8f6b4fcc766b4ad2bc39584398647582557679526df9b665a9279941345c36
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-commons-base
+    type: application
+    urls:
+    - ../openg2p-commons-base-0.0.0-develop.167.tgz
+    version: 0.0.0-develop.167
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Commons Base
+      catalog.cattle.io/release-name: commons
+      openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
       org.opencontainers.image.revision: a8537c68b96d30503135478723430bd8ea752d70
       org.opencontainers.image.source: https://github.com/OpenG2P/openg2p-commons-deployment
     apiVersion: v2
@@ -2155,6 +2213,81 @@ entries:
     urls:
     - ../openg2p-commons-services-2.0.0-develop.tgz
     version: 2.0.0-develop
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Commons Services
+      catalog.cattle.io/release-name: commons-services
+      openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
+      org.opencontainers.image.revision: 7328c8cb68ea317ab117e8531853c469a753fe8f
+      org.opencontainers.image.source: https://github.com/OpenG2P/openg2p-commons-deployment
+    apiVersion: v2
+    appVersion: 0.0.0-develop.167
+    created: "2026-07-13T10:47:17.298045751Z"
+    dependencies:
+    - alias: masterData
+      condition: masterData.enabled
+      name: openg2p-master-data
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.24
+    - condition: artifactory.enabled
+      name: artifactory
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.0.3
+    - condition: keymanager.enabled
+      name: keymanager
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.1.1
+    - condition: superset.enabled
+      name: superset
+      repository: https://apache.github.io/superset
+      version: 0.12.11
+    - condition: esignet.enabled
+      name: esignet
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.4.3
+    - condition: mock-identity-system.enabled
+      name: mock-identity-system
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.9.5
+    - condition: odk-central.enabled
+      name: odk-central
+      repository: https://openg2p.github.io/openg2p-helm
+      version: v2025.2.2
+    - condition: openg2p-iam-service.enabled
+      name: openg2p-iam-service
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.55
+    - condition: openg2p-audit-manager.enabled
+      name: openg2p-audit-manager
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.0.0
+    - condition: openg2p-staff-portal-ui.enabled
+      name: openg2p-staff-portal-ui
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.54
+    - condition: openg2p-awe.enabled
+      name: openg2p-awe
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.62
+    - condition: partner-management.enabled
+      name: partner-management
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.10
+    - condition: openg2p-consent-manager.enabled
+      name: openg2p-consent-manager
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.40
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: Helm chart for OpenG2P Commons application services
+    digest: fdfcf45eac016b0df78dda823d13feb63700c1354e024204fea161115e247b14
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-commons-services
+    type: application
+    urls:
+    - ../openg2p-commons-services-0.0.0-develop.167.tgz
+    version: 0.0.0-develop.167
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       catalog.cattle.io/release-name: commons-services
@@ -7016,4 +7149,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-13T10:41:45.699184754Z"
+generated: "2026-07-13T10:47:17.226216973Z"
