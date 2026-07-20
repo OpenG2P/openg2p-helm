@@ -8561,6 +8561,35 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 0e54e65238d79f8d1fbd7bf0bd8c43b381874188
+      org.opencontainers.image.source: https://github.com/OpenG2P/pbms
+    apiVersion: v2
+    appVersion: 0.0.0-develop.7
+    created: "2026-07-20T01:33:54.745582641Z"
+    dependencies:
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: odoo.enabled
+      name: odoo
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 26.3.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    description: Helm chart for OpenG2P PBMS
+    digest: 823b93fa51066369e0c5baad47a7f9f53ae75b32012a7af25b3642252368b3a9
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-pbms
+    type: application
+    urls:
+    - ../openg2p-pbms-0.0.0-develop.7.tgz
+    version: 0.0.0-develop.7
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P PBMS
+      openg2p.org/add-to-rancher: ""
     apiVersion: v2
     created: "2026-07-07T01:13:51.499550156Z"
     dependencies:
@@ -9768,4 +9797,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-19T17:42:06.109740211Z"
+generated: "2026-07-20T01:33:54.725952544Z"
