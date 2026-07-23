@@ -5166,6 +5166,45 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Farmer Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 9cf5ec777f072b489d064887ea99e555a3530d95
+      org.opencontainers.image.source: https://github.com/OpenG2P/farmer-registry
+    apiVersion: v2
+    appVersion: 0.0.0-develop.121
+    created: "2026-07-23T02:40:24.262800342Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.286
+    description: 'OpenG2P Farmer Registry — a thin, branded package over the shared
+      openg2p-registry chart published by the registry platform.  This chart owns
+      NO templates. It declares openg2p-registry as a pinned dependency and supplies
+      only the farmer values overlay (variant identity, hostname, the farmer-built
+      images, seed toggles and the farmer sanity suite). Everything else — all service
+      templates, keycloak/iam wiring, db-seed machinery — comes from the openg2p-registry
+      subchart. '
+    digest: 9b72d379dfa2ae68ff1b9fbb4571f943b15030eff6fdefff5d1d4955750ba257
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - farmer-registry
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-farmer-registry
+    sources:
+    - https://github.com/OpenG2P/farmer-registry
+    type: application
+    urls:
+    - ../openg2p-farmer-registry-0.0.0-develop.121.tgz
+    version: 0.0.0-develop.121
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Farmer Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 4c66e681fbd6fd8740f0064464d901733454ae6f
       org.opencontainers.image.source: https://github.com/OpenG2P/farmer-registry
     apiVersion: v2
@@ -10311,4 +10350,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-22T12:00:28.334518373Z"
+generated: "2026-07-23T02:40:24.248902241Z"
