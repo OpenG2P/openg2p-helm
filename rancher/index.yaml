@@ -9997,6 +9997,64 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 6ec5f56c97c3744ac71f6bb0594db12d864203a1
+      org.opencontainers.image.source: https://github.com/OpenG2P/registry-platform
+    apiVersion: v2
+    appVersion: 0.0.0-develop.296
+    created: "2026-07-24T09:05:08.053340069Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    - alias: idgenerator
+      condition: idgenerator.enabled
+      name: openg2p-id-generator
+      repository: https://gitlab.com/api/v4/projects/84460547/packages/helm/stable
+      version: 0.0.0-develop.42
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: 'OpenG2P Registry — the self-sufficient base Helm chart for any registry
+      built on the registry platform (staff portal API/UI, partner API, beneficiary
+      portal API, celery beat/worker, db-seed, id-generator, keycloak users, IAM catalog
+      registration).  This chart is published by the registry-platform and is the
+      single source of truth for registry deployment. A concrete registry (NSR, farmer,
+      a customer registry, ...) does NOT fork or wrap this chart — it installs it
+      and supplies a small values overlay that points at its own extension images,
+      hostname, registryVariant, seed image and (optionally) demo users. Everything
+      variant- specific is values; the templates here are generic. '
+    digest: 3175a96ebaeb256baed709ce40960e1bb1b042cfb120616b8bc3b571dcabfb21
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - social-registry
+    - farmer-registry
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-registry
+    sources:
+    - https://github.com/OpenG2P/registry-platform
+    type: application
+    urls:
+    - ../openg2p-registry-0.0.0-develop.296.tgz
+    version: 0.0.0-develop.296
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: c5214fc0ea55c590df3599b2b82c7245ac967417
       org.opencontainers.image.source: https://github.com/OpenG2P/registry-platform
     apiVersion: v2
@@ -11233,4 +11291,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-24T05:02:35.119638769Z"
+generated: "2026-07-24T09:05:08.042257796Z"
