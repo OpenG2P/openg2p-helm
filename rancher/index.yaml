@@ -7752,6 +7752,46 @@ entries:
     version: 1.0.0
   - annotations:
       catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P National Social Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: ddfda05a04784413bccfefeb7a635d86ebb709bc
+      org.opencontainers.image.source: https://github.com/OpenG2P/national-social-registry
+    apiVersion: v2
+    appVersion: 1.0.0-rc.171
+    created: "2026-07-25T01:58:25.645361056Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.295
+    description: 'OpenG2P National Social Registry — a thin, branded package over
+      the shared openg2p-registry chart published by the registry platform.  This
+      chart owns NO templates. It declares openg2p-registry as a pinned dependency
+      and supplies only the NSR values overlay (variant identity, hostname, the NSR-built
+      images, seed toggles, id types and the IAM tile name). Everything else — all
+      service templates, keycloak/iam wiring, db-seed machinery, sanity suite — comes
+      from the openg2p-registry subchart. '
+    digest: c6d16065294eb773b95f0c2ddefabcfa6fbbc109b2297308bd1ec22e31a73d99
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - social-registry
+    - nsr
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-nsr
+    sources:
+    - https://github.com/OpenG2P/national-social-registry
+    type: application
+    urls:
+    - ../openg2p-nsr-1.0.0-rc.171.tgz
+    version: 1.0.0-rc.171
+  - annotations:
+      catalog.cattle.io/certified: partner
       catalog.cattle.io/display-name: OpenG2P NSR
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
@@ -11370,4 +11410,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-24T09:49:06.349199284Z"
+generated: "2026-07-25T01:58:25.630285488Z"
