@@ -4931,6 +4931,45 @@ entries:
       org.opencontainers.image.revision: 7055a710a25bca297f8a1cbd6c2cb64664840b20
       org.opencontainers.image.source: https://github.com/OpenG2P/farmer-registry
     apiVersion: v2
+    appVersion: 1.2.0
+    created: "2026-07-25T02:07:05.334283331Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.296
+    description: 'OpenG2P Farmer Registry — a thin, branded package over the shared
+      openg2p-registry chart published by the registry platform.  This chart owns
+      NO templates. It declares openg2p-registry as a pinned dependency and supplies
+      only the farmer values overlay (variant identity, hostname, the farmer-built
+      images, seed toggles and the farmer sanity suite). Everything else — all service
+      templates, keycloak/iam wiring, db-seed machinery — comes from the openg2p-registry
+      subchart. '
+    digest: 5628ce0000fe7d6189b98989d8d1a806aef2ed4e8b06b5d7a894d3ae8b2d5d33
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - farmer-registry
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-farmer-registry
+    sources:
+    - https://github.com/OpenG2P/farmer-registry
+    type: application
+    urls:
+    - ../openg2p-farmer-registry-1.2.0.tgz
+    version: 1.2.0
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Farmer Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 7055a710a25bca297f8a1cbd6c2cb64664840b20
+      org.opencontainers.image.source: https://github.com/OpenG2P/farmer-registry
+    apiVersion: v2
     appVersion: 1.2.0-rc.132
     created: "2026-07-25T02:04:19.619576617Z"
     dependencies:
@@ -11449,4 +11488,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-07-25T02:04:19.605529447Z"
+generated: "2026-07-25T02:07:05.31950827Z"
