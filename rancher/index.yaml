@@ -9479,6 +9479,46 @@ entries:
       catalog.cattle.io/display-name: OpenG2P National Social Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 31fb59fd8202e6f33bf0cb8ac22596cca6bc5303
+      org.opencontainers.image.source: https://github.com/OpenG2P/national-social-registry
+    apiVersion: v2
+    appVersion: 0.0.0-develop.203
+    created: "2026-08-01T09:40:44.946195957Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.336
+    description: 'OpenG2P National Social Registry — a thin, branded package over
+      the shared openg2p-registry chart published by the registry platform.  This
+      chart owns NO templates. It declares openg2p-registry as a pinned dependency
+      and supplies only the NSR values overlay (variant identity, hostname, the NSR-built
+      images, seed toggles, id types and the IAM tile name). Everything else — all
+      service templates, keycloak/iam wiring, db-seed machinery, sanity suite — comes
+      from the openg2p-registry subchart. '
+    digest: a4eed25772427d798d26473d22e39fac1ffa5141e26f010d3ed276ddf8b88dbd
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - social-registry
+    - nsr
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-nsr
+    sources:
+    - https://github.com/OpenG2P/national-social-registry
+    type: application
+    urls:
+    - ../openg2p-nsr-0.0.0-develop.203.tgz
+    version: 0.0.0-develop.203
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P National Social Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 08a905f1e078c8abca9e263573da60346ef09ecf
       org.opencontainers.image.source: https://github.com/OpenG2P/national-social-registry
     apiVersion: v2
@@ -13787,4 +13827,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-08-01T05:19:10.887519817Z"
+generated: "2026-08-01T09:40:44.930854883Z"
