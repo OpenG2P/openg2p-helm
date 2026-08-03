@@ -10277,6 +10277,46 @@ entries:
       catalog.cattle.io/display-name: OpenG2P National Social Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 0f78334e5c2beb107ad563458e64d3abd1c42e15
+      org.opencontainers.image.source: https://github.com/OpenG2P/national-social-registry
+    apiVersion: v2
+    appVersion: 0.0.0-develop.215
+    created: "2026-08-03T15:33:40.231542021Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.339
+    description: 'OpenG2P National Social Registry — a thin, branded package over
+      the shared openg2p-registry chart published by the registry platform.  This
+      chart owns NO templates. It declares openg2p-registry as a pinned dependency
+      and supplies only the NSR values overlay (variant identity, hostname, the NSR-built
+      images, seed toggles, id types and the IAM tile name). Everything else — all
+      service templates, keycloak/iam wiring, db-seed machinery, sanity suite — comes
+      from the openg2p-registry subchart. '
+    digest: 538fa669f6283e8ae98b4c0fd4fff0c98b73fc80a2315d1b287eb9a29c4c3a4b
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - social-registry
+    - nsr
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-nsr
+    sources:
+    - https://github.com/OpenG2P/national-social-registry
+    type: application
+    urls:
+    - ../openg2p-nsr-0.0.0-develop.215.tgz
+    version: 0.0.0-develop.215
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P National Social Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 378189f8952e11e039624ce7b197c2ea823ea173
       org.opencontainers.image.source: https://github.com/OpenG2P/national-social-registry
     apiVersion: v2
@@ -14999,4 +15039,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-08-03T13:27:28.295933503Z"
+generated: "2026-08-03T15:33:40.215970235Z"
