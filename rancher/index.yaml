@@ -9285,6 +9285,36 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P IAM Service
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 6eac6a995e00b392fdf65b7a5a5faf983b14b38e
+      org.opencontainers.image.source: https://github.com/OpenG2P/iam-service
+    apiVersion: v2
+    appVersion: 0.0.0-develop.80
+    created: "2026-08-20T04:47:21.385956176Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    description: A Helm chart for OpenG2P IAM Service
+    digest: 29102f57eac69fc2e5887641f3f331207e2d84d785fdc474a9ea5c863098acf9
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-iam-service
+    - iam
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-iam-service
+    type: application
+    urls:
+    - ../openg2p-iam-service-0.0.0-develop.80.tgz
+    version: 0.0.0-develop.80
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P IAM Service
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 9de210b49892450a651173bdd85538db21e692b9
       org.opencontainers.image.source: https://github.com/OpenG2P/iam-service
     apiVersion: v2
@@ -15277,4 +15307,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-08-20T04:40:54.403603496Z"
+generated: "2026-08-20T04:47:21.381648172Z"
