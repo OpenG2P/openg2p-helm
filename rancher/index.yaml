@@ -14905,6 +14905,30 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: d47e6af33b6560e5c44d2234ab92192956b75cd3
+      org.opencontainers.image.source: https://github.com/OpenG2P/spar
+    apiVersion: v2
+    appVersion: 0.0.0-develop.36
+    created: "2026-08-28T02:43:43.334853174Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    description: A Helm chart for OpenG2P SPAR - June 2026 Edition
+    digest: 00fba99b0059e1c328f27c65aef714accd6c588c93333e22c0f0a3625eab5586
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-spar
+    type: application
+    urls:
+    - ../openg2p-spar-0.0.0-develop.36.tgz
+    version: 0.0.0-develop.36
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P SPAR
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 3ec576f98cd67ebe7946ae4b21eabe2cfa62e26e
       org.opencontainers.image.source: https://github.com/OpenG2P/spar
     apiVersion: v2
@@ -15683,4 +15707,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-08-28T02:35:41.846064091Z"
+generated: "2026-08-28T02:43:43.332543628Z"
