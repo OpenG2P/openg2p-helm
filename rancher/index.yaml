@@ -10571,6 +10571,54 @@ entries:
       catalog.cattle.io/display-name: OpenG2P National Social Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 33a905d4051784a11e1cfcdbd2b4f1fae8f37293
+      org.opencontainers.image.source: https://github.com/OpenG2P/national-social-registry
+    apiVersion: v2
+    appVersion: 0.0.0-develop.242
+    created: "2026-08-28T02:34:57.381664784Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.421
+    description: 'OpenG2P National Social Registry — a thin, branded package over
+      the shared openg2p-registry chart published by the registry platform.  This
+      chart owns NO service templates. It declares openg2p-registry as a pinned dependency
+      and supplies the NSR values overlay (variant identity, hostname, the NSR-built
+      images, seed toggles, id types and the IAM tile name). Every deployment, service,
+      ingress, keycloak/iam wiring, the db-seed machinery and the sanity suite come
+      from the openg2p-registry subchart.  It does own the ANALYTICS layer, in templates/
+      — because the reporting views and dashboards are written against NSR''s schema
+      and the platform has no concept of them:    analytics-jobs.yaml                reporting-views
+      + dashboard-import Jobs   reporting-views-refresh.yaml       CronJob refreshing
+      the materialized views   dashboard-bundle-configmap.yaml    ships nsr-dashboards.zip
+      into the cluster   maps-content-configmap.yaml        maps content for G2P Insights   _maps-content.tpl                  its
+      name helper   superset-service-account-secret.yaml  Hook weights order these
+      above the sanity suite (25), so rebuilding the views cannot change what the
+      sanity tests asserted against. '
+    digest: dacedc4a10e1de0058ba45cac774e236557afeccf21fc82f87175882d95153b1
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - social-registry
+    - nsr
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-nsr
+    sources:
+    - https://github.com/OpenG2P/national-social-registry
+    type: application
+    urls:
+    - ../openg2p-nsr-0.0.0-develop.242.tgz
+    version: 0.0.0-develop.242
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P National Social Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 6aff652f710502255164033e076da4962135384e
       org.opencontainers.image.source: https://github.com/OpenG2P/national-social-registry
     apiVersion: v2
@@ -15544,4 +15592,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-08-28T02:24:51.24727401Z"
+generated: "2026-08-28T02:34:57.368870393Z"
