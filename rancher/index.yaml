@@ -1,5 +1,22 @@
 apiVersion: v1
 entries:
+  keycloak-init:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Keycloak Init
+      openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
+      org.opencontainers.image.revision: 480a3241b49e0b9a9c827a19bd57d112da94178a
+      org.opencontainers.image.source: https://github.com/OpenG2P/keycloak-init
+    apiVersion: v2
+    appVersion: 0.0.0-develop.60
+    created: "2026-08-28T01:46:37.238726169Z"
+    description: Helm chart to initialize Keycloak clients
+    digest: 51385cb26bcb2e2c3094b5c7c5248ffb1f63c86c54ef1b4ace85d998251a1d14
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: keycloak-init
+    type: application
+    urls:
+    - ../keycloak-init-0.0.0-develop.60.tgz
+    version: 0.0.0-develop.60
   mowsa-nsr:
   - annotations:
       catalog.cattle.io/certified: partner
@@ -15339,4 +15356,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-08-28T01:01:25.215323144Z"
+generated: "2026-08-28T01:46:37.238223986Z"
