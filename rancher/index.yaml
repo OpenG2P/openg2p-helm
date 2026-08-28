@@ -6925,6 +6925,50 @@ entries:
     urls:
     - ../openg2p-consent-manager-0.0.0-develop.12.tgz
     version: 0.0.0-develop.12
+  openg2p-disability-registry:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Disability Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: ad4bf83dd2c8498e01b731123283dce20329c582
+      org.opencontainers.image.source: https://github.com/OpenG2P/disability-registry
+    apiVersion: v2
+    appVersion: 0.0.0-develop.10
+    created: "2026-08-28T02:35:41.863344754Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.421
+    description: 'OpenG2P Disability Registry — a thin, branded package over the shared
+      openg2p-registry chart published by the registry platform.  A single-register
+      registry of persons with disability, modelled on the SPDCI Disability Registry
+      data objects (DO.DR.01 - DO.DR.10). No group or household register: the subject
+      is the individual.  This chart owns no service templates. It declares openg2p-registry
+      as a pinned dependency and supplies only this registry''s values overlay (variant
+      identity, hostname, the images built here, seed toggles, the ID pool and the
+      IAM tile name), plus the analytics jobs that are genuinely ours — the reporting
+      views and the dashboard import, which are written against this registry''s schema. '
+    digest: 8b6e681ada75e8bb32a78953753371677432ff9705d4017de6a4ba941467c337
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - disability
+    - disability-registry
+    - spdci
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-disability-registry
+    sources:
+    - https://github.com/OpenG2P/disability-registry
+    type: application
+    urls:
+    - ../openg2p-disability-registry-0.0.0-develop.10.tgz
+    version: 0.0.0-develop.10
   openg2p-farmer-registry:
   - annotations:
       catalog.cattle.io/certified: partner
@@ -15639,4 +15683,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-08-28T02:35:16.247780352Z"
+generated: "2026-08-28T02:35:41.846064091Z"
