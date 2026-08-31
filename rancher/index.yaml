@@ -10548,6 +10548,38 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Inji Certify
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 2ad48fdf69bd3649dc26ed3ee67fbb065b8aca52
+      org.opencontainers.image.source: https://github.com/OpenG2P/verifiable-credentials
+    apiVersion: v2
+    appVersion: 0.0.0-develop.15
+    created: "2026-08-31T01:35:34.755285303Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0
+    description: A Helm chart for MOSIP Inji Certify (OpenG2P VC issuer)
+    digest: a605654ccb9c12acdfe9474bc6a1bedd94f4abf898c8f2648bded01f55c01675
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - inji
+    - certify
+    - verifiable-credentials
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-inji-certify
+    type: application
+    urls:
+    - ../openg2p-inji-certify-0.0.0-develop.15.tgz
+    version: 0.0.0-develop.15
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Inji Certify
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: e9b9a19e72d90d55f4b96d1998364dd825f7cf82
       org.opencontainers.image.source: https://github.com/OpenG2P/verifiable-credentials
     apiVersion: v2
@@ -16649,4 +16681,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-08-28T11:09:38.725098862Z"
+generated: "2026-08-31T01:35:34.752880264Z"
