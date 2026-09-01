@@ -852,6 +852,38 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Audit Manager
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: dcc215485c176c75777c7df0738f3c4f6e315e23
+      org.opencontainers.image.source: https://github.com/OpenG2P/audit-manager
+    apiVersion: v2
+    appVersion: 1.2.0-rc.26
+    created: "2026-09-01T11:01:15.949103356Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    description: A Helm chart for OpenG2P Audit Manager Service
+    digest: 17836ccdaa60d34e08e1a3289c7510473ded4084fc3fc805f0304f31d747cc9e
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - audit-manager
+    - audit
+    - cloudevents
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-audit-manager
+    type: application
+    urls:
+    - ../openg2p-audit-manager-1.2.0-rc.26.tgz
+    version: 1.2.0-rc.26
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Audit Manager
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 36dbf77a0c0ff8afc9a10a1de769b3bdf06d5fd6
       org.opencontainers.image.source: https://github.com/OpenG2P/audit-manager
     apiVersion: v2
@@ -18664,4 +18696,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-09-01T10:56:38.332867455Z"
+generated: "2026-09-01T11:01:15.946751632Z"
