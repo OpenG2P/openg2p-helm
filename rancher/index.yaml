@@ -12243,6 +12243,40 @@ entries:
       org.opencontainers.image.revision: f0933664668c7752ff23f216259b722e437cba86
       org.opencontainers.image.source: https://github.com/OpenG2P/master-data-service
     apiVersion: v2
+    appVersion: 1.1.0
+    created: "2026-09-01T11:29:00.816293852Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    description: Helm chart for OpenG2P Master Data Service
+    digest: 5d936b70fd8c9c0c71239403c961ee785bbcbc583c60d406f53b0e1799d7e041
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - master-data
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-master-data
+    type: application
+    urls:
+    - ../openg2p-master-data-1.1.0.tgz
+    version: 1.1.0
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Master Data
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: f0933664668c7752ff23f216259b722e437cba86
+      org.opencontainers.image.source: https://github.com/OpenG2P/master-data-service
+    apiVersion: v2
     appVersion: 1.1.0-rc.73
     created: "2026-09-01T11:27:25.548374187Z"
     dependencies:
@@ -18996,4 +19030,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-09-01T11:27:25.544682443Z"
+generated: "2026-09-01T11:29:00.811901627Z"
