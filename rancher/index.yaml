@@ -820,6 +820,38 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Audit Manager
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: b63bc7753efed44a199939a6033c99539d628295
+      org.opencontainers.image.source: https://gitlab.com/openg2p/audit-manager
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2026-09-01T10:27:06.242632+05:30"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.0
+    description: A Helm chart for OpenG2P Audit Manager Service
+    digest: b6be5fc3d947d63ac93dc7d794314a3274148e89157e6e83a84a79a0e223fea0
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - audit-manager
+    - audit
+    - cloudevents
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-audit-manager
+    type: application
+    urls:
+    - ../openg2p-audit-manager-1.0.1.tgz
+    version: 1.0.1
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Audit Manager
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 2c920b4db9827ae216e3d712f657a0f2bc0492e5
       org.opencontainers.image.source: https://github.com/OpenG2P/audit-manager
     apiVersion: v2
@@ -1011,6 +1043,42 @@ entries:
     urls:
     - ../openg2p-awe-1.1.1-rc.69.tgz
     version: 1.1.1-rc.69
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Approval Workflow Engine
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: eb178cd8dfdd9b5a4b18f36615664b48a69e0f5f
+      org.opencontainers.image.source: https://gitlab.com/openg2p/awe
+    apiVersion: v2
+    appVersion: 1.1.0
+    created: "2026-09-01T10:27:06.243926+05:30"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: A Helm chart for the OpenG2P Approval Workflow Engine
+    digest: 161d9a427c7840c4b14f3bec35b65d30bb9287bf33460b374dc0af876c3a4025
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - approval
+    - workflow
+    - awe
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-awe
+    type: application
+    urls:
+    - ../openg2p-awe-1.1.0.tgz
+    version: 1.1.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Approval Workflow Engine
       openg2p.org/add-to-rancher: ""
@@ -1216,6 +1284,80 @@ entries:
     - ../openg2p-awe-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-bridge:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Bridge
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: e812f7cdc817eea83c1ba5e229b0f049ffd7cb22
+      org.opencontainers.image.source: https://gitlab.com/openg2p/g2p-bridge/g2p-bridge
+    apiVersion: v2
+    appVersion: 1.2.0
+    created: "2026-09-01T10:27:06.254337+05:30"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    description: Helm chart for OpenG2P G2P Bridge (with optional bundled Example
+      Bank simulator)
+    digest: dcd0499fe4cb75b19ebaf1925267f4dc41e528f51c84ca7481660c38d3540ce4
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-bridge
+    - g2p-bridge
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-bridge
+    type: application
+    urls:
+    - ../openg2p-bridge-1.2.0.tgz
+    version: 1.2.0
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Bridge
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 60b33bea497c51647d1d016f5a10364d13b080f9
+      org.opencontainers.image.source: https://gitlab.com/openg2p/g2p-bridge/g2p-bridge
+    apiVersion: v2
+    appVersion: 1.1.0
+    created: "2026-09-01T10:27:06.248981+05:30"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: Helm chart for OpenG2P G2P Bridge (with optional bundled Example
+      Bank simulator)
+    digest: 9c0d23c17d973772ea4a4bb7b6b9d46f901b6d08035e13950b03c86bcb0d4eb9
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-bridge
+    - g2p-bridge
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-bridge
+    type: application
+    urls:
+    - ../openg2p-bridge-1.1.0.tgz
+    version: 1.1.0
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Bridge
       openg2p.org/add-to-rancher: ""
@@ -1945,6 +2087,64 @@ entries:
     - ../openg2p-bridge-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-commons-base:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Commons Base
+      catalog.cattle.io/release-name: commons
+      openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
+      org.opencontainers.image.revision: 310bf240b836a50aac0757736e12d75df18b9b6e
+      org.opencontainers.image.source: https://gitlab.com/openg2p/commons
+    apiVersion: v2
+    appVersion: 2.2.1
+    created: "2026-09-01T10:27:06.270054+05:30"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 15.5.38
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: mail.enabled
+      name: mail
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.2
+    - condition: minio.enabled
+      name: minio
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.12.2
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 29.3.14
+    - condition: softhsm.enabled
+      name: softhsm
+      repository: https://mosip.github.io/mosip-helm
+      version: 12.0.1
+    - name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    - alias: redis-auth
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    - condition: keycloak.enabled
+      name: keycloak
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 21.4.5
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: Helm chart for OpenG2P Commons infrastructure (databases, message
+      queues, init jobs)
+    digest: a77960ab1987f70c80f5a4dc1f36aece7d9c95f637eaa613f692d016533e5243
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-commons-base
+    type: application
+    urls:
+    - ../openg2p-commons-base-2.2.1.tgz
+    version: 2.2.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Commons Base
       catalog.cattle.io/release-name: commons
@@ -4141,6 +4341,81 @@ entries:
     - ../openg2p-commons-base-0.0.0-2-1.183.tgz
     version: 0.0.0-2-1.183
   openg2p-commons-services:
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Commons Services
+      catalog.cattle.io/release-name: commons-services
+      openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
+      org.opencontainers.image.revision: 310bf240b836a50aac0757736e12d75df18b9b6e
+      org.opencontainers.image.source: https://gitlab.com/openg2p/commons
+    apiVersion: v2
+    appVersion: 2.2.1
+    created: "2026-09-01T10:27:06.287205+05:30"
+    dependencies:
+    - alias: masterData
+      condition: masterData.enabled
+      name: openg2p-master-data
+      repository: https://gitlab.com/api/v4/projects/84460547/packages/helm/stable
+      version: 0.0.0-develop.26
+    - condition: artifactory.enabled
+      name: artifactory
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.0.3
+    - condition: keymanager.enabled
+      name: keymanager
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 12.1.1
+    - condition: superset.enabled
+      name: superset
+      repository: https://apache.github.io/superset
+      version: 0.12.11
+    - condition: esignet.enabled
+      name: esignet
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.4.3
+    - condition: mock-identity-system.enabled
+      name: mock-identity-system
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.9.5
+    - condition: odk-central.enabled
+      name: odk-central
+      repository: https://openg2p.github.io/openg2p-helm
+      version: v2025.2.2
+    - condition: openg2p-iam-service.enabled
+      name: openg2p-iam-service
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.55
+    - condition: openg2p-audit-manager.enabled
+      name: openg2p-audit-manager
+      repository: https://gitlab.com/api/v4/projects/84460547/packages/helm/stable
+      version: 1.0.1
+    - condition: openg2p-staff-portal-ui.enabled
+      name: openg2p-staff-portal-ui
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.54
+    - condition: openg2p-awe.enabled
+      name: openg2p-awe
+      repository: https://gitlab.com/api/v4/projects/84460547/packages/helm/stable
+      version: 0.0.0-develop.67
+    - condition: partner-management.enabled
+      name: partner-management
+      repository: https://gitlab.com/api/v4/projects/84460547/packages/helm/stable
+      version: 0.0.0-develop.13
+    - condition: openg2p-consent-manager.enabled
+      name: openg2p-consent-manager
+      repository: https://gitlab.com/api/v4/projects/84460547/packages/helm/stable
+      version: 0.0.0-develop.49
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.1.1
+    description: Helm chart for OpenG2P Commons application services
+    digest: aedf8d9077483e51906e1b1ccadf5a11e78335f05c670506e0c7977d2b6dc036
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-commons-services
+    type: application
+    urls:
+    - ../openg2p-commons-services-2.2.1.tgz
+    version: 2.2.1
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       catalog.cattle.io/release-name: commons-services
@@ -7629,6 +7904,45 @@ entries:
     - ../openg2p-disability-registry-0.0.0-develop.10.tgz
     version: 0.0.0-develop.10
   openg2p-farmer-registry:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Farmer Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: d39deba138813845cc34ea701b885ed763833836
+      org.opencontainers.image.source: https://gitlab.com/openg2p/registry/farmer-registry
+    apiVersion: v2
+    appVersion: 1.3.0
+    created: "2026-09-01T10:27:06.295805+05:30"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://gitlab.com/api/v4/projects/84460547/packages/helm/stable
+      version: 0.0.0-develop.346
+    description: 'OpenG2P Farmer Registry — a thin, branded package over the shared
+      openg2p-registry chart published by the registry platform.  This chart owns
+      NO templates. It declares openg2p-registry as a pinned dependency and supplies
+      only the farmer values overlay (variant identity, hostname, the farmer-built
+      images, seed toggles and the farmer sanity suite). Everything else — all service
+      templates, keycloak/iam wiring, db-seed machinery — comes from the openg2p-registry
+      subchart. '
+    digest: c4cf492bdc0d6919711969bcfc834dd45942d361225661253bcdb59d4c0d2c4e
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - farmer-registry
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-farmer-registry
+    sources:
+    - https://github.com/OpenG2P/farmer-registry
+    type: application
+    urls:
+    - ../openg2p-farmer-registry-1.3.0.tgz
+    version: 1.3.0
   - annotations:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/display-name: OpenG2P Farmer Registry
@@ -11256,6 +11570,46 @@ entries:
     - ../openg2p-master-data-0.0.0-develop.tgz
     version: 0.0.0-develop
   openg2p-nsr:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P National Social Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 1d9641f266790bf8e09c6a2e9a1b5e77ef3f4c5e
+      org.opencontainers.image.source: https://gitlab.com/openg2p/registry/national-social-registry
+    apiVersion: v2
+    appVersion: 1.1.0
+    created: "2026-09-01T10:27:06.302521+05:30"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://gitlab.com/api/v4/projects/84460547/packages/helm/stable
+      version: 0.0.0-develop.343
+    description: 'OpenG2P National Social Registry — a thin, branded package over
+      the shared openg2p-registry chart published by the registry platform.  This
+      chart owns NO templates. It declares openg2p-registry as a pinned dependency
+      and supplies only the NSR values overlay (variant identity, hostname, the NSR-built
+      images, seed toggles, id types and the IAM tile name). Everything else — all
+      service templates, keycloak/iam wiring, db-seed machinery, sanity suite — comes
+      from the openg2p-registry subchart. '
+    digest: 650919485557801518d65021532faec7007b308fee7db62addf6fed5f9391b04
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - social-registry
+    - nsr
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-nsr
+    sources:
+    - https://github.com/OpenG2P/national-social-registry
+    type: application
+    urls:
+    - ../openg2p-nsr-1.1.0.tgz
+    version: 1.1.0
   - annotations:
       catalog.cattle.io/certified: partner
       catalog.cattle.io/display-name: OpenG2P National Social Registry
@@ -16161,6 +16515,30 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 1a7155798e6de6f6abe6bfe109aa5902cc0e660d
+      org.opencontainers.image.source: https://gitlab.com/openg2p/spar/spar
+    apiVersion: v2
+    appVersion: 1.1.0
+    created: "2026-09-01T10:27:06.303549+05:30"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    description: A Helm chart for OpenG2P SPAR - June 2026 Edition
+    digest: 3300d82dfc97682be5668ada775a859407e62342d0e07280520b2ba937a8e059
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    name: openg2p-spar
+    type: application
+    urls:
+    - ../openg2p-spar-1.1.0.tgz
+    version: 1.1.0
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P SPAR
+      openg2p.org/add-to-rancher: ""
     apiVersion: v2
     created: "2026-07-05T10:58:42.046451838Z"
     dependencies:
@@ -17074,4 +17452,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-09-01T01:33:41.192543648Z"
+generated: "2026-09-01T10:27:06.24149+05:30"
