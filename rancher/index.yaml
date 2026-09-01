@@ -11692,6 +11692,36 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P ID Generator
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: ebf72eda719326b9a2be5cefbccd89deda0d9c3c
+      org.opencontainers.image.source: https://github.com/OpenG2P/id-generator
+    apiVersion: v2
+    appVersion: 1.1.2-rc.48
+    created: "2026-09-01T11:04:36.88596073Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop
+    description: A Helm chart for OpenG2P ID Generator Service
+    digest: f065d2eecb6ef3538dc74ac18def51867d7f8efae49979b6ad5fe54f89bc2820
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - id-generator
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-id-generator
+    type: application
+    urls:
+    - ../openg2p-id-generator-1.1.2-rc.48.tgz
+    version: 1.1.2-rc.48
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P ID Generator
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 6afff1cbaabc679c371cd66b3ebd7f3211a0bd3e
       org.opencontainers.image.source: https://github.com/OpenG2P/id-generator
     apiVersion: v2
@@ -18696,4 +18726,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-09-01T11:01:15.946751632Z"
+generated: "2026-09-01T11:04:36.884198848Z"
