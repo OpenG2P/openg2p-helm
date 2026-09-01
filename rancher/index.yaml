@@ -7669,6 +7669,41 @@ entries:
       org.opencontainers.image.revision: c67030b14e70decb46d2ebdbba07e4c9e63def7f
       org.opencontainers.image.source: https://github.com/OpenG2P/consent-manager
     apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-09-01T09:20:05.890723237Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.60
+    description: Helm chart for the OpenG2P Consent Manager (PDP for outbound data
+      sharing)
+    digest: e6034f0b3e475f6e8cc294ded3463e7a671fa3c41ca03b1fefe277eadc3a8dd1
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - consent-manager
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-consent-manager
+    type: application
+    urls:
+    - ../openg2p-consent-manager-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Consent Manager
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: c67030b14e70decb46d2ebdbba07e4c9e63def7f
+      org.opencontainers.image.source: https://github.com/OpenG2P/consent-manager
+    apiVersion: v2
     appVersion: 1.0.0-rc.57
     created: "2026-09-01T09:11:20.906444933Z"
     dependencies:
@@ -17965,4 +18000,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-09-01T09:11:20.900508142Z"
+generated: "2026-09-01T09:20:05.887548873Z"
