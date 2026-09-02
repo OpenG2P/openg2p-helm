@@ -1314,6 +1314,42 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Approval Workflow Engine
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 792e93dfe38eba671dbe09a83c533826a4afebea
+      org.opencontainers.image.source: https://github.com/OpenG2P/awe
+    apiVersion: v2
+    appVersion: 1.2.2-rc.84
+    created: "2026-09-02T09:07:22.4710244Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    description: A Helm chart for the OpenG2P Approval Workflow Engine
+    digest: 3f6a85a133804db09e8ff845d5b90afd8ebfd5cbbad43d08c0bddc12556801c4
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - approval
+    - workflow
+    - awe
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-awe
+    type: application
+    urls:
+    - ../openg2p-awe-1.2.2-rc.84.tgz
+    version: 1.2.2-rc.84
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Approval Workflow Engine
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: b76e63a471f0aeb690216a5337f47f7783dcc39c
       org.opencontainers.image.source: https://github.com/OpenG2P/awe
     apiVersion: v2
@@ -20910,4 +20946,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-09-02T08:57:04.115706097Z"
+generated: "2026-09-02T09:07:22.467442273Z"
