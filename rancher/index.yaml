@@ -10415,6 +10415,45 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Farmer Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 0c3146fb81ec5e162d1f9bf2d81175216eda3660
+      org.opencontainers.image.source: https://github.com/OpenG2P/farmer-registry
+    apiVersion: v2
+    appVersion: 1.2.1-rc.163
+    created: "2026-09-03T05:28:51.487730869Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0-rc.434
+    description: 'OpenG2P Farmer Registry — a thin, branded package over the shared
+      openg2p-registry chart published by the registry platform.  This chart owns
+      NO templates. It declares openg2p-registry as a pinned dependency and supplies
+      only the farmer values overlay (variant identity, hostname, the farmer-built
+      images, seed toggles and the farmer sanity suite). Everything else — all service
+      templates, keycloak/iam wiring, db-seed machinery — comes from the openg2p-registry
+      subchart. '
+    digest: d9fc2d5e622b9293e869e4f4b2b58cab812a0b0660ab9994d68cbb19dba1bc3f
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - farmer-registry
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-farmer-registry
+    sources:
+    - https://github.com/OpenG2P/farmer-registry
+    type: application
+    urls:
+    - ../openg2p-farmer-registry-1.2.1-rc.163.tgz
+    version: 1.2.1-rc.163
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Farmer Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 3282b9228243b76b9e18f76535cb4be6c7da3f46
       org.opencontainers.image.source: https://github.com/OpenG2P/farmer-registry
     apiVersion: v2
@@ -21489,4 +21528,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-09-03T04:52:10.022167346Z"
+generated: "2026-09-03T05:28:51.475236245Z"
