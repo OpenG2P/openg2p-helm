@@ -22019,6 +22019,41 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Partner Management
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: b5232da650841b7db013f24974c2b392e6a74efc
+      org.opencontainers.image.source: https://github.com/OpenG2P/partner-management
+    apiVersion: v2
+    appVersion: 1.0.3-rc.33
+    created: "2026-09-04T10:24:37.054058432Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    description: Helm chart for the OpenG2P Partner Management service (API + admin
+      UI)
+    digest: c7d806711ccbeecb402365fd0967012b731cf2b8d570b72c0174815cefccaed4
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - partner-management
+    - openg2p
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: partner-management
+    type: application
+    urls:
+    - ../partner-management-1.0.3-rc.33.tgz
+    version: 1.0.3-rc.33
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Partner Management
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 9cd7d4e016bc12d03258564a559abd06c32c0e04
       org.opencontainers.image.source: https://github.com/OpenG2P/partner-management
     apiVersion: v2
@@ -22729,4 +22764,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-09-04T10:23:19.317946818Z"
+generated: "2026-09-04T10:24:37.051633113Z"
