@@ -1,5 +1,50 @@
 apiVersion: v1
 entries:
+  dom-household-registry:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P DOM Household Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 9dacfb713dba29abc950e29267b07ca0e2508d2e
+      org.opencontainers.image.source: https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions
+    apiVersion: v2
+    appVersion: 0.0.0-develop.26
+    created: "2026-09-17T13:21:17.698504285Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0-rc.440
+    description: 'DOM Household Registry — a thin, branded package over the shared
+      openg2p-registry chart published by the registry platform.  This chart declares
+      openg2p-registry as a pinned dependency and supplies the DOM values overlay
+      (variant identity, hostname, DOM-built images, seed toggles, id types and the
+      IAM tile name). DOM also ships connector-stack templates (ODK / WebSub ingestion)
+      under templates/connector/ — the only templates this chart owns. Everything
+      else comes from the openg2p-registry subchart. '
+    digest: eba14c0125ed05fc9876c924d50f54eb92403c3b13ea1461e6b14ac4355ecdc6
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - household-registry
+    - dominican-republic
+    - siuben
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: dom-household-registry
+    sources:
+    - https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions
+    type: application
+    urls:
+    - ../dom-household-registry-0.0.0-develop.26.tgz
+    version: 0.0.0-develop.26
   keycloak-init:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Keycloak Init
@@ -23804,4 +23849,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-09-17T09:49:44.078140356Z"
+generated: "2026-09-17T13:21:17.679102113Z"
