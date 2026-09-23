@@ -69,7 +69,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.30.0
-    created: "2026-09-23T08:04:49.556710406Z"
+    created: "2026-09-23T15:53:35.263919418+05:30"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
     digest: 51100d6ab9824c904af74258b8fac7791815a6e1102de7b3cd78825d29acc09d
@@ -169,7 +169,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.12.2
-    created: "2026-09-23T08:04:49.563939361Z"
+    created: "2026-09-23T15:53:35.275629288+05:30"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -536,7 +536,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.7.1
-    created: "2026-09-23T08:04:49.573164325Z"
+    created: "2026-09-23T15:53:35.287402358+05:30"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -579,7 +579,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 24.0.5
-    created: "2026-09-23T08:04:49.581354516Z"
+    created: "2026-09-23T15:53:35.298244437+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -996,7 +996,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2023.12.23
-    created: "2026-09-23T08:04:49.583954197Z"
+    created: "2026-09-23T15:53:35.301807789+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -2393,63 +2393,6 @@ entries:
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
-    appVersion: "1.0"
-    created: "2026-09-23T08:04:37.944484547Z"
-    dependencies:
-    - name: common
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 2.30.0
-    - condition: postgres-init.enabled
-      name: postgres-init
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 0.0.0-develop
-    - condition: redis.enabled
-      name: redis
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 19.6.4
-    - alias: idgenerator
-      condition: idgenerator.enabled
-      name: openg2p-id-generator
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.0.0
-    - condition: keycloak-init.enabled
-      name: keycloak-init
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.1.1
-    - condition: openg2p-awe.enabled
-      name: openg2p-awe
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 1.0.0
-    description: 'OpenG2P National Social Registry (NSR) — a self-sufficient Helm
-      chart for the NSR registry stack (staff portal API/UI, partner API, celery beat/worker,
-      db-seed, id-generator). Supplies NSR-branded Docker images and NSR-specific
-      ID-generator configuration. Previously a thin wrapper over the openg2p-registry
-      base chart; that chart''s templates and defaults now live directly in this chart,
-      so it no longer depends on openg2p-registry. '
-    digest: eaf5ab87d77cc3c662b90764f320d262b529cc61cfe0ffe20c99d0ca4820da6f
-    home: https://openg2p.org
-    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
-    keywords:
-    - openg2p
-    - social-registry
-    - nsr
-    - registry
-    maintainers:
-    - email: info@openg2p.org
-      name: OpenG2P
-    name: mowsa-nsr
-    sources:
-    - https://github.com/OpenG2P/openg2p-registry-nsr-extensions
-    type: application
-    urls:
-    - https://openg2p.github.io/openg2p-helm/mowsa-nsr-1.tgz
-    version: "1"
-  - annotations:
-      catalog.cattle.io/certified: partner
-      catalog.cattle.io/display-name: OpenG2P MOWSA NSR
-      catalog.cattle.io/kube-version: '>=1.23.0-0'
-      openg2p.org/add-to-rancher: ""
-    apiVersion: v2
     appVersion: 1.0.0-develop
     created: "2026-09-23T08:04:37.537539311Z"
     dependencies:
@@ -3010,51 +2953,11 @@ entries:
       category: CRM
       images: |
         - name: odoo
-          image: docker.io/bitnami/odoo:17.0.20240605-debian-12-r4
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 17.0.20240605
-    created: "2026-09-23T08:04:38.044024193Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: Odoo is an open source ERP and CRM platform, formerly known as OpenERP,
-      that can connect a wide variety of business operations such as sales, supply
-      chain, finance, and project management.
-    digest: 44131d9ac54e173900c7f1d486af1daf611b93347fdabae93e620925a5104fcd
-    home: https://bitnami.com
-    icon: https://bitnami.com/assets/stacks/odoo/img/odoo-stack-220x234.png
-    keywords:
-    - odoo
-    - crm
-    - www
-    - http
-    - web
-    maintainers:
-    - name: Broadcom, Inc. All Rights Reserved.
-      url: https://github.com/bitnami/charts
-    name: odoo
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/odoo
-    urls:
-    - https://openg2p.github.io/openg2p-helm/odoo-26.3.0.tgz
-    version: 26.3.0
-  - annotations:
-      category: CRM
-      images: |
-        - name: odoo
           image: docker.io/openg2p/odoo:17.0.20240605-debian-12-r4
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2026-09-23T08:04:49.599401081Z"
+    created: "2026-09-23T15:53:35.320064357+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -3094,7 +2997,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2026-09-23T08:04:49.591569984Z"
+    created: "2026-09-23T15:53:35.311631737+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -16853,61 +16756,6 @@ entries:
     - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-2.0.0.tgz
     version: 2.0.0
   - annotations:
-      catalog.cattle.io/display-name: OpenG2P G2P Bridge
-      openg2p.org/add-to-rancher: ""
-    apiVersion: v2
-    created: "2026-09-23T08:04:44.034252578Z"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 15.x.x
-    - condition: redis.enabled
-      name: redis
-      repository: oci://registry-1.docker.io/bitnamicharts
-      version: 19.x.x
-    - condition: artifactory.enabled
-      name: artifactory
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 12.0.2
-    - condition: keymanager.enabled
-      name: keymanager
-      repository: https://openg2p.github.io/openg2p-helm
-      version: 12.1.0
-    - condition: softhsm.enabled
-      name: softhsm
-      repository: https://mosip.github.io/mosip-helm
-      version: 12.0.1
-    - condition: openg2p-g2p-bridge-api.enabled
-      name: openg2p-g2p-bridge-api
-      repository: ""
-      version: 2.0-develop
-    - condition: openg2p-g2p-bridge-celery-beat-producers.enabled
-      name: openg2p-g2p-bridge-celery-beat-producers
-      repository: ""
-      version: 2.0-develop
-    - condition: openg2p-g2p-bridge-celery-workers.enabled
-      name: openg2p-g2p-bridge-celery-workers
-      repository: ""
-      version: 2.0-develop
-    description: A Helm chart for OpenG2P G2P Bridge
-    digest: f6ebf972da29ef442f8aabfb59d1645f6937b0bf58690095c268e60ac58460fe
-    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
-    keywords:
-    - openg2p-g2p-bridge
-    - openg2p-g2p-bridge-api
-    - openg2p-g2p-bridge-celery-beat-producers
-    - openg2p-g2p-bridge-celery-workers
-    - g2p-bridge
-    maintainers:
-    - email: info@openg2p.org
-      name: OpenG2P
-    name: openg2p-g2p-bridge
-    type: application
-    urls:
-    - https://openg2p.github.io/openg2p-helm/openg2p-g2p-bridge-2.0-develop.tgz
-    version: 2.0-develop
-  - annotations:
       catalog.cattle.io/display-name: OpenG2P-G2P-Bridge
       openg2p.org/add-to-rancher: ""
     apiVersion: v2
@@ -29160,7 +29008,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.14.0
-    created: "2026-09-23T08:04:49.605048961Z"
+    created: "2026-09-23T15:53:35.327326164+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -30042,7 +29890,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.4.0
-    created: "2026-09-23T08:04:49.610532427Z"
+    created: "2026-09-23T15:53:35.332645789+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -30088,7 +29936,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.5
-    created: "2026-09-23T08:04:49.615554165Z"
+    created: "2026-09-23T15:53:35.338025416+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -30783,6 +30631,37 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
+  superset:
+  - apiVersion: v2
+    appVersion: 4.0.1
+    created: "2026-09-23T15:53:35.349346863+05:30"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: ""
+      version: 12.1.6
+    - condition: redis.enabled
+      name: redis
+      repository: ""
+      version: 17.9.4
+    description: Apache Superset is a modern, enterprise-ready business intelligence
+      web application
+    digest: 9fbc7789108a5613489e3e803a9608da3a000759ad14c235d5ba8bcccaceccb9
+    home: https://superset.apache.org/
+    icon: https://artifacthub.io/image/68c1d717-0e97-491f-b046-754e46f46922@2x
+    keywords:
+    - business intelligence
+    - data science
+    maintainers:
+    - email: craig@craigrueda.com
+      name: craig-rueda
+      url: https://github.com/craig-rueda
+    name: superset
+    sources:
+    - https://github.com/apache/superset
+    urls:
+    - https://openg2p.github.io/openg2p-helm/third-party/superset-0.12.11.tgz
+    version: 0.12.11
   websub:
   - annotations:
       catalog.cattle.io/display-name: WebSub
@@ -30836,4 +30715,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/websub-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-09-23T08:04:37.324139033Z"
+generated: "2026-09-23T15:53:35.262863921+05:30"
