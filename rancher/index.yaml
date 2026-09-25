@@ -188,6 +188,50 @@ entries:
       catalog.cattle.io/display-name: OpenG2P MoWSA NSR
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: bbbcfdcd7da144cc2e9ab409fdba8741aa1252a6
+      org.opencontainers.image.source: https://github.com/OpenG2P/mowsa-nsr
+    apiVersion: v2
+    appVersion: 1.2.1-rc.329
+    created: "2026-09-25T18:14:08.178574826Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.2-rc.509
+    description: 'MoWSA National Social Registry — a thin, branded package over the
+      shared openg2p-registry chart published by the registry platform.  This chart
+      declares openg2p-registry as a pinned dependency and supplies the MoWSA values
+      overlay (variant identity, hostname, MoWSA-built images, seed toggles, id types
+      and the IAM tile name). MoWSA also ships connector-stack templates (ODK / WebSub
+      ingestion) under templates/connector/ — the only templates this chart owns.
+      Everything else comes from the openg2p-registry subchart. '
+    digest: 770863f7a779801553456c177afe899a271cf25c1eda612fa3148820f46ac78b
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - mowsa
+    - registry
+    - social-registry
+    - nsr
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: mowsa-nsr
+    sources:
+    - https://github.com/OpenG2P/mowsa-nsr
+    type: application
+    urls:
+    - ../mowsa-nsr-1.2.1-rc.329.tgz
+    version: 1.2.1-rc.329
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P MoWSA NSR
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: a4a180808c53ce159e83e92e3ded59d5df48a288
       org.opencontainers.image.source: https://github.com/OpenG2P/mowsa-nsr
     apiVersion: v2
@@ -24911,4 +24955,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-09-25T16:56:36.629989423Z"
+generated: "2026-09-25T18:14:08.160638028Z"
