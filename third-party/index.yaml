@@ -6,7 +6,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.30.0
-    created: "2026-09-23T15:37:03.318747685+05:30"
+    created: "2026-09-30T10:02:54.432079536+05:30"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
     digest: 51100d6ab9824c904af74258b8fac7791815a6e1102de7b3cd78825d29acc09d
@@ -41,7 +41,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.12.2
-    created: "2026-09-23T15:37:03.329746734+05:30"
+    created: "2026-09-30T10:02:54.439570958+05:30"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -69,6 +69,26 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/third-party/elasticsearch-19.21.2.tgz
     version: 19.21.2
+  garage:
+  - apiVersion: v2
+    appVersion: v2.2.0
+    created: "2026-09-30T10:02:54.440133438+05:30"
+    description: S3-compatible object store for small self-hosted geo-distributed
+      deployments
+    digest: d0297d661088ec616e04479391face08651d7c443bda09b0412906a203549534
+    home: https://garagehq.deuxfleurs.fr/
+    icon: https://garagehq.deuxfleurs.fr/images/garage-logo.svg
+    keywords:
+    - geo-distributed
+    - read-after-write-consistency
+    - s3-compatible
+    name: garage
+    sources:
+    - https://git.deuxfleurs.fr/Deuxfleurs/garage.git
+    type: application
+    urls:
+    - https://openg2p.github.io/openg2p-helm/third-party/garage-0.9.2.tgz
+    version: 0.9.2
   kafka:
   - annotations:
       category: Infrastructure
@@ -84,7 +104,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.7.1
-    created: "2026-09-23T15:37:03.340394745+05:30"
+    created: "2026-09-30T10:02:54.44869774+05:30"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -127,7 +147,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 24.0.5
-    created: "2026-09-23T15:37:03.350061293+05:30"
+    created: "2026-09-30T10:02:54.456850722+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -169,7 +189,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2023.12.23
-    created: "2026-09-23T15:37:03.353606357+05:30"
+    created: "2026-09-30T10:02:54.459563197+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -206,7 +226,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2026-09-23T15:37:03.371254569+05:30"
+    created: "2026-09-30T10:02:54.470249534+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -246,7 +266,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2026-09-23T15:37:03.362519034+05:30"
+    created: "2026-09-30T10:02:54.465127976+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -291,7 +311,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.14.0
-    created: "2026-09-23T15:37:03.377894639+05:30"
+    created: "2026-09-30T10:02:54.473960785+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -328,7 +348,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.4.0
-    created: "2026-09-23T15:37:03.384522997+05:30"
+    created: "2026-09-30T10:02:54.478170361+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -374,7 +394,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.5
-    created: "2026-09-23T15:37:03.390789884+05:30"
+    created: "2026-09-30T10:02:54.483216361+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -403,7 +423,7 @@ entries:
   superset:
   - apiVersion: v2
     appVersion: 4.0.1
-    created: "2026-09-23T15:37:03.402385784+05:30"
+    created: "2026-09-30T10:02:54.493447582+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -431,4 +451,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/third-party/superset-0.12.11.tgz
     version: 0.12.11
-generated: "2026-09-23T15:37:03.316998545+05:30"
+generated: "2026-09-30T10:02:54.431254369+05:30"
