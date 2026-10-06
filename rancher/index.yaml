@@ -3113,6 +3113,41 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Bridge
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 317a66dfad955cbf0066987d6c7c1861ed37b8a5
+      org.opencontainers.image.source: https://github.com/OpenG2P/g2p-bridge
+    apiVersion: v2
+    appVersion: 1.2.1-rc.108
+    created: "2026-10-06T00:55:18.73569057Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: redis.enabled
+      name: redis
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 19.6.4
+    description: Helm chart for OpenG2P G2P Bridge (with optional bundled Example
+      Bank simulator)
+    digest: 135f8060cf95f0b4e93ee320d0c2a8ea19b4d2aba15492635ac51c7f4c3a1bc1
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p-bridge
+    - g2p-bridge
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-bridge
+    type: application
+    urls:
+    - ../openg2p-bridge-1.2.1-rc.108.tgz
+    version: 1.2.1-rc.108
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Bridge
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: e812f7cdc817eea83c1ba5e229b0f049ffd7cb22
       org.opencontainers.image.source: https://gitlab.com/openg2p/g2p-bridge/g2p-bridge
     apiVersion: v2
@@ -30021,4 +30056,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-10-05T11:23:00.24827093Z"
+generated: "2026-10-06T00:55:18.725039255Z"
