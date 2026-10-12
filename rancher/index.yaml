@@ -1953,6 +1953,35 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: Agri Stack Composite
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: efff75d411d8d351410ba2af84593447bde3db68
+      org.opencontainers.image.source: https://github.com/OpenG2P/agri-stack
+    apiVersion: v2
+    appVersion: 0.0.0-develop.50
+    created: "2026-10-12T06:15:29.658086598Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    description: Agri Stack use-case composite — serves configured use cases by querying
+      several registries over DCI with the partner's consent.
+    digest: 9861422ba2aaf445a9a68ef3f94ecacdc4c5e7e12c1556c26d475e170dfc601f
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - agri-stack
+    - composite
+    - dci
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-agri-composite
+    type: application
+    urls:
+    - ../openg2p-agri-composite-0.0.0-develop.50.tgz
+    version: 0.0.0-develop.50
+  - annotations:
+      catalog.cattle.io/display-name: Agri Stack Composite
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 9cc27d3857634160473b36e7aee1c56c6dc1dbc4
       org.opencontainers.image.source: https://github.com/OpenG2P/agri-stack
     apiVersion: v2
@@ -33845,4 +33874,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-10-12T06:10:25.921480659Z"
+generated: "2026-10-12T06:15:29.654301203Z"
