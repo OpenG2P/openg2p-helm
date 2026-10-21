@@ -19873,6 +19873,49 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Disability Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 6f04c947cb405c94b770a982047ea71dfc67b70c
+      org.opencontainers.image.source: https://github.com/OpenG2P/disability-registry
+    apiVersion: v2
+    appVersion: 0.0.0-develop.12
+    created: "2026-10-21T00:59:04.237767512Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.621
+    description: 'OpenG2P Disability Registry — a thin, branded package over the shared
+      openg2p-registry chart published by the registry platform.  A single-register
+      registry of persons with disability, modelled on the SPDCI Disability Registry
+      data objects (DO.DR.01 - DO.DR.10). No group or household register: the subject
+      is the individual.  This chart owns no service templates. It declares openg2p-registry
+      as a pinned dependency and supplies only this registry''s values overlay (variant
+      identity, hostname, the images built here, seed toggles, the ID pool and the
+      IAM tile name), plus the analytics jobs that are genuinely ours — the reporting
+      views and the dashboard import, which are written against this registry''s schema. '
+    digest: 65f0eb6bcc69e6d795797c4a5b8d82f2792b2ee703321b44ddc3cb03e7266638
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - disability
+    - disability-registry
+    - spdci
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-disability-registry
+    sources:
+    - https://github.com/OpenG2P/disability-registry
+    type: application
+    urls:
+    - ../openg2p-disability-registry-0.0.0-develop.12.tgz
+    version: 0.0.0-develop.12
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Disability Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: ad4bf83dd2c8498e01b731123283dce20329c582
       org.opencontainers.image.source: https://github.com/OpenG2P/disability-registry
     apiVersion: v2
@@ -36592,4 +36635,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-10-21T00:57:05.581958733Z"
+generated: "2026-10-21T00:59:04.216090738Z"
