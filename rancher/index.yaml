@@ -18226,6 +18226,46 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Consent Manager
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: b4fe45703aa7d488f6595928344a96b1ed984212
+      org.opencontainers.image.source: https://github.com/OpenG2P/consent-manager
+    apiVersion: v2
+    appVersion: 0.0.0-develop.83
+    created: "2026-10-21T05:10:49.014219353Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    - condition: keycloak-init.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.60
+    - alias: partner-keycloak-init
+      condition: partner-keycloak-init.enabled,partnerPortal.enabled
+      name: keycloak-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.60
+    description: Helm chart for the OpenG2P Consent Manager (PDP for outbound data
+      sharing)
+    digest: cf28bf056e734588bf0763ce533ce1c416bbd28ac1284f8e8a46c8c1115009ae
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - consent-manager
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-consent-manager
+    type: application
+    urls:
+    - ../openg2p-consent-manager-0.0.0-develop.83.tgz
+    version: 0.0.0-develop.83
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Consent Manager
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 93c4c54ad8266b3745395da2affa5ef36c807929
       org.opencontainers.image.source: https://github.com/OpenG2P/consent-manager
     apiVersion: v2
@@ -36752,4 +36792,4 @@ entries:
     urls:
     - ../postgres-init-0.0.0-develop.tgz
     version: 0.0.0-develop
-generated: "2026-10-21T04:38:57.209075702Z"
+generated: "2026-10-21T05:10:49.009747786Z"
