@@ -6,7 +6,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.30.0
-    created: "2026-09-30T10:02:54.432079536+05:30"
+    created: "2026-10-30T15:46:31.901794145+05:30"
     description: A Library Helm Chart for grouping common logic between bitnami charts.
       This chart is not deployable by itself.
     digest: 51100d6ab9824c904af74258b8fac7791815a6e1102de7b3cd78825d29acc09d
@@ -41,7 +41,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.12.2
-    created: "2026-09-30T10:02:54.439570958+05:30"
+    created: "2026-10-30T15:46:31.910575532+05:30"
     dependencies:
     - condition: global.kibanaEnabled
       name: kibana
@@ -72,7 +72,7 @@ entries:
   garage:
   - apiVersion: v2
     appVersion: v2.2.0
-    created: "2026-09-30T10:02:54.440133438+05:30"
+    created: "2026-10-30T15:46:31.911624693+05:30"
     description: S3-compatible object store for small self-hosted geo-distributed
       deployments
     digest: d0297d661088ec616e04479391face08651d7c443bda09b0412906a203549534
@@ -104,7 +104,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 3.7.1
-    created: "2026-09-30T10:02:54.44869774+05:30"
+    created: "2026-10-30T15:46:31.92086574+05:30"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -147,7 +147,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 24.0.5
-    created: "2026-09-30T10:02:54.456850722+05:30"
+    created: "2026-10-30T15:46:31.92860289+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -189,7 +189,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2023.12.23
-    created: "2026-09-30T10:02:54.459563197+05:30"
+    created: "2026-10-30T15:46:31.93219579+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -226,7 +226,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2026-09-30T10:02:54.470249534+05:30"
+    created: "2026-10-30T15:46:31.944309067+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -266,7 +266,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 17.0.20240605
-    created: "2026-09-30T10:02:54.465127976+05:30"
+    created: "2026-10-30T15:46:31.937651658+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -311,7 +311,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.14.0
-    created: "2026-09-30T10:02:54.473960785+05:30"
+    created: "2026-10-30T15:46:31.950483314+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -348,7 +348,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 16.4.0
-    created: "2026-09-30T10:02:54.478170361+05:30"
+    created: "2026-10-30T15:46:31.95516364+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -394,7 +394,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.5
-    created: "2026-09-30T10:02:54.483216361+05:30"
+    created: "2026-10-30T15:46:31.961648876+05:30"
     dependencies:
     - name: common
       repository: ""
@@ -422,8 +422,38 @@ entries:
     version: 19.6.4
   superset:
   - apiVersion: v2
+    appVersion: 6.1.0
+    created: "2026-10-30T15:46:31.999366142+05:30"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: ""
+      version: 16.7.27
+    - condition: redis.enabled
+      name: redis
+      repository: ""
+      version: 17.9.4
+    description: Apache Superset is a modern, enterprise-ready business intelligence
+      web application
+    digest: d0edeacf84efba2228f27cc14137b28553ff691dec3d1d124321cfab77474ec8
+    home: https://superset.apache.org/
+    icon: https://artifacthub.io/image/68c1d717-0e97-491f-b046-754e46f46922@2x
+    keywords:
+    - business intelligence
+    - data science
+    maintainers:
+    - email: craig@craigrueda.com
+      name: craig-rueda
+      url: https://github.com/craig-rueda
+    name: superset
+    sources:
+    - https://github.com/apache/superset
+    urls:
+    - https://openg2p.github.io/openg2p-helm/third-party/superset-0.16.2.tgz
+    version: 0.16.2
+  - apiVersion: v2
     appVersion: 4.0.1
-    created: "2026-09-30T10:02:54.493447582+05:30"
+    created: "2026-10-30T15:46:31.971338763+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -451,4 +481,4 @@ entries:
     urls:
     - https://openg2p.github.io/openg2p-helm/third-party/superset-0.12.11.tgz
     version: 0.12.11
-generated: "2026-09-30T10:02:54.431254369+05:30"
+generated: "2026-10-30T15:46:31.900890445+05:30"
