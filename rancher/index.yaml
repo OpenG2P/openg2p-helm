@@ -6,6 +6,50 @@ entries:
       catalog.cattle.io/display-name: OpenG2P DOM Household Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 7aec25c6904626f63e4e3f43f89826a3a6b4cf67
+      org.opencontainers.image.source: https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions
+    apiVersion: v2
+    appVersion: 0.0.0-develop.43
+    created: "2026-10-30T09:33:23.240425646Z"
+    dependencies:
+    - name: common
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 2.30.0
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0-rc.440
+    description: 'DOM Household Registry — a thin, branded package over the shared
+      openg2p-registry chart published by the registry platform.  This chart declares
+      openg2p-registry as a pinned dependency and supplies the DOM values overlay
+      (variant identity, hostname, DOM-built images, seed toggles, id types and the
+      IAM tile name). DOM also ships connector-stack templates (ODK / WebSub ingestion)
+      under templates/connector/ — the only templates this chart owns. Everything
+      else comes from the openg2p-registry subchart. '
+    digest: 8a4fdf724fb4c581bcd9d834fd6ee15eaa0a8f61b917afcd8d9d8b4ea6c94711
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - household-registry
+    - dominican-republic
+    - siuben
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: dom-household-registry
+    sources:
+    - https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions
+    type: application
+    urls:
+    - ../dom-household-registry-0.0.0-develop.43.tgz
+    version: 0.0.0-develop.43
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P DOM Household Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: c767d524b7ee2246f53ef5da59f0af9de6677d9e
       org.opencontainers.image.source: https://github.com/OpenG2P/openg2p-registry-dr-hh-extensions
     apiVersion: v2
@@ -38034,4 +38078,4 @@ entries:
     urls:
     - ../registry-connector-0.0.0-develop.9.tgz
     version: 0.0.0-develop.9
-generated: "2026-10-30T09:32:05.182081056Z"
+generated: "2026-10-30T09:33:23.228299538Z"
