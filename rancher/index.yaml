@@ -30791,6 +30791,40 @@ entries:
     - ../openg2p-pbms-1.2.0-develop.tgz
     version: 1.2.0-develop
   - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P PBMS
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 799576649a36c09e04bed6598ce75a805cf4364f
+      org.opencontainers.image.source: https://github.com/OpenG2P/pbms-connectors
+    apiVersion: v2
+    appVersion: 0.0.0-develop.18
+    created: "2026-11-02T06:12:23.346426026Z"
+    dependencies:
+    - alias: pbms
+      name: openg2p-pbms-platform
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.18
+    description: 'OpenG2P PBMS — the chart you install. It has no templates of its
+      own. It depends on openg2p-pbms-platform and sets the Odoo, Celery, and staff
+      API images that a cluster runs. '
+    digest: 5ce621aee91ae8fa1f55a3dee48e4a3956a1d818c4759becfff731e67b2ae3da
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - pbms
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-pbms
+    sources:
+    - https://github.com/OpenG2P/pbms-connectors
+    type: application
+    urls:
+    - ../openg2p-pbms-0.0.0-develop.18.tgz
+    version: 0.0.0-develop.18
+  - annotations:
       catalog.cattle.io/display-name: OpenG2P PBMS
       openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: aa1ce60cdd91a8c01148c044caef9e27049741af
@@ -38387,4 +38421,4 @@ entries:
     urls:
     - ../registry-connector-0.0.0-develop.9.tgz
     version: 0.0.0-develop.9
-generated: "2026-11-02T02:18:33.410751035Z"
+generated: "2026-11-02T06:12:23.328544927Z"
