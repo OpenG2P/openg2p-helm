@@ -41314,6 +41314,35 @@ entries:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P Registry Connector
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 0ec945fe701550fcf2008975a051d886e8cded6d
+      org.opencontainers.image.source: https://github.com/OpenG2P/registry-connector
+    apiVersion: v2
+    appVersion: 1.0.0-rc.12
+    created: "2026-11-17T10:44:12.657761073Z"
+    dependencies:
+    - condition: postgres-init.enabled
+      name: postgres-init
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.0
+    description: Helm chart for OpenG2P Registry Connector (API, worker, beat)
+    digest: f39e721bc9e6458f4d3b1ff9c483a851cbe6be33f1263b45ad56b914cde22089
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry-connector
+    - connector
+    - ingestion
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: registry-connector
+    type: application
+    urls:
+    - ../registry-connector-1.0.0-rc.12.tgz
+    version: 1.0.0-rc.12
+  - annotations:
+      catalog.cattle.io/display-name: OpenG2P Registry Connector
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: c535ba0c89c7a53ca4ca618b31c3b863bc92b22a
       org.opencontainers.image.source: https://github.com/OpenG2P/registry-connector
     apiVersion: v2
@@ -41398,4 +41427,4 @@ entries:
     urls:
     - ../registry-connector-0.0.0-develop.9.tgz
     version: 0.0.0-develop.9
-generated: "2026-11-17T10:41:46.826793762Z"
+generated: "2026-11-17T10:44:12.656352148Z"
