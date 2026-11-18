@@ -5236,11 +5236,11 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Base
       catalog.cattle.io/release-name: commons
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
-      org.opencontainers.image.revision: 80c224a1e21e494b9987541180ecbd211755230e
+      org.opencontainers.image.revision: e93f7dec204b0a7c0d70a2f4bad3d3c36f547ccc
       org.opencontainers.image.source: https://github.com/OpenG2P/commons
     apiVersion: v2
     appVersion: 2.3.4
-    created: "2026-11-18T06:55:02.064463849Z"
+    created: "2026-11-18T09:57:49.507258563Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -5291,7 +5291,7 @@ entries:
       version: 1.2.0
     description: Helm chart for OpenG2P Commons infrastructure (databases, message
       queues, init jobs)
-    digest: cb739afab434d1e0559ae1597b3fb9c4f3538144d41401cbfee063b8f7e51875
+    digest: 818eb3566e842568751786044e63ef03887eba637c9469f65f9ccaadcf5569da
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons-base
     type: application
@@ -11716,11 +11716,11 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Commons Services
       catalog.cattle.io/release-name: commons-services
       openg2p.org/add-to-rancher: openg2p.org/add-to-rancher
-      org.opencontainers.image.revision: 80c224a1e21e494b9987541180ecbd211755230e
+      org.opencontainers.image.revision: e93f7dec204b0a7c0d70a2f4bad3d3c36f547ccc
       org.opencontainers.image.source: https://github.com/OpenG2P/commons
     apiVersion: v2
     appVersion: 2.3.4
-    created: "2026-11-18T06:55:02.100666197Z"
+    created: "2026-11-18T09:57:49.537493804Z"
     dependencies:
     - alias: master-data
       condition: master-data.enabled
@@ -11778,13 +11778,13 @@ entries:
     - condition: openg2p-consent-manager.enabled
       name: openg2p-consent-manager
       repository: https://openg2p.github.io/openg2p-helm
-      version: 1.0.3
+      version: 1.0.4
     - condition: keycloak-init.enabled
       name: keycloak-init
       repository: https://openg2p.github.io/openg2p-helm
       version: 1.2.0
     description: Helm chart for OpenG2P Commons application services
-    digest: 27dd98afd65cfbed9eedc9687a3e662b2a8d7f2920f6669ffa1472aa9cc3ea0a
+    digest: 60e7b4e774acf640f94f8b5b3bd34495c4da41350fcd4c873081db55f33f9b39
     icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
     name: openg2p-commons-services
     type: application
@@ -42709,4 +42709,4 @@ entries:
     urls:
     - ../registry-connector-0.0.0-develop.9.tgz
     version: 0.0.0-develop.9
-generated: "2026-11-18T09:34:50.711751146Z"
+generated: "2026-11-18T09:57:49.473275188Z"
