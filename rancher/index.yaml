@@ -24691,6 +24691,54 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Farmer Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: fb7b90bad86bdbd646a686970bbb3d90584059d0
+      org.opencontainers.image.source: https://github.com/OpenG2P/farmer-registry
+    apiVersion: v2
+    appVersion: 0.0.0-develop.284
+    created: "2026-11-20T04:05:10.810560285Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.721
+    description: 'OpenG2P Farmer Registry — a thin, branded package over the shared
+      openg2p-registry chart published by the registry platform.  This chart owns
+      NO service templates. It declares openg2p-registry as a pinned dependency and
+      supplies the farmer values overlay (variant identity, hostname, the farmer-built
+      images, seed toggles and the farmer sanity suite). Every deployment, service,
+      ingress, keycloak/iam wiring and the db-seed machinery come from the openg2p-registry
+      subchart.  It does own the ANALYTICS layer, in templates/ — because the reporting
+      views and dashboards are written against the farmer schema and the platform
+      has no concept of them:    analytics-jobs.yaml                reporting-views
+      + dashboard-import Jobs   reporting-views-refresh.yaml       CronJob refreshing
+      the materialized views   dashboard-bundle-configmap.yaml    ships fr-dashboards.zip
+      into the cluster   maps-content-configmap.yaml        maps content for G2P Insights   _maps-content.tpl                  its
+      name helper   _mds-api-env.tpl                   Master Data API env (MDS_*)
+      for the Jobs   superset-service-account-secret.yaml  Hook weights order these
+      above the sanity suite (25), so rebuilding the views cannot change what the
+      sanity tests asserted against. '
+    digest: b896c8870f7b5b2d4755d60c99adf43986060938fa992a2028ae10a0e715f03d
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - farmer-registry
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-farmer-registry
+    sources:
+    - https://github.com/OpenG2P/farmer-registry
+    type: application
+    urls:
+    - ../openg2p-farmer-registry-0.0.0-develop.284.tgz
+    version: 0.0.0-develop.284
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Farmer Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: fad6a40bc2bbda64c1584151e6e0542a2fbc9539
       org.opencontainers.image.source: https://github.com/OpenG2P/farmer-registry
     apiVersion: v2
@@ -43020,4 +43068,4 @@ entries:
     urls:
     - ../registry-connector-0.0.0-develop.9.tgz
     version: 0.0.0-develop.9
-generated: "2026-11-19T06:55:48.028275035Z"
+generated: "2026-11-20T04:05:10.794806749Z"
