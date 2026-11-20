@@ -41085,6 +41085,45 @@ entries:
     urls:
     - ../openg2p-registry-0.0.0-develop.283.tgz
     version: 0.0.0-develop.283
+  openg2p-spa-registry:
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P SPA Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 35fbdc724b1c5ce926f7ed14e2f9eb5261714607
+      org.opencontainers.image.source: https://github.com/OpenG2P/spa-registry
+    apiVersion: v2
+    appVersion: 0.0.0-develop.15
+    created: "2026-11-20T06:07:41.210685521Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 1.2.2-rc.625
+    description: 'OpenG2P SPA Registry — a thin, branded package over the shared openg2p-registry
+      chart published by the registry platform.  This chart owns NO templates. It
+      declares openg2p-registry as a pinned dependency and supplies only the farmer
+      values overlay (variant identity, hostname, the farmer-built images, seed toggles
+      and the farmer sanity suite). Everything else — all service templates, keycloak/iam
+      wiring, db-seed machinery — comes from the openg2p-registry subchart. '
+    digest: d0806169600c8b65820f4613f8cc1c4e0490fab4043ebae503d4a85c5b0e8142
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - spa-registry
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-spa-registry
+    sources:
+    - https://github.com/OpenG2P/spa-registry
+    type: application
+    urls:
+    - ../openg2p-spa-registry-0.0.0-develop.15.tgz
+    version: 0.0.0-develop.15
   openg2p-spar:
   - annotations:
       catalog.cattle.io/display-name: OpenG2P SPAR
@@ -43107,4 +43146,4 @@ entries:
     urls:
     - ../registry-connector-0.0.0-develop.9.tgz
     version: 0.0.0-develop.9
-generated: "2026-11-20T04:05:44.67983819Z"
+generated: "2026-11-20T06:07:41.196603374Z"
