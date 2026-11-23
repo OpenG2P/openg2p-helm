@@ -2191,6 +2191,46 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Agents Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 91023a6ba30f9e41b9b0fb0ee768a6e0386bc51c
+      org.opencontainers.image.source: https://github.com/OpenG2P/agents-registry
+    apiVersion: v2
+    appVersion: 0.0.0-develop.5
+    created: "2026-11-23T05:36:49.134086241Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.845
+    description: 'OpenG2P Agents Registry — a reference registry of the agents who
+      serve farmers (extension agents, development agents, animal health workers):
+      their employment, assignments, specializations, qualifications and trainings.  A
+      thin package over the shared openg2p-registry chart: this chart owns no templates,
+      only a values overlay (variant identity, hostname, the agents images, the Agent
+      ID pool, seed toggles). Every deployment, service, gateway, keycloak/iam wiring
+      and the db-seed machinery come from the openg2p-registry subchart. '
+    digest: a7a8f61ef99f258096ed89febc834ed3e1efd4b2a2bdcf56a378b557d0584baa
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - agents-registry
+    - activity-register
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-agents-registry
+    sources:
+    - https://github.com/OpenG2P/agents-registry
+    type: application
+    urls:
+    - ../openg2p-agents-registry-0.0.0-develop.5.tgz
+    version: 0.0.0-develop.5
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Agents Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 519423fa2f60e8f15c2b91aecfc7a3b50121f952
       org.opencontainers.image.source: https://github.com/OpenG2P/agents-registry
     apiVersion: v2
@@ -43873,4 +43913,4 @@ entries:
     urls:
     - ../registry-connector-0.0.0-develop.9.tgz
     version: 0.0.0-develop.9
-generated: "2026-11-23T05:36:15.643356005Z"
+generated: "2026-11-23T05:36:49.11281002Z"
