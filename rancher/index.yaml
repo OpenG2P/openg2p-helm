@@ -22838,6 +22838,45 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Crop Sown Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: cc96f2d870435de784309c12ba02b7a483e7aee2
+      org.opencontainers.image.source: https://github.com/OpenG2P/crop-sown-registry
+    apiVersion: v2
+    appVersion: 0.0.0-develop.49
+    created: "2026-11-24T04:44:49.239666343Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.847
+    description: 'OpenG2P Crop Sown Registry — an activity register of what farmers
+      plan, sow, observe and harvest, plot by plot and season by season.  A thin package
+      over the shared openg2p-registry chart: this chart owns no templates, only a
+      values overlay (variant identity, hostname, the crop-sown images, seed toggles,
+      activity/ODK settings). Every deployment, service, gateway, keycloak/iam wiring
+      and the db-seed machinery come from the openg2p-registry subchart. '
+    digest: d45fab64306ced70c3f21a1c01854da79de8924a3b360afb4da09511252eb29f
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - crop-sown-registry
+    - activity-register
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-crop-sown-registry
+    sources:
+    - https://github.com/OpenG2P/crop-sown-registry
+    type: application
+    urls:
+    - ../openg2p-crop-sown-registry-0.0.0-develop.49.tgz
+    version: 0.0.0-develop.49
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Crop Sown Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: b3ef0fc7441f782709dbed974c1d7cbd7f319a9e
       org.opencontainers.image.source: https://github.com/OpenG2P/crop-sown-registry
     apiVersion: v2
@@ -44164,4 +44203,4 @@ entries:
     urls:
     - ../registry-connector-0.0.0-develop.9.tgz
     version: 0.0.0-develop.9
-generated: "2026-11-24T01:11:57.144306281Z"
+generated: "2026-11-24T04:44:49.227273779Z"
