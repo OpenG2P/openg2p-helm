@@ -31408,6 +31408,47 @@ entries:
       catalog.cattle.io/display-name: OpenG2P Livestock Registry
       catalog.cattle.io/kube-version: '>=1.23.0-0'
       openg2p.org/add-to-rancher: ""
+      org.opencontainers.image.revision: 77f787a3b26ecfe3ff7e10d3e9498e1c620bfb46
+      org.opencontainers.image.source: https://github.com/OpenG2P/live-stock-registry
+    apiVersion: v2
+    appVersion: 0.0.0-develop.5
+    created: "2026-11-28T02:05:08.851755893Z"
+    dependencies:
+    - alias: registry
+      name: openg2p-registry
+      repository: https://openg2p.github.io/openg2p-helm
+      version: 0.0.0-develop.858
+    description: 'OpenG2P Livestock Registry — the livestock department''s registry:
+      the animals and their owners, the veterinarians who serve them, and each animal''s
+      births, vaccinations, treatments, sales and deaths.  A thin package over the
+      shared openg2p-registry chart: a values overlay (variant identity, hostname,
+      the livestock images, the Animal and Vet ID pools, DCI search settings, seed
+      toggles) and its Superset dashboard bundle. Every deployment, service, gateway,
+      keycloak/iam wiring and the db-seed machinery come from the openg2p-registry
+      subchart. '
+    digest: 5ddbd7e77b75f8922d5f88d4f16638cb5bc9f4822a2ac5526b11556880786725
+    home: https://openg2p.org
+    icon: https://openg2p.github.io/openg2p-helm/openg2p-logo.png
+    keywords:
+    - openg2p
+    - registry
+    - livestock-registry
+    - activity-register
+    maintainers:
+    - email: info@openg2p.org
+      name: OpenG2P
+    name: openg2p-livestock-registry
+    sources:
+    - https://github.com/OpenG2P/live-stock-registry
+    type: application
+    urls:
+    - ../openg2p-livestock-registry-0.0.0-develop.5.tgz
+    version: 0.0.0-develop.5
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: OpenG2P Livestock Registry
+      catalog.cattle.io/kube-version: '>=1.23.0-0'
+      openg2p.org/add-to-rancher: ""
       org.opencontainers.image.revision: 5747ca802fd268e231e9e8b4c8f94c01f6e62853
       org.opencontainers.image.source: https://github.com/OpenG2P/live-stock-registry
     apiVersion: v2
@@ -45856,4 +45897,4 @@ entries:
     urls:
     - ../registry-connector-0.0.0-develop.9.tgz
     version: 0.0.0-develop.9
-generated: "2026-11-28T02:04:40.463653369Z"
+generated: "2026-11-28T02:05:08.837615172Z"
